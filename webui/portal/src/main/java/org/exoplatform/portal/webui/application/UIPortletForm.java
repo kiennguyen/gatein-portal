@@ -372,7 +372,8 @@ public class UIPortletForm extends UIFormTabPane
          uiPortlet.putSuitedTheme(null, uiThemeSelector.getChild(UIItemThemeSelector.class).getSelectedTheme());
          uiPortletForm.savePreferences();
          UIMaskWorkspace uiMaskWorkspace = uiPortletForm.getParent();
-         uiMaskWorkspace.setUIComponent(null);
+         PortalRequestContext pcontext = (PortalRequestContext)event.getRequestContext();
+         uiMaskWorkspace.createEvent("Close", Phase.DECODE, pcontext).broadcast();
          if (uiPortletForm.hasEditMode())
          {
             uiPortlet.setCurrentPortletMode(PortletMode.VIEW);
@@ -406,9 +407,7 @@ public class UIPortletForm extends UIFormTabPane
             uiPortlet.setHeight(height);
          }
 
-         PortalRequestContext pcontext = (PortalRequestContext)event.getRequestContext();
          pcontext.getJavascriptManager().addJavascript("eXo.portal.UIPortal.changeComposerSaveButton();");
-         pcontext.addUIComponentToUpdateByAjax(uiMaskWorkspace);
          UIPortalApplication uiPortalApp = uiPortlet.getAncestorOfType(UIPortalApplication.class);
          UIWorkingWorkspace uiWorkingWS = uiPortalApp.getChildById(UIPortalApplication.UI_WORKING_WS_ID);
          pcontext.addUIComponentToUpdateByAjax(uiWorkingWS);
@@ -430,9 +429,7 @@ public class UIPortletForm extends UIFormTabPane
          PortalRequestContext pcontext = (PortalRequestContext)event.getRequestContext();
          //add by Pham Dinh Tan
          UIMaskWorkspace uiMaskWorkspace = uiPortalApp.getChildById(UIPortalApplication.UI_MASK_WS_ID);
-         uiMaskWorkspace.setUIComponent(null);
-         uiMaskWorkspace.setWindowSize(-1, -1);
-         pcontext.addUIComponentToUpdateByAjax(uiMaskWorkspace);
+         uiMaskWorkspace.broadcast(event, Phase.DECODE);
          pcontext.ignoreAJAXUpdateOnPortlets(true);
       }
    }
