@@ -81,10 +81,10 @@
             </includes>
          </resource>
          <resource>
-            <directory>src/main/javascript</directory>
-            <includes>
-                <include>**/*</include>
-            </includes>
+           <directory>src/main/javascript</directory>
+           <includes>
+             <include>**/*</include>
+           </includes>
          </resource>
       </resources>
    </build>

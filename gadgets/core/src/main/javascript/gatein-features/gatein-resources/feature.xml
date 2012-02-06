@@ -1,0 +1,10 @@
+<feature>
+	<!--
+    Contains common gatein resources that use for gadget.
+    Gadget can use this feature by require like:
+    <Require feature="gatein-resources">
+      <Param name="id">jquery</Param>
+    </Require>
+  -->
+  <name>gatein-resources</name>
+</feature>

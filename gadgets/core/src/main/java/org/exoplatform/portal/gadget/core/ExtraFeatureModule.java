@@ -18,8 +18,9 @@
  */
 package org.exoplatform.portal.gadget.core;
 
-import com.google.inject.AbstractModule;
+import org.apache.shindig.gadgets.rewrite.GadgetRewriter;
 
+import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.Multibinder;
 import com.google.inject.name.Names;
 
@@ -32,7 +33,24 @@ public class ExtraFeatureModule extends AbstractModule
    @Override
    protected void configure()
    {
-      Multibinder<String> featureBinder = Multibinder.newSetBinder(binder(), String.class, Names.named("org.apache.shindig.features-extended")); 
-      featureBinder.addBinding().toInstance("res://gatein-features/features.txt");
+      configureGateInFeatures();
+      configureGateInFeaturesRewriter();
+   }
+   
+   /**
+    * Adds the gatein-features directory to the FeatureRegistry
+    */
+   protected void configureGateInFeatures() {
+     Multibinder<String> featureBinder = Multibinder.newSetBinder(binder(), String.class, Names.named("org.apache.shindig.features-extended")); 
+     featureBinder.addBinding().toInstance("res://gatein-features/features.txt");
+   }
+   
+   /**
+    * Adds the rewriter to process gatein resources
+    */
+   private void configureGateInFeaturesRewriter()
+   {
+      Multibinder<GadgetRewriter> rewriterbinder = Multibinder.newSetBinder(binder(), GadgetRewriter.class, Names.named("shindig.rewriters.gadget"));       
+      rewriterbinder.addBinding().to(GateInResourcesRewriter.class);
    }
 }
