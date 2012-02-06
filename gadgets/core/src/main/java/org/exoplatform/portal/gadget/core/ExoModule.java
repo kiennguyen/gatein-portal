@@ -19,6 +19,8 @@
 
 package org.exoplatform.portal.gadget.core;
 
+import com.google.inject.multibindings.Multibinder;
+
 import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;
 

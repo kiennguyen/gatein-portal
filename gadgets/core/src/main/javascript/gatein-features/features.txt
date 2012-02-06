@@ -1,0 +1,1 @@
+gatein-features/gatein-resources/feature.xml
