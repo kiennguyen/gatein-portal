@@ -1,1 +1,2 @@
 gatein-features/gatein-resources/feature.xml
+gatein-features/gadget-container/feature.xml
