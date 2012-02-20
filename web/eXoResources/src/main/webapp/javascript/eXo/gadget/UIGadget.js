@@ -34,7 +34,7 @@ eXo.gadget.UIGadget = {
     window.gadgets = window.gadgets || {};
     eXo.gadgets = window.gadgets;
     var loader = eXo.core.AsyncLoader;
-    loader.loadJS([hostName + '/js/gadget-container.js?c=1'], eXo.gadget.UIGadget.createCallback, arguments, null);
+    loader.loadJS([hostName + '/js/gadget-container.js?c=1' + (debug ? "&debug=1": "") + (nocache ? "&nocache=1" : "&nocache=0")], eXo.gadget.UIGadget.createCallback, arguments, null);
   },
 
   createCallback : function(url, id, metadata, userPref, view, hostName, debug, nocache)
