@@ -42,12 +42,14 @@
       <Require feature="dynamic-height"/>
       <Require feature="minimessage"/>
       <Require feature="views"/>
+      <Require feature="gatein-resources">
+         <Param name="id">jquery</Param>
+      </Require>
    </ModulePrefs>
    <UserPref name="servicesURL" display_name="__MSG_services_url__" default_value="/portal/rest/management" required="true"/>
    <Content type="html" view="home">
       <![CDATA[
-        <link rel="stylesheet" type="text/css" href="style/home.css"></link>
-        <script src="script/jquery-1.4.2.min.js" type="text/javascript"></script>		
+        <link rel="stylesheet" type="text/css" href="style/home.css"></link>	
 		<script src="script/script.js" type="text/javascript"></script>	
 		<script src="script/handlers.js" type="text/javascript"></script>
 		<script type="text/javascript">
@@ -137,8 +139,7 @@
    </Content>
    <Content type="html" view="canvas">
       <![CDATA[
-        <link rel="stylesheet" type="text/css" href="style/canvas.css"></link>
-        <script src="script/jquery-1.4.2.min.js"></script>     
+        <link rel="stylesheet" type="text/css" href="style/canvas.css"></link>    
 		<script src="script/script.js"></script>
 		<script src="script/handlers.js"></script>
 		<script type="text/javascript">
