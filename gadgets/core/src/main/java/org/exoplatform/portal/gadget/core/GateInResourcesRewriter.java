@@ -25,12 +25,28 @@ import org.apache.shindig.gadgets.rewrite.GadgetRewriter;
 import org.apache.shindig.gadgets.rewrite.MutableContent;
 import org.apache.shindig.gadgets.rewrite.RewritingException;
 import org.apache.shindig.gadgets.spec.Feature;
+import org.exoplatform.commons.utils.PropertyManager;
+import org.exoplatform.container.PortalContainer;
+import org.exoplatform.portal.controller.resource.ResourceId;
+import org.exoplatform.portal.controller.resource.ResourceScope;
+import org.exoplatform.portal.controller.resource.script.FetchMap;
+import org.exoplatform.portal.controller.resource.script.FetchMode;
+import org.exoplatform.web.ControllerContext;
+import org.exoplatform.web.WebAppController;
+import org.exoplatform.web.application.javascript.JavascriptConfigService;
+import org.gatein.common.logging.Logger;
+import org.gatein.common.logging.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
+import java.io.IOException;
 import java.util.Collection;
+import java.util.Locale;
+import java.util.Map;
 
 /**
+ * Look up GateIn resource with given Id and inject resource URL into html header of gadget's content
+ * 
  * @author <a href="kienna@exoplatform.com">Kien Nguyen</a>
  * @version $Revision$
  */
@@ -39,6 +55,9 @@ public class GateInResourcesRewriter implements GadgetRewriter
    private static String GATEIN_RESOURCES_FEATURE = "gatein-resources";
 
    private static String FEATURE_ID = "id";
+   
+   /** . */
+   final Logger log = LoggerFactory.getLogger(GateInResourcesRewriter.class);
 
    public void rewrite(Gadget gadget, MutableContent content) throws RewritingException
    {
@@ -49,26 +68,44 @@ public class GateInResourcesRewriter implements GadgetRewriter
 
          if (resourceIds.size() > 0)
          {
-            Document doc = content.getDocument();
-            Element head = (Element)DomUtil.getFirstNamedChildNode(doc.getDocumentElement(), "head");
-            Element script = head.getOwnerDocument().createElement("script");
+            PortalContainer pcontainer = PortalContainer.getInstance();
+            JavascriptConfigService service =
+               (JavascriptConfigService)pcontainer.getComponentInstanceOfType(
+                  JavascriptConfigService.class);
+            FetchMap<ResourceId> resourcesMap = new FetchMap<ResourceId>();
 
-            //TODO should use resource controller for finding resources URL
-            //Temporary hardcode for testing jquery resource
-            if (resourceIds.contains("jquery"))
+            for (String id : resourceIds)
             {
-               String resourceUrl = "http://localhost:8080/eXoResources/javascript/jquery.js";
-               script.setAttribute("src", resourceUrl);
+               resourcesMap.add(new ResourceId(ResourceScope.SHARED, id), FetchMode.IMMEDIATE);
             }
 
-            head.appendChild(script);
+            try
+            {
+               WebAppController webAppController = (WebAppController)pcontainer.getComponentInstanceOfType(
+                  WebAppController.class);
+               ControllerContext context = new ControllerContext(webAppController.getRouter(), null);
+               Map<String, FetchMode> resources =
+                  service.resolveURLs(context, resourcesMap, !PropertyManager.isDevelopping(), new Locale("en"));
+   
+               for (Map.Entry<String, FetchMode> entry : resources.entrySet())
+               {
+                  Document doc = content.getDocument();
+                  Element head = (Element)DomUtil.getFirstNamedChildNode(doc.getDocumentElement(), "head");
+                  Element script = head.getOwnerDocument().createElement("script");
+                  script.setAttribute("src", entry.getKey());
+                  head.appendChild(script);
+               }
+            }
+            catch (IOException e) 
+            {
+               throw new RewritingException("Error",
+                  HttpResponse.SC_INTERNAL_SERVER_ERROR);
+            }
          }
          else
          {
-            throw new RewritingException(GATEIN_RESOURCES_FEATURE + " required Param: " + FEATURE_ID,
-               HttpResponse.SC_INTERNAL_SERVER_ERROR);
+            log.warn("There is no GateIn resources configured in the gadget " + gadget.getSpec().getUrl());
          }
       }
-
    }
 }
