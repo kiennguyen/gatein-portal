@@ -33,6 +33,7 @@
     <name>GateIn Portal eXo Gadgets Server</name>
 
     <build>
+        <finalName>eXoGadgetServer</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

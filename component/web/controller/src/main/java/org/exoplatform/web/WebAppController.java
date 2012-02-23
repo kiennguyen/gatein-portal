@@ -400,4 +400,11 @@ public class WebAppController
          res.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
       }
    }
+   
+   //Need this to build ControllerContext out of the box
+   public Router getRouter()
+   {
+      //TODO: Load the configuration if the router has not been built yet
+      return routerRef.get();
+   }
 }
