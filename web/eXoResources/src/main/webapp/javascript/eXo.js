@@ -148,6 +148,13 @@ eXo.session.destroyItv = function () {
    session.itvObj = null ;
 } ;
 
+/**
+ * Generates an id based on the current time and random number
+ */
+eXo.generateId = function(objectId) {
+	return (objectId + "-" + new Date().getTime() + Math.random().toString().substring(2)) ;
+};
+
 eXo.debug = function(message) {
 	if(!eXo.developing) return;
 	
