@@ -20,23 +20,23 @@
 package org.gatein.portal.application;
 
 import org.exoplatform.container.PortalContainer;
-import org.exoplatform.portal.config.DataStorage;
-import org.exoplatform.portal.config.UserPortalConfig;
-import org.exoplatform.portal.config.UserPortalConfigService;
-import org.exoplatform.portal.config.model.Page;
-import org.exoplatform.portal.config.model.PortalConfig;
-import org.exoplatform.portal.mop.SiteKey;
-import org.exoplatform.portal.mop.SiteType;
-import org.exoplatform.portal.mop.navigation.Scope;
-import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.portal.mop.user.UserNode;
-import org.exoplatform.portal.mop.user.UserNodeFilterConfig;
-import org.exoplatform.portal.mop.user.UserPortal;
-import org.exoplatform.web.application.Application;
-import org.exoplatform.web.application.ApplicationLifecycle;
-import org.exoplatform.web.application.RequestFailure;
 import org.gatein.common.logging.Logger;
 import org.gatein.common.logging.LoggerFactory;
+import org.gatein.portal.config.DataStorage;
+import org.gatein.portal.config.UserPortalConfig;
+import org.gatein.portal.config.UserPortalConfigService;
+import org.gatein.portal.config.model.Page;
+import org.gatein.portal.config.model.PortalConfig;
+import org.gatein.portal.mop.SiteKey;
+import org.gatein.portal.mop.SiteType;
+import org.gatein.portal.mop.navigation.Scope;
+import org.gatein.portal.mop.user.UserNavigation;
+import org.gatein.portal.mop.user.UserNode;
+import org.gatein.portal.mop.user.UserNodeFilterConfig;
+import org.gatein.portal.mop.user.UserPortal;
+import org.gatein.web.application.Application;
+import org.gatein.web.application.ApplicationLifecycle;
+import org.gatein.web.application.RequestFailure;
 
 /**
  * @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a>

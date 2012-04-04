@@ -19,16 +19,16 @@
 
 package org.gatein.portal.url;
 
-import org.exoplatform.commons.utils.I18N;
-import org.exoplatform.portal.mop.SiteKey;
-import org.exoplatform.web.ControllerContext;
-import org.exoplatform.web.WebAppController;
-import org.exoplatform.web.controller.QualifiedName;
-import org.exoplatform.web.controller.router.URIWriter;
-import org.exoplatform.web.url.PortalURL;
-import org.exoplatform.web.url.URLContext;
 import org.gatein.common.io.UndeclaredIOException;
+import org.gatein.commons.utils.I18N;
 import org.gatein.portal.application.PortalRequestHandler;
+import org.gatein.portal.mop.SiteKey;
+import org.gatein.web.ControllerContext;
+import org.gatein.web.WebAppController;
+import org.gatein.web.controller.QualifiedName;
+import org.gatein.web.controller.router.URIWriter;
+import org.gatein.web.url.PortalURL;
+import org.gatein.web.url.URLContext;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;

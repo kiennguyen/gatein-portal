@@ -19,7 +19,7 @@
 
 package org.gatein.portal.webui.application;
 
-import org.exoplatform.portal.config.model.Properties;
+import org.gatein.portal.config.model.Properties;
 import org.gatein.portal.webui.portal.UIPortalComponent;
 
 /**

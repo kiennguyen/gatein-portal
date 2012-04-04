@@ -22,8 +22,8 @@ package org.gatein.navigation.webui.component;
 import javax.portlet.PortletPreferences;
 import javax.portlet.PortletRequest;
 
-import org.exoplatform.portal.mop.navigation.GenericScope;
-import org.exoplatform.portal.mop.navigation.Scope;
+import org.gatein.portal.mop.navigation.GenericScope;
+import org.gatein.portal.mop.navigation.Scope;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.application.portlet.PortletRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;

@@ -19,17 +19,17 @@
 
 package org.gatein.gadget.webui.component;
 
-import org.exoplatform.application.gadget.Gadget;
-import org.exoplatform.application.gadget.GadgetImporter;
-import org.exoplatform.application.gadget.GadgetRegistryService;
 import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.ExoContainerContext;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.application.gadget.Gadget;
+import org.gatein.application.gadget.GadgetImporter;
+import org.gatein.application.gadget.GadgetRegistryService;
 import org.gatein.common.logging.Logger;
 import org.gatein.common.logging.LoggerFactory;
 import org.gatein.portal.webui.application.GadgetUtil;
 import org.gatein.portal.webui.application.UIGadget;
 import org.gatein.portal.webui.util.Util;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiApplication;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.application.portlet.PortletRequestContext;

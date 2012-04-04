@@ -19,23 +19,16 @@
 
 package org.gatein.portal.webui.portal;
 
-import org.exoplatform.portal.config.model.PortalProperties;
-import org.exoplatform.portal.config.model.Properties;
-import org.exoplatform.portal.mop.SiteKey;
-import org.exoplatform.portal.mop.SiteType;
-import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.portal.mop.user.UserNode;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.User;
-import org.exoplatform.web.application.JavascriptManager;
-import org.exoplatform.web.login.InitiateLoginServlet;
-import org.exoplatform.web.login.LogoutControl;
-import org.exoplatform.web.security.security.AbstractTokenService;
-import org.exoplatform.web.security.security.CookieTokenService;
-import org.exoplatform.web.url.navigation.NavigationResource;
-import org.exoplatform.web.url.navigation.NodeURL;
 import org.gatein.portal.account.UIAccountSetting;
 import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.config.model.PortalProperties;
+import org.gatein.portal.config.model.Properties;
+import org.gatein.portal.mop.SiteKey;
+import org.gatein.portal.mop.SiteType;
+import org.gatein.portal.mop.user.UserNavigation;
+import org.gatein.portal.mop.user.UserNode;
 import org.gatein.portal.webui.application.UIPortlet;
 import org.gatein.portal.webui.container.UIContainer;
 import org.gatein.portal.webui.page.UIPage;
@@ -50,6 +43,13 @@ import org.gatein.portal.webui.portal.UIPortalComponentActionListener.ShowLoginF
 import org.gatein.portal.webui.util.Util;
 import org.gatein.portal.webui.workspace.UIMaskWorkspace;
 import org.gatein.portal.webui.workspace.UIPortalApplication;
+import org.gatein.web.application.JavascriptManager;
+import org.gatein.web.login.InitiateLoginServlet;
+import org.gatein.web.login.LogoutControl;
+import org.gatein.web.security.security.AbstractTokenService;
+import org.gatein.web.security.security.CookieTokenService;
+import org.gatein.web.url.navigation.NavigationResource;
+import org.gatein.web.url.navigation.NodeURL;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;

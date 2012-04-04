@@ -19,7 +19,7 @@
 
 package org.gatein.webui.form;
 
-import org.exoplatform.commons.utils.HTMLEntityEncoder;
+import org.gatein.commons.utils.HTMLEntityEncoder;
 import org.gatein.webui.application.WebuiRequestContext;
 
 import java.io.Writer;

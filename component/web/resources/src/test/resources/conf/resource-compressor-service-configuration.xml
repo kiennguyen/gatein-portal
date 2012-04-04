@@ -26,11 +26,11 @@
    xmlns="http://www.exoplaform.org/xml/ns/kernel_1_2.xsd">
    
    <external-component-plugins>
-      <target-component>org.exoplatform.portal.resource.compressor.ResourceCompressor</target-component>
+      <target-component>org.gatein.portal.resource.compressor.ResourceCompressor</target-component>
       <component-plugin>
          <name>MockCompressorPlugin</name>
          <set-method>registerCompressorPlugin</set-method>
-         <type>org.exoplatform.portal.resource.compressor.MockCompressorPlugin</type>
+         <type>org.gatein.portal.resource.compressor.MockCompressorPlugin</type>
          <init-params>
             <value-param>
                <name>plugin.priority</name>
@@ -42,7 +42,7 @@
       <component-plugin>
          <name>JSMinCompressorPlugin</name>
          <set-method>registerCompressorPlugin</set-method>
-         <type>org.exoplatform.portal.resource.compressor.impl.JSMinCompressorPlugin</type>
+         <type>org.gatein.portal.resource.compressor.impl.JSMinCompressorPlugin</type>
          <init-params>
             <value-param>
                <name>plugin.priority</name>
@@ -54,7 +54,7 @@
       <component-plugin>
          <name>YUICSSCompressorPlugin</name>
          <set-method>registerCompressorPlugin</set-method>
-         <type>org.exoplatform.portal.resource.compressor.css.YUICSSCompressorPlugin</type>
+         <type>org.gatein.portal.resource.compressor.css.YUICSSCompressorPlugin</type>
          <init-params>
             <value-param>
                <name>plugin.priority</name>

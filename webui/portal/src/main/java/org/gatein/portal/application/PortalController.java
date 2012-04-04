@@ -24,9 +24,9 @@ import org.exoplatform.container.PortalContainer;
 import org.exoplatform.container.RootContainer;
 import org.exoplatform.container.RootContainer.PortalContainerPostCreateTask;
 import org.exoplatform.container.web.AbstractHttpServlet;
-import org.exoplatform.web.WebAppController;
 import org.gatein.common.logging.Logger;
 import org.gatein.common.logging.LoggerFactory;
+import org.gatein.web.WebAppController;
 
 import java.io.IOException;
 import java.util.Enumeration;

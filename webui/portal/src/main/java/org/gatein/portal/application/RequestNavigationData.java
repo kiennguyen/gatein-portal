@@ -18,7 +18,7 @@
  */
 package org.gatein.portal.application;
 
-import org.exoplatform.web.controller.QualifiedName;
+import org.gatein.web.controller.QualifiedName;
 
 /**
 * @author <a href="hoang281283@gmail.com">Minh Hoang TO</a>

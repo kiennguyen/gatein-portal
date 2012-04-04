@@ -19,23 +19,23 @@
 
 package org.gatein.portal.webui.application;
 
-import org.exoplatform.application.gadget.GadgetRegistryService;
 import org.exoplatform.container.ExoContainer;
-import org.exoplatform.portal.config.DataStorage;
-import org.exoplatform.portal.config.model.ApplicationState;
-import org.exoplatform.portal.config.model.ApplicationType;
-import org.exoplatform.portal.config.model.TransientApplicationState;
-import org.exoplatform.portal.pc.ExoPortletState;
-import org.exoplatform.portal.pc.ExoPortletStateType;
-import org.exoplatform.portal.pom.spi.gadget.Gadget;
-import org.exoplatform.portal.pom.spi.portlet.Portlet;
-import org.exoplatform.portal.pom.spi.portlet.PortletBuilder;
-import org.exoplatform.portal.pom.spi.portlet.Preference;
-import org.exoplatform.portal.pom.spi.wsrp.WSRP;
-import org.exoplatform.portal.pom.spi.wsrp.WSRPPortletStateType;
+import org.gatein.application.gadget.GadgetRegistryService;
 import org.gatein.pc.api.PortletContext;
 import org.gatein.pc.api.PortletInvoker;
 import org.gatein.pc.api.StatefulPortletContext;
+import org.gatein.portal.config.DataStorage;
+import org.gatein.portal.config.model.ApplicationState;
+import org.gatein.portal.config.model.ApplicationType;
+import org.gatein.portal.config.model.TransientApplicationState;
+import org.gatein.portal.pc.ExoPortletState;
+import org.gatein.portal.pc.ExoPortletStateType;
+import org.gatein.portal.pom.spi.gadget.Gadget;
+import org.gatein.portal.pom.spi.portlet.Portlet;
+import org.gatein.portal.pom.spi.portlet.PortletBuilder;
+import org.gatein.portal.pom.spi.portlet.Preference;
+import org.gatein.portal.pom.spi.wsrp.WSRP;
+import org.gatein.portal.pom.spi.wsrp.WSRPPortletStateType;
 
 import java.io.Serializable;
 import java.util.Arrays;
@@ -200,7 +200,7 @@ public abstract class ModelAdapter<S, C extends Serializable>
       {
          GadgetRegistryService gadgetService =
             (GadgetRegistryService)container.getComponentInstanceOfType(GadgetRegistryService.class);
-         org.exoplatform.application.gadget.Gadget model = gadgetService.getGadget(applicationId);
+         org.gatein.application.gadget.Gadget model = gadgetService.getGadget(applicationId);
          String url = GadgetUtil.reproduceUrl(model.getUrl(), model.isLocal());
          ExoPortletState prefs = new ExoPortletState(WRAPPER_ID);
          prefs.getState().put("url", Arrays.asList(url));

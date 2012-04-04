@@ -19,7 +19,7 @@
 
 package org.gatein.webui.config;
 
-import org.exoplatform.commons.serialization.api.TypeConverter;
+import org.gatein.commons.serialization.api.TypeConverter;
 import org.gatein.webui.application.ConfigurationManager;
 import org.gatein.webui.application.WebuiApplication;
 import org.gatein.webui.application.WebuiRequestContext;

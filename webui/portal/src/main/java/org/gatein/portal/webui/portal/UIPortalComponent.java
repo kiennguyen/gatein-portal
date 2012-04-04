@@ -21,7 +21,7 @@ package org.gatein.portal.webui.portal;
 
 import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.ExoContainerContext;
-import org.exoplatform.portal.config.UserACL;
+import org.gatein.portal.config.UserACL;
 import org.gatein.webui.core.UIContainer;
 
 /**

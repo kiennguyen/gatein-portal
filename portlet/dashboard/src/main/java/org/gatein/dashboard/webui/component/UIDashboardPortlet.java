@@ -19,15 +19,15 @@
 
 package org.gatein.dashboard.webui.component;
 
-import org.exoplatform.portal.config.DataStorage;
-import org.exoplatform.portal.config.UserACL;
-import org.exoplatform.portal.config.model.Page;
-import org.exoplatform.portal.mop.user.UserNode;
 import org.gatein.dashboard.webui.component.DashboardParent;
 import org.gatein.dashboard.webui.component.UIDashboard;
 import org.gatein.dashboard.webui.component.UIDashboardContainer;
 import org.gatein.dashboard.webui.component.UIDashboardEditForm;
 import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.config.DataStorage;
+import org.gatein.portal.config.UserACL;
+import org.gatein.portal.config.model.Page;
+import org.gatein.portal.mop.user.UserNode;
 import org.gatein.portal.webui.container.UIContainer;
 import org.gatein.portal.webui.portal.UIPortal;
 import org.gatein.portal.webui.workspace.UIPortalApplication;

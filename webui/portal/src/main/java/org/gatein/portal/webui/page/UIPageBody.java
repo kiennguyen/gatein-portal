@@ -20,10 +20,10 @@
 package org.gatein.portal.webui.page;
 
 import org.exoplatform.container.ExoContainer;
-import org.exoplatform.portal.config.UserPortalConfigService;
-import org.exoplatform.portal.config.model.Page;
-import org.exoplatform.portal.config.model.PageBody;
-import org.exoplatform.portal.mop.user.UserNode;
+import org.gatein.portal.config.UserPortalConfigService;
+import org.gatein.portal.config.model.Page;
+import org.gatein.portal.config.model.PageBody;
+import org.gatein.portal.mop.user.UserNode;
 import org.gatein.portal.webui.portal.UIPortal;
 import org.gatein.portal.webui.portal.UIPortalComponent;
 import org.gatein.portal.webui.util.PortalDataMapper;

@@ -19,12 +19,12 @@
 
 package org.gatein.organization.webui.component;
 
-import org.exoplatform.portal.config.UserACL;
 import org.exoplatform.services.organization.Group;
 import org.exoplatform.services.organization.GroupHandler;
 import org.exoplatform.services.organization.OrganizationService;
-import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.portal.config.UserACL;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;

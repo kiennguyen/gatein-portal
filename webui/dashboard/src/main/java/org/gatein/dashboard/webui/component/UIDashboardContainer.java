@@ -19,21 +19,21 @@
 
 package org.gatein.dashboard.webui.component;
 
-import org.exoplatform.application.registry.Application;
-import org.exoplatform.application.registry.ApplicationRegistryService;
-import org.exoplatform.portal.config.DataStorage;
-import org.exoplatform.portal.config.StaleModelException;
-import org.exoplatform.portal.config.model.Container;
-import org.exoplatform.portal.config.model.Dashboard;
-import org.exoplatform.portal.config.model.TransientApplicationState;
-import org.exoplatform.portal.pom.spi.gadget.Gadget;
-import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.web.application.RequestContext;
+import org.gatein.application.registry.Application;
+import org.gatein.application.registry.ApplicationRegistryService;
+import org.gatein.portal.config.DataStorage;
+import org.gatein.portal.config.StaleModelException;
+import org.gatein.portal.config.model.Container;
+import org.gatein.portal.config.model.Dashboard;
+import org.gatein.portal.config.model.TransientApplicationState;
+import org.gatein.portal.pom.spi.gadget.Gadget;
 import org.gatein.portal.webui.application.UIGadget;
 import org.gatein.portal.webui.application.UIPortlet;
 import org.gatein.portal.webui.container.UIContainer;
 import org.gatein.portal.webui.util.PortalDataMapper;
 import org.gatein.portal.webui.util.Util;
+import org.gatein.web.application.ApplicationMessage;
+import org.gatein.web.application.RequestContext;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.application.portlet.PortletRequestContext;
 import org.gatein.webui.config.InitParams;

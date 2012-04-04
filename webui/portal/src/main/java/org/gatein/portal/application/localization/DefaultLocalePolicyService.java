@@ -21,8 +21,8 @@
  */
 package org.gatein.portal.application.localization;
 
-import org.exoplatform.services.resources.LocaleContextInfo;
-import org.exoplatform.services.resources.LocalePolicy;
+import org.gatein.services.resources.LocaleContextInfo;
+import org.gatein.services.resources.LocalePolicy;
 import org.picocontainer.Startable;
 
 import java.util.List;

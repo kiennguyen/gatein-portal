@@ -21,12 +21,12 @@ package org.gatein.portal.webui.navigation;
 
 import java.util.Iterator;
 
-import org.exoplatform.portal.mop.navigation.NodeChange;
-import org.exoplatform.portal.mop.navigation.NodeChangeQueue;
-import org.exoplatform.portal.mop.navigation.Scope;
-import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.portal.mop.user.UserNode;
-import org.exoplatform.portal.mop.user.UserPortal;
+import org.gatein.portal.mop.navigation.NodeChange;
+import org.gatein.portal.mop.navigation.NodeChangeQueue;
+import org.gatein.portal.mop.navigation.Scope;
+import org.gatein.portal.mop.user.UserNavigation;
+import org.gatein.portal.mop.user.UserNode;
+import org.gatein.portal.mop.user.UserPortal;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;

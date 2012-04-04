@@ -19,7 +19,7 @@
 
 package org.gatein.webui.config;
 
-import org.exoplatform.web.application.ApplicationLifecycle;
+import org.gatein.web.application.ApplicationLifecycle;
 import org.gatein.webui.Util;
 import org.gatein.webui.config.Event;
 import org.gatein.webui.config.InitParams;

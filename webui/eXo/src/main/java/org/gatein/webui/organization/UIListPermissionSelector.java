@@ -22,11 +22,11 @@ package org.gatein.webui.organization;
 import java.io.Serializable;
 import java.util.*;
 
-import org.exoplatform.commons.utils.SerializablePageList;
-import org.exoplatform.portal.config.UserACL;
-import org.exoplatform.portal.config.UserACL.Permission;
-import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.utils.SerializablePageList;
+import org.gatein.portal.config.UserACL;
+import org.gatein.portal.config.UserACL.Permission;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;

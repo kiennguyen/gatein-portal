@@ -19,7 +19,7 @@
 
 package org.gatein.portal.webui.workspace;
 
-import org.exoplatform.web.application.JavascriptManager;
+import org.gatein.web.application.JavascriptManager;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.core.UIComponent;

@@ -19,11 +19,10 @@
 
 package org.gatein.portal.webui.page;
 
-import org.exoplatform.portal.config.UserACL;
-import org.exoplatform.portal.config.model.Page;
-import org.exoplatform.portal.mop.SiteKey;
-import org.exoplatform.web.application.ApplicationMessage;
 import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.config.UserACL;
+import org.gatein.portal.config.model.Page;
+import org.gatein.portal.mop.SiteKey;
 import org.gatein.portal.webui.application.UIPortlet;
 import org.gatein.portal.webui.container.UIContainer;
 import org.gatein.portal.webui.portal.UIPortalComposer;
@@ -34,6 +33,7 @@ import org.gatein.portal.webui.workspace.UIEditInlineWorkspace;
 import org.gatein.portal.webui.workspace.UIPortalApplication;
 import org.gatein.portal.webui.workspace.UIPortalToolPanel;
 import org.gatein.portal.webui.workspace.UIWorkingWorkspace;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;

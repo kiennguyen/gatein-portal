@@ -24,7 +24,7 @@ package org.gatein.webui.form.validator;
 
 import java.io.Serializable;
 
-import org.exoplatform.web.application.CompoundApplicationMessage;
+import org.gatein.web.application.CompoundApplicationMessage;
 
 /**
  * @author <a href="mailto:mwringe@redhat.com">Matt Wringe</a>

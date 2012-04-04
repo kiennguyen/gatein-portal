@@ -19,8 +19,8 @@
 
 package org.gatein.webui.form;
 
-import org.exoplatform.upload.UploadResource;
-import org.exoplatform.upload.UploadService;
+import org.gatein.upload.UploadResource;
+import org.gatein.upload.UploadService;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 

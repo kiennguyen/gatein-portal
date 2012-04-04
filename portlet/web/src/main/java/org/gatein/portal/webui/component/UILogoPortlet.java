@@ -19,13 +19,13 @@
 
 package org.gatein.portal.webui.component;
 
-import org.exoplatform.portal.mop.SiteType;
-import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.portal.mop.user.UserNode;
 import org.exoplatform.services.organization.User;
 import org.exoplatform.services.security.ConversationState;
-import org.exoplatform.web.CacheUserProfileFilter;
+import org.gatein.portal.mop.SiteType;
+import org.gatein.portal.mop.user.UserNavigation;
+import org.gatein.portal.mop.user.UserNode;
 import org.gatein.portal.webui.util.Util;
+import org.gatein.web.CacheUserProfileFilter;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.application.portlet.PortletRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;

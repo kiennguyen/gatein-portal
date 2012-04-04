@@ -20,14 +20,14 @@
 package org.gatein.organization.webui.component;
 
 import org.exoplatform.commons.utils.ListAccess;
-import org.exoplatform.commons.utils.ListAccessImpl;
-import org.exoplatform.commons.utils.PageListAccess;
 import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.PortalContainer;
 import org.exoplatform.services.organization.Group;
 import org.exoplatform.services.organization.Membership;
 import org.exoplatform.services.organization.MembershipHandler;
 import org.exoplatform.services.organization.OrganizationService;
+import org.gatein.commons.utils.ListAccessImpl;
+import org.gatein.commons.utils.PageListAccess;
 
 import java.util.List;
 

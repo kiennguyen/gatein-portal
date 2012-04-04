@@ -19,11 +19,11 @@
 
 package org.gatein.webui.core;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.web.application.AbstractApplicationMessage;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.web.application.AbstractApplicationMessage;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.exception.MessageException;
 

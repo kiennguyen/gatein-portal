@@ -19,9 +19,9 @@
 
 package org.gatein.portal.webui.component;
 
-import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.portal.mop.user.UserNode;
-import org.exoplatform.portal.mop.user.UserPortal;
+import org.gatein.portal.mop.user.UserNavigation;
+import org.gatein.portal.mop.user.UserNode;
+import org.gatein.portal.mop.user.UserPortal;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.application.portlet.PortletRequestContext;

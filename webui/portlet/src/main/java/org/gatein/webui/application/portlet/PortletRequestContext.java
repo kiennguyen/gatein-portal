@@ -19,14 +19,14 @@
 
 package org.gatein.webui.application.portlet;
 
-import org.exoplatform.commons.utils.WriterPrinter;
-import org.exoplatform.portal.mop.user.UserPortal;
-import org.exoplatform.services.resources.Orientation;
-import org.exoplatform.web.application.RequestContext;
-import org.exoplatform.web.application.URLBuilder;
-import org.exoplatform.web.url.URLFactory;
-import org.exoplatform.web.url.ResourceType;
-import org.exoplatform.web.url.PortalURL;
+import org.gatein.commons.utils.WriterPrinter;
+import org.gatein.portal.mop.user.UserPortal;
+import org.gatein.services.resources.Orientation;
+import org.gatein.web.application.RequestContext;
+import org.gatein.web.application.URLBuilder;
+import org.gatein.web.url.PortalURL;
+import org.gatein.web.url.ResourceType;
+import org.gatein.web.url.URLFactory;
 import org.gatein.webui.application.WebuiApplication;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIApplication;

@@ -21,7 +21,7 @@ package org.gatein.toolbar.webui.component;
 
 import org.exoplatform.services.organization.User;
 import org.exoplatform.services.security.ConversationState;
-import org.exoplatform.web.CacheUserProfileFilter;
+import org.gatein.web.CacheUserProfileFilter;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.core.UIPortletApplication;
 import org.gatein.webui.core.lifecycle.UIApplicationLifecycle;

@@ -21,12 +21,12 @@ package org.gatein.applicationregistry.webui.component;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.exoplatform.application.registry.Application;
-import org.exoplatform.application.registry.ApplicationCategory;
-import org.exoplatform.application.registry.ApplicationRegistryService;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.portal.config.model.ApplicationType;
+import org.gatein.application.registry.Application;
+import org.gatein.application.registry.ApplicationCategory;
+import org.gatein.application.registry.ApplicationRegistryService;
 import org.gatein.applicationregistry.webui.component.UIPortletManagement.PortletExtra;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.portal.config.model.ApplicationType;
 import org.gatein.portal.webui.container.UIContainer;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;

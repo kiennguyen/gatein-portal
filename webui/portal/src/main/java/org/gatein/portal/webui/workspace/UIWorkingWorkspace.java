@@ -19,8 +19,8 @@
 
 package org.gatein.portal.webui.workspace;
 
-import org.exoplatform.portal.config.model.ApplicationType;
-import org.exoplatform.portal.pom.config.Utils;
+import org.gatein.portal.config.model.ApplicationType;
+import org.gatein.portal.pom.config.Utils;
 import org.gatein.portal.webui.application.UIPortlet;
 import org.gatein.portal.webui.portal.UIPortal;
 import org.gatein.portal.webui.util.Util;

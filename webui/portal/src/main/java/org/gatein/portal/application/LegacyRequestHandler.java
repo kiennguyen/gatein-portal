@@ -19,21 +19,21 @@
 
 package org.gatein.portal.application;
 
-import org.exoplatform.portal.config.UserPortalConfig;
-import org.exoplatform.portal.config.UserPortalConfigService;
-import org.exoplatform.portal.mop.SiteKey;
-import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.portal.mop.user.UserNode;
-import org.exoplatform.portal.mop.user.UserNodeFilterConfig;
-import org.exoplatform.portal.mop.user.UserPortal;
-import org.exoplatform.portal.mop.user.UserPortalContext;
-import org.exoplatform.web.ControllerContext;
-import org.exoplatform.web.WebRequestHandler;
-import org.exoplatform.web.url.MimeType;
-import org.exoplatform.web.url.URLFactoryService;
-import org.exoplatform.web.url.navigation.NavigationResource;
-import org.exoplatform.web.url.navigation.NodeURL;
+import org.gatein.portal.config.UserPortalConfig;
+import org.gatein.portal.config.UserPortalConfigService;
+import org.gatein.portal.mop.SiteKey;
+import org.gatein.portal.mop.user.UserNavigation;
+import org.gatein.portal.mop.user.UserNode;
+import org.gatein.portal.mop.user.UserNodeFilterConfig;
+import org.gatein.portal.mop.user.UserPortal;
+import org.gatein.portal.mop.user.UserPortalContext;
 import org.gatein.portal.url.PortalURLContext;
+import org.gatein.web.ControllerContext;
+import org.gatein.web.WebRequestHandler;
+import org.gatein.web.url.MimeType;
+import org.gatein.web.url.URLFactoryService;
+import org.gatein.web.url.navigation.NavigationResource;
+import org.gatein.web.url.navigation.NodeURL;
 
 import java.util.Enumeration;
 import java.util.Locale;

@@ -20,12 +20,12 @@
 package org.gatein.portal.webui.page;
 
 import org.exoplatform.commons.utils.ListAccess;
-import org.exoplatform.commons.utils.PageListAccess;
 import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.PortalContainer;
-import org.exoplatform.portal.config.DataStorage;
-import org.exoplatform.portal.config.Query;
-import org.exoplatform.portal.config.model.Page;
+import org.gatein.commons.utils.PageListAccess;
+import org.gatein.portal.config.DataStorage;
+import org.gatein.portal.config.Query;
+import org.gatein.portal.config.model.Page;
 
 /**
  * @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a>

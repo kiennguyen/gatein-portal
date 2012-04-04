@@ -19,12 +19,12 @@
 
 package org.gatein.dashboard.webui.component;
 
-import org.exoplatform.web.application.ApplicationMessage;
 import org.gatein.portal.webui.application.UIGadget;
 import org.gatein.portal.webui.page.UIPage;
 import org.gatein.portal.webui.page.UIPageBody;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.portal.webui.workspace.UIPortalApplication;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.application.portlet.PortletRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;

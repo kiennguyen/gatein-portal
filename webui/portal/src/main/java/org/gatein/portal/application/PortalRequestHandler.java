@@ -19,21 +19,21 @@
 
 package org.gatein.portal.application;
 
-import org.exoplatform.commons.utils.I18N;
-import org.exoplatform.commons.utils.Safe;
 import org.exoplatform.container.PortalContainer;
-import org.exoplatform.portal.config.DataStorage;
-import org.exoplatform.portal.config.StaleModelException;
-import org.exoplatform.portal.config.model.PortalConfig;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.web.ControllerContext;
-import org.exoplatform.web.WebRequestHandler;
-import org.exoplatform.web.application.ApplicationLifecycle;
-import org.exoplatform.web.application.ApplicationRequestPhaseLifecycle;
-import org.exoplatform.web.application.Phase;
-import org.exoplatform.web.application.RequestFailure;
-import org.exoplatform.web.controller.QualifiedName;
+import org.gatein.commons.utils.I18N;
+import org.gatein.commons.utils.Safe;
+import org.gatein.portal.config.DataStorage;
+import org.gatein.portal.config.StaleModelException;
+import org.gatein.portal.config.model.PortalConfig;
+import org.gatein.web.ControllerContext;
+import org.gatein.web.WebRequestHandler;
+import org.gatein.web.application.ApplicationLifecycle;
+import org.gatein.web.application.ApplicationRequestPhaseLifecycle;
+import org.gatein.web.application.Phase;
+import org.gatein.web.application.RequestFailure;
+import org.gatein.web.controller.QualifiedName;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIApplication;
 

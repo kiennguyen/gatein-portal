@@ -21,12 +21,12 @@ package org.gatein.webui.core.lifecycle;
 
 import groovy.lang.Closure;
 import org.exoplatform.commons.utils.PropertyManager;
-import org.exoplatform.groovyscript.text.BindingContext;
-import org.exoplatform.resolver.ResourceResolver;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.services.resources.Orientation;
-import org.exoplatform.web.url.navigation.NodeURL;
+import org.gatein.groovyscript.text.BindingContext;
+import org.gatein.resolver.ResourceResolver;
+import org.gatein.services.resources.Orientation;
+import org.gatein.web.url.navigation.NodeURL;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIComponent;
 import org.gatein.webui.core.UIComponentDecorator;

@@ -1,12 +1,12 @@
 package org.gatein.navigation.webui;
 
-import org.exoplatform.commons.utils.HTMLEntityEncoder;
-import org.exoplatform.portal.mop.Described.State;
-import org.exoplatform.portal.mop.Visibility;
-import org.exoplatform.portal.mop.navigation.NodeChangeListener;
-import org.exoplatform.portal.mop.navigation.NodeState;
-import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.portal.mop.user.UserNode;
+import org.gatein.commons.utils.HTMLEntityEncoder;
+import org.gatein.portal.mop.Visibility;
+import org.gatein.portal.mop.Described.State;
+import org.gatein.portal.mop.navigation.NodeChangeListener;
+import org.gatein.portal.mop.navigation.NodeState;
+import org.gatein.portal.mop.user.UserNavigation;
+import org.gatein.portal.mop.user.UserNode;
 import org.gatein.portal.webui.util.Util;
 
 import java.util.HashMap;

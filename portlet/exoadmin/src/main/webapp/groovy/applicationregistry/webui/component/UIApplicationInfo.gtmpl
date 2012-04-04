@@ -1,6 +1,6 @@
 <%
 import org.gatein.common.text.EntityEncoder;
-import org.exoplatform.commons.utils.HTMLEntityEncoder;	
+import org.gatein.commons.utils.HTMLEntityEncoder;	
 def application = uicomponent.getApplication();
 def category = uicomponent.getApplicationCategory();
 String name = application.getApplicationName();

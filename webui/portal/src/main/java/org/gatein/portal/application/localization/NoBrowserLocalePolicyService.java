@@ -21,12 +21,12 @@
  */
 package org.gatein.portal.application.localization;
 
-import org.exoplatform.services.resources.LocaleContextInfo;
+import org.gatein.services.resources.LocaleContextInfo;
 
 import java.util.Locale;
 
 /**
- * This implementation of {@link org.exoplatform.services.resources.LocalePolicy} disregards client browser language preference.
+ * This implementation of {@link org.gatein.services.resources.LocalePolicy} disregards client browser language preference.
  * Localization will therefore not be affected by different OS or browser language settings. 
  *
  * @author <a href="mailto:mstrukel@redhat.com">Marko Strukelj</a>

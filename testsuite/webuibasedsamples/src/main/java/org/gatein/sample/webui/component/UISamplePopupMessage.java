@@ -1,6 +1,6 @@
 package org.gatein.sample.webui.component;
 
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.application.portlet.PortletRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;

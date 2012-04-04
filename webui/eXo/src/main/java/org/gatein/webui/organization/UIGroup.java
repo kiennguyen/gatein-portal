@@ -1,7 +1,7 @@
 package org.gatein.webui.organization;
 
-import org.exoplatform.commons.utils.HTMLEntityEncoder;
 import org.exoplatform.services.organization.Group;
+import org.gatein.commons.utils.HTMLEntityEncoder;
 
 import java.io.Serializable;
 

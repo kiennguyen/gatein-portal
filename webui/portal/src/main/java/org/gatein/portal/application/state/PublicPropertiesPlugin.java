@@ -19,7 +19,7 @@
 package org.gatein.portal.application.state;
 
 import org.exoplatform.container.xml.InitParams;
-import org.exoplatform.portal.mop.user.UserNode;
+import org.gatein.portal.mop.user.UserNode;
 import org.gatein.portal.webui.application.UIPortlet;
 import org.gatein.portal.webui.page.UIPage;
 import org.gatein.portal.webui.portal.UIPortal;

@@ -19,17 +19,17 @@
 
 package org.gatein.applicationregistry.webui.component;
 
-import org.exoplatform.application.gadget.Gadget;
-import org.exoplatform.application.gadget.GadgetRegistryService;
-import org.exoplatform.application.registry.Application;
-import org.exoplatform.application.registry.ApplicationCategory;
-import org.exoplatform.application.registry.ApplicationRegistryService;
-import org.exoplatform.portal.config.model.ApplicationType;
-import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.application.gadget.Gadget;
+import org.gatein.application.gadget.GadgetRegistryService;
+import org.gatein.application.registry.Application;
+import org.gatein.application.registry.ApplicationCategory;
+import org.gatein.application.registry.ApplicationRegistryService;
 import org.gatein.applicationregistry.webui.Util;
+import org.gatein.commons.serialization.api.annotations.Serialized;
 import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.config.model.ApplicationType;
 import org.gatein.portal.webui.portal.UIPortal;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.application.portlet.PortletRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;

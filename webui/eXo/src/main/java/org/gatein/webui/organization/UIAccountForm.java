@@ -20,8 +20,8 @@
 package org.gatein.webui.organization;
 
 import org.exoplatform.services.organization.OrganizationService;
-import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.InitParams;
 import org.gatein.webui.config.annotation.ComponentConfig;

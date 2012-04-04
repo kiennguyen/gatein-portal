@@ -20,8 +20,8 @@
 package org.gatein.webui.test;
 
 import org.exoplatform.container.ExoContainer;
-import org.exoplatform.resolver.ApplicationResourceResolver;
-import org.exoplatform.resolver.MockResourceResolver;
+import org.gatein.resolver.ApplicationResourceResolver;
+import org.gatein.resolver.MockResourceResolver;
 import org.gatein.webui.application.WebuiApplication;
 
 import java.net.URL;

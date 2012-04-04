@@ -47,7 +47,7 @@
      // we cannot be sure that they will be initialized before initializing your script
       var currentContext = '<%=docBase%>' ;
     </script>
-    <%if(org.exoplatform.commons.utils.PropertyManager.isDevelopping()) {
+    <%if(org.gatein.commons.utils.PropertyManager.isDevelopping()) {
         for(path in scriptsPaths) { %>
           <script type="text/javascript" src="<%=path%>"></script>
     <%  }

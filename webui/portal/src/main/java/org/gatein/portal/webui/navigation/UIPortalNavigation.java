@@ -19,17 +19,17 @@
 
 package org.gatein.portal.webui.navigation;
 
-import org.exoplatform.portal.mop.SiteType;
-import org.exoplatform.portal.mop.Visibility;
-import org.exoplatform.portal.mop.navigation.NodeChange;
-import org.exoplatform.portal.mop.navigation.NodeChangeQueue;
-import org.exoplatform.portal.mop.navigation.Scope;
-import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.portal.mop.user.UserNode;
-import org.exoplatform.portal.mop.user.UserNodeFilterConfig;
-import org.exoplatform.portal.mop.user.UserPortal;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
+import org.gatein.portal.mop.SiteType;
+import org.gatein.portal.mop.Visibility;
+import org.gatein.portal.mop.navigation.NodeChange;
+import org.gatein.portal.mop.navigation.NodeChangeQueue;
+import org.gatein.portal.mop.navigation.Scope;
+import org.gatein.portal.mop.user.UserNavigation;
+import org.gatein.portal.mop.user.UserNode;
+import org.gatein.portal.mop.user.UserNodeFilterConfig;
+import org.gatein.portal.mop.user.UserPortal;
 import org.gatein.portal.webui.portal.UIPortal;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.webui.application.WebuiRequestContext;

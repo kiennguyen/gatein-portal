@@ -20,14 +20,14 @@
 package org.gatein.webui.organization;
 
 import org.exoplatform.commons.utils.LazyPageList;
-import org.exoplatform.commons.utils.SerializablePageList;
 import org.exoplatform.services.organization.Group;
 import org.exoplatform.services.organization.GroupHandler;
 import org.exoplatform.services.organization.MembershipType;
 import org.exoplatform.services.organization.MembershipTypeHandler;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.User;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.utils.SerializablePageList;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;
 import org.gatein.webui.core.UIGrid;

@@ -19,7 +19,7 @@
 
 package org.gatein.webui.form.wysiwyg;
 
-import org.exoplatform.web.resource.config.xml.FCKConfigListener;
+import org.gatein.web.resource.config.xml.FCKConfigListener;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

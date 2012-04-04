@@ -27,13 +27,13 @@ import javax.portlet.PortletRequest;
 import javax.portlet.ResourceRequest;
 import javax.portlet.ResourceURL;
 
-import org.exoplatform.portal.mop.navigation.GenericScope;
-import org.exoplatform.portal.mop.navigation.Scope;
-import org.exoplatform.portal.mop.user.UserNode;
-import org.exoplatform.web.url.navigation.NodeURL;
-import org.exoplatform.web.url.navigation.NavigationResource;
+import org.gatein.portal.mop.navigation.GenericScope;
+import org.gatein.portal.mop.navigation.Scope;
+import org.gatein.portal.mop.user.UserNode;
 import org.gatein.portal.webui.navigation.UIPortalNavigation;
 import org.gatein.portal.webui.util.Util;
+import org.gatein.web.url.navigation.NavigationResource;
+import org.gatein.web.url.navigation.NodeURL;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.application.portlet.PortletRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;

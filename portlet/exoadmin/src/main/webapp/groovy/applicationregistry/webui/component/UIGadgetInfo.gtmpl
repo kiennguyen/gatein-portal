@@ -1,7 +1,7 @@
 <%
 	import org.gatein.applicationregistry.webui.component.UICategorySelector;
   import org.gatein.common.text.EntityEncoder;
-	import org.exoplatform.commons.utils.HTMLEntityEncoder;
+	import org.gatein.commons.utils.HTMLEntityEncoder;
 
 	EntityEncoder encoder = HTMLEntityEncoder.getInstance();
 	def gadget = uicomponent.getGadget();

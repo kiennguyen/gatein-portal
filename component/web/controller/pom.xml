@@ -146,12 +146,12 @@
                   <param name="japex.runIterations" value="${japex.runIterations}" />
                   <param name="japex.numberOfThreads" value="${japex.numberOfThreads}" />
                   <driver name="JavaUtilRegex">
-                    <param name="japex.driverClass" value="org.exoplatform.web.controller.performance.ControllerRendererDriver" />
+                    <param name="japex.driverClass" value="org.gatein.web.controller.performance.ControllerRendererDriver" />
                     <param name="description" value="Controller performance with the java.util.regex package" />
                     <param name="regex" value="java" />
                   </driver>
                   <driver name="JRegex">
-                    <param name="japex.driverClass" value="org.exoplatform.web.controller.performance.ControllerRendererDriver" />
+                    <param name="japex.driverClass" value="org.gatein.web.controller.performance.ControllerRendererDriver" />
                     <param name="description" value="Controller performance with the jregex package" />
                     <param name="regex" value="jregex" />
                   </driver>

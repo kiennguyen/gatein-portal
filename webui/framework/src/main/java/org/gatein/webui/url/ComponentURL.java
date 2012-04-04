@@ -19,11 +19,11 @@
 
 package org.gatein.webui.url;
 
-import org.exoplatform.web.controller.QualifiedName;
-import org.exoplatform.web.url.PortalURL;
-import org.exoplatform.web.url.ResourceType;
-import org.exoplatform.web.url.URLContext;
 import org.gatein.common.util.Tools;
+import org.gatein.web.controller.QualifiedName;
+import org.gatein.web.url.PortalURL;
+import org.gatein.web.url.ResourceType;
+import org.gatein.web.url.URLContext;
 import org.gatein.webui.core.UIComponent;
 
 import java.util.Collections;

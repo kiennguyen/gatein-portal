@@ -1,8 +1,8 @@
 package org.gatein.portal.gadget.core;
 
 import org.apache.shindig.gadgets.oauth.OAuthStore.TokenInfo;
-import org.exoplatform.web.security.Token;
 import org.gatein.wci.security.Credentials;
+import org.gatein.web.security.Token;
 
 
 public class GadgetToken extends TokenInfo implements Token

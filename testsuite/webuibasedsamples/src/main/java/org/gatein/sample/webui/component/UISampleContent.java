@@ -21,7 +21,7 @@ import java.util.List;
 
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.core.UIComponent;
 import org.gatein.webui.core.UIConfirmation;

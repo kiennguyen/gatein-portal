@@ -18,7 +18,7 @@
  */
 package org.gatein.applicationregistry.webui.component;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.portal.webui.workspace.UIPortalApplication;
 import org.gatein.webui.application.WebuiRequestContext;

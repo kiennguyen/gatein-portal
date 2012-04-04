@@ -1,12 +1,12 @@
 <%	
 	import java.util.List;
-	import org.exoplatform.portal.mop.user.UserNode;
+	import org.gatein.portal.mop.user.UserNode;
 	import org.gatein.portal.webui.util.Util;
 	import org.gatein.portal.application.PortalRequestContext;
   import org.gatein.common.text.EntityEncoder;
-	import org.exoplatform.commons.utils.HTMLEntityEncoder;
-  import org.exoplatform.web.url.PortalURL;
-  import org.exoplatform.web.url.navigation.NavigationResource;
+	import org.gatein.commons.utils.HTMLEntityEncoder;
+  import org.gatein.web.url.PortalURL;
+  import org.gatein.web.url.navigation.NavigationResource;
  
 	List<UserNode> list = uicomponent.getSelectedPath();
 	int size = list.size();

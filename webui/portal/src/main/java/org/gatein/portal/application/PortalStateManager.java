@@ -19,14 +19,14 @@
 
 package org.gatein.portal.application;
 
-import org.exoplatform.commons.utils.Safe;
 import org.exoplatform.container.ExoContainer;
-import org.exoplatform.portal.config.UserPortalConfig;
-import org.exoplatform.portal.config.UserPortalConfigService;
-import org.exoplatform.portal.mop.SiteType;
 import org.gatein.common.logging.Logger;
 import org.gatein.common.logging.LoggerFactory;
+import org.gatein.commons.utils.Safe;
 import org.gatein.portal.application.replication.ApplicationState;
+import org.gatein.portal.config.UserPortalConfig;
+import org.gatein.portal.config.UserPortalConfigService;
+import org.gatein.portal.mop.SiteType;
 import org.gatein.webui.application.ConfigurationManager;
 import org.gatein.webui.application.StateManager;
 import org.gatein.webui.application.WebuiApplication;

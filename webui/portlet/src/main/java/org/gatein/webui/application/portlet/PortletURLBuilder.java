@@ -19,8 +19,8 @@
 
 package org.gatein.webui.application.portlet;
 
-import org.exoplatform.web.application.Parameter;
-import org.exoplatform.web.application.URLBuilder;
+import org.gatein.web.application.Parameter;
+import org.gatein.web.application.URLBuilder;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIComponent;
 

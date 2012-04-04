@@ -20,14 +20,12 @@
 package org.gatein.portal.webui.application;
 
 import org.exoplatform.Constants;
-import org.exoplatform.commons.utils.I18N;
-import org.exoplatform.web.url.MimeType;
-import org.exoplatform.web.url.PortalURL;
 import org.gatein.common.logging.Logger;
 import org.gatein.common.logging.LoggerFactory;
 import org.gatein.common.net.media.MediaType;
 import org.gatein.common.util.MarkupInfo;
 import org.gatein.common.util.ParameterValidation;
+import org.gatein.commons.utils.I18N;
 import org.gatein.pc.api.ActionURL;
 import org.gatein.pc.api.ContainerURL;
 import org.gatein.pc.api.Mode;
@@ -39,6 +37,8 @@ import org.gatein.pc.api.WindowState;
 import org.gatein.pc.api.cache.CacheLevel;
 import org.gatein.pc.portlet.impl.spi.AbstractPortletInvocationContext;
 import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.web.url.MimeType;
+import org.gatein.web.url.PortalURL;
 import org.gatein.webui.core.UIComponent;
 import org.gatein.webui.url.ComponentURL;
 

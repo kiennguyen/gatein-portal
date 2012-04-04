@@ -19,7 +19,7 @@
 
 package org.gatein.webui.core.model;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
 
 /**
  * Created by The eXo Platform SARL

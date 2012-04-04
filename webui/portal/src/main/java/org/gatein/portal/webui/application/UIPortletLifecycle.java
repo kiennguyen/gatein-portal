@@ -20,26 +20,26 @@
 package org.gatein.portal.webui.application;
 
 import org.exoplatform.Constants;
-import org.exoplatform.commons.utils.Text;
 import org.exoplatform.container.ExoContainer;
-import org.exoplatform.portal.controller.resource.ResourceScope;
-import org.exoplatform.portal.controller.resource.script.FetchMode;
-import org.exoplatform.portal.portlet.PortletExceptionHandleService;
-import org.exoplatform.resolver.ApplicationResourceResolver;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.services.portletcontainer.PortletContainerException;
-import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.web.application.JavascriptManager;
 import org.gatein.common.util.MultiValuedPropertyMap;
+import org.gatein.commons.utils.Text;
 import org.gatein.pc.api.invocation.RenderInvocation;
 import org.gatein.pc.api.invocation.response.ErrorResponse;
 import org.gatein.pc.api.invocation.response.FragmentResponse;
 import org.gatein.pc.api.invocation.response.PortletInvocationResponse;
 import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.controller.resource.ResourceScope;
+import org.gatein.portal.controller.resource.script.FetchMode;
+import org.gatein.portal.portlet.PortletExceptionHandleService;
 import org.gatein.portal.webui.portal.UIPortal;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.portal.webui.workspace.UIPortalApplication;
+import org.gatein.resolver.ApplicationResourceResolver;
+import org.gatein.services.portletcontainer.PortletContainerException;
+import org.gatein.web.application.ApplicationMessage;
+import org.gatein.web.application.JavascriptManager;
 import org.gatein.webui.application.WebuiApplication;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIComponent;
@@ -105,7 +105,7 @@ public class UIPortletLifecycle<S, C extends Serializable, I> extends Lifecycle<
             return;
          }
 
-         String portletMode = context.getRequestParameter(org.exoplatform.portal.Constants.PORTAL_PORTLET_MODE);
+         String portletMode = context.getRequestParameter(org.gatein.portal.Constants.PORTAL_PORTLET_MODE);
          if (portletMode != null)
          {
             Event<UIComponent> event = uicomponent.createEvent("ChangePortletMode", Event.Phase.PROCESS, context);
@@ -113,7 +113,7 @@ public class UIPortletLifecycle<S, C extends Serializable, I> extends Lifecycle<
                event.broadcast();
          }
 
-         String windowState = context.getRequestParameter(org.exoplatform.portal.Constants.PORTAL_WINDOW_STATE);
+         String windowState = context.getRequestParameter(org.gatein.portal.Constants.PORTAL_WINDOW_STATE);
          if (windowState != null)
          {
             Event<UIComponent> event = uicomponent.createEvent("ChangeWindowState", Event.Phase.PROCESS, context);

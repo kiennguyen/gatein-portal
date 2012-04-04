@@ -19,9 +19,9 @@
 
 package org.gatein.applicationregistry.webui.component;
 
-import org.exoplatform.application.registry.Application;
-import org.exoplatform.application.registry.ApplicationCategory;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.application.registry.Application;
+import org.gatein.application.registry.ApplicationCategory;
+import org.gatein.commons.serialization.api.annotations.Serialized;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;

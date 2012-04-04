@@ -19,9 +19,9 @@
 
 package org.gatein.webui.form;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
 import org.gatein.common.logging.Logger;
 import org.gatein.common.logging.LoggerFactory;
+import org.gatein.commons.serialization.api.annotations.Serialized;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIComponent;
 

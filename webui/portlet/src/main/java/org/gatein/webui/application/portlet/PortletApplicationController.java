@@ -23,7 +23,7 @@ import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.web.WebAppController;
+import org.gatein.web.WebAppController;
 
 import java.io.IOException;
 import java.util.List;

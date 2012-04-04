@@ -19,13 +19,13 @@
 
 package org.gatein.webui.core;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
 import org.exoplatform.container.ExoContainer;
-import org.exoplatform.resolver.ResourceResolver;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.web.application.Parameter;
-import org.exoplatform.web.application.URLBuilder;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.resolver.ResourceResolver;
+import org.gatein.web.application.Parameter;
+import org.gatein.web.application.URLBuilder;
 import org.gatein.webui.application.WebuiApplication;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.Component;

@@ -19,19 +19,19 @@
 
 package org.gatein.organization.webui.component;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.portal.Constants;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.Query;
 import org.exoplatform.services.organization.User;
 import org.exoplatform.services.organization.UserProfile;
 import org.exoplatform.services.organization.UserProfileHandler;
-import org.exoplatform.services.resources.LocaleConfig;
-import org.exoplatform.services.resources.LocaleConfigService;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.portal.Constants;
 import org.gatein.portal.application.PortalRequestContext;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.portal.webui.workspace.UIPortalApplication;
 import org.gatein.portal.webui.workspace.UIWorkingWorkspace;
+import org.gatein.services.resources.LocaleConfig;
+import org.gatein.services.resources.LocaleConfigService;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;

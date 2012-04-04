@@ -26,7 +26,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import org.exoplatform.portal.mop.user.UserNode;
+import org.gatein.portal.mop.user.UserNode;
 
 /**
  * Created by The eXo Platform SARL

@@ -19,11 +19,11 @@
 
 package org.gatein.toolbar.webui.component;
 
-import org.exoplatform.portal.config.DataStorage;
-import org.exoplatform.portal.config.UserACL;
-import org.exoplatform.portal.config.model.Page;
-import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.portal.mop.user.UserNode;
+import org.gatein.portal.config.DataStorage;
+import org.gatein.portal.config.UserACL;
+import org.gatein.portal.config.model.Page;
+import org.gatein.portal.mop.user.UserNavigation;
+import org.gatein.portal.mop.user.UserNode;
 import org.gatein.portal.webui.page.UIPage;
 import org.gatein.portal.webui.page.UIPageBody;
 import org.gatein.portal.webui.portal.UIPortal;

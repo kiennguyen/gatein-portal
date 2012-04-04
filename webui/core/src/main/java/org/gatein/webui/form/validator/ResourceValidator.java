@@ -19,8 +19,8 @@
 
 package org.gatein.webui.form.validator;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.web.application.CompoundApplicationMessage;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.web.application.CompoundApplicationMessage;
 import org.gatein.webui.form.UIFormInput;
 
 /**

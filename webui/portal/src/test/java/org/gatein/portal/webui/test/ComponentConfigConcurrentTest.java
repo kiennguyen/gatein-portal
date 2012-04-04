@@ -22,7 +22,7 @@
  ******************************************************************************/
 package org.gatein.portal.webui.test;
 
-import org.exoplatform.component.test.AbstractGateInTest;
+import org.gatein.component.test.AbstractGateInTest;
 import org.gatein.portal.webui.portal.UIPortal;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.Event;

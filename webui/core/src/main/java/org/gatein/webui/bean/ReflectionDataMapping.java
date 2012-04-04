@@ -19,7 +19,7 @@
 
 package org.gatein.webui.bean;
 
-import org.exoplatform.util.ReflectionUtil;
+import org.gatein.util.ReflectionUtil;
 import org.gatein.webui.core.UIComponent;
 import org.gatein.webui.form.UIForm;
 import org.gatein.webui.form.UIFormInput;

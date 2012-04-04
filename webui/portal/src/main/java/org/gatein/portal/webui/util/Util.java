@@ -19,10 +19,10 @@
 
 package org.gatein.portal.webui.util;
 
-import org.exoplatform.portal.config.UserPortalConfigService;
-import org.exoplatform.portal.config.model.Page;
-import org.exoplatform.portal.config.model.PageNode;
 import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.config.UserPortalConfigService;
+import org.gatein.portal.config.model.Page;
+import org.gatein.portal.config.model.PageNode;
 import org.gatein.portal.webui.container.UIContainer;
 import org.gatein.portal.webui.page.UIPage;
 import org.gatein.portal.webui.page.UIPageFactory;

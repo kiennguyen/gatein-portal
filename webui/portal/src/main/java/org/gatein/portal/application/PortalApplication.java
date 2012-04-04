@@ -20,11 +20,11 @@
 package org.gatein.portal.application;
 
 import org.exoplatform.container.ExoContainer;
-import org.exoplatform.resolver.ApplicationResourceResolver;
-import org.exoplatform.resolver.ServletResourceResolver;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.services.resources.ResourceBundleService;
+import org.gatein.resolver.ApplicationResourceResolver;
+import org.gatein.resolver.ServletResourceResolver;
+import org.gatein.services.resources.ResourceBundleService;
 import org.gatein.webui.application.WebuiApplication;
 
 import java.util.Locale;

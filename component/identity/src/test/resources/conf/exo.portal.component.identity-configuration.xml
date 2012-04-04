@@ -24,13 +24,13 @@
 
 
    <component>
-     <key>org.exoplatform.services.organization.idm.PicketLinkIDMCacheService</key>
-     <type>org.exoplatform.services.organization.idm.PicketLinkIDMCacheService</type>
+     <key>org.gatein.services.organization.idm.PicketLinkIDMCacheService</key>
+     <type>org.gatein.services.organization.idm.PicketLinkIDMCacheService</type>
    </component> 
 
    <component>
-      <key>org.exoplatform.services.organization.idm.PicketLinkIDMService</key>
-      <type>org.exoplatform.services.organization.idm.PicketLinkIDMServiceImpl</type>
+      <key>org.gatein.services.organization.idm.PicketLinkIDMService</key>
+      <type>org.gatein.services.organization.idm.PicketLinkIDMServiceImpl</type>
       <init-params>
          <value-param>
             <name>config</name>
@@ -40,8 +40,8 @@
    </component>
 
    <component>
-      <key>org.exoplatform.services.organization.OrganizationService</key>
-      <type>org.exoplatform.services.organization.idm.PicketLinkIDMOrganizationServiceImpl</type>
+      <key>org.gatein.services.organization.OrganizationService</key>
+      <type>org.gatein.services.organization.idm.PicketLinkIDMOrganizationServiceImpl</type>
    </component>
 
    <component>

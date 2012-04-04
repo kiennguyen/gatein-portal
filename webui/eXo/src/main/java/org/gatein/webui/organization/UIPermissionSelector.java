@@ -19,8 +19,8 @@
 
 package org.gatein.webui.organization;
 
-import org.exoplatform.portal.config.UserACL.Permission;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.portal.config.UserACL.Permission;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;
 import org.gatein.webui.core.UIBreadcumbs;

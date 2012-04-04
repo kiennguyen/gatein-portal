@@ -21,9 +21,9 @@ package org.gatein.applicationregistry.webui.component;
 
 import java.util.ArrayList;
 
-import org.exoplatform.application.registry.Application;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.portal.config.UserACL;
+import org.gatein.application.registry.Application;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.portal.config.UserACL;
 import org.gatein.portal.webui.portal.UIPortalComponentActionListener.ViewChildActionListener;
 import org.gatein.webui.application.WebuiApplication;
 import org.gatein.webui.application.WebuiRequestContext;

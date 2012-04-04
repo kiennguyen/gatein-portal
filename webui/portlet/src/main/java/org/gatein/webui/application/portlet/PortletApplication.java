@@ -19,14 +19,14 @@
 
 package org.gatein.webui.application.portlet;
 
-import org.exoplatform.commons.utils.PortalPrinter;
-import org.exoplatform.commons.utils.Safe;
-import org.exoplatform.resolver.ApplicationResourceResolver;
-import org.exoplatform.resolver.PortletResourceResolver;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.web.application.ApplicationLifecycle;
-import org.exoplatform.web.application.RequestContext;
+import org.gatein.commons.utils.PortalPrinter;
+import org.gatein.commons.utils.Safe;
+import org.gatein.resolver.ApplicationResourceResolver;
+import org.gatein.resolver.PortletResourceResolver;
+import org.gatein.web.application.ApplicationLifecycle;
+import org.gatein.web.application.RequestContext;
 import org.gatein.webui.application.StateManager;
 import org.gatein.webui.application.WebuiApplication;
 import org.gatein.webui.application.WebuiRequestContext;

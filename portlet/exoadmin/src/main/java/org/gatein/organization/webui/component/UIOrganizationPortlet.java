@@ -20,7 +20,7 @@
 package org.gatein.organization.webui.component;
 
 import org.exoplatform.services.organization.Query;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
 import org.gatein.portal.webui.portal.UIPortalComponentActionListener.ViewChildActionListener;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;

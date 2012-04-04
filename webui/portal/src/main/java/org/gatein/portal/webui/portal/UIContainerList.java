@@ -19,7 +19,7 @@
 
 package org.gatein.portal.webui.portal;
 
-import org.exoplatform.portal.config.model.Container;
+import org.gatein.portal.config.model.Container;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.InitParams;
 import org.gatein.webui.config.Param;

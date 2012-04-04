@@ -19,8 +19,8 @@
 
 package org.gatein.webui.core;
 
-import org.exoplatform.util.ReflectionUtil;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.util.ReflectionUtil;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.core.UIComponent;
 

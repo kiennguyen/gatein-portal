@@ -19,11 +19,11 @@
 
 package org.gatein.applicationregistry.webui.component;
 
-import org.exoplatform.application.gadget.Gadget;
-import org.exoplatform.application.gadget.GadgetRegistryService;
-import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.application.gadget.Gadget;
+import org.gatein.application.gadget.GadgetRegistryService;
+import org.gatein.commons.serialization.api.annotations.Serialized;
 import org.gatein.portal.webui.application.GadgetUtil;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;

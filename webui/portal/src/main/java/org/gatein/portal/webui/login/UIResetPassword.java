@@ -21,11 +21,11 @@ package org.gatein.portal.webui.login;
 
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.User;
-import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.web.security.Token;
-import org.exoplatform.web.security.security.RemindPasswordTokenService;
 import org.gatein.portal.webui.workspace.UIMaskWorkspace;
 import org.gatein.portal.webui.workspace.UIPortalApplication;
+import org.gatein.web.application.ApplicationMessage;
+import org.gatein.web.security.Token;
+import org.gatein.web.security.security.RemindPasswordTokenService;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;

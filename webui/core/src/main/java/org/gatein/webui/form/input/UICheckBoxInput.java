@@ -21,7 +21,7 @@ package org.gatein.webui.form.input;
 
 import java.io.Writer;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.form.UIForm;
 import org.gatein.webui.form.UIFormInput;

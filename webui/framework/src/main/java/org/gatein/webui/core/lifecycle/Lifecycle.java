@@ -21,10 +21,10 @@ package org.gatein.webui.core.lifecycle;
 
 import org.exoplatform.commons.utils.PropertyManager;
 import org.exoplatform.container.ExoContainer;
-import org.exoplatform.groovyscript.text.TemplateService;
-import org.exoplatform.resolver.ResourceResolver;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
+import org.gatein.groovyscript.text.TemplateService;
+import org.gatein.resolver.ResourceResolver;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIComponent;
 import org.gatein.webui.event.Event;

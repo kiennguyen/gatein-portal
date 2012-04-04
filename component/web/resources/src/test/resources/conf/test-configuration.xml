@@ -26,17 +26,17 @@
    xmlns="http://www.exoplaform.org/xml/ns/kernel_1_2.xsd">
 
    <component>
-      <key>org.exoplatform.portal.resource.SkinService</key>
-      <type>org.exoplatform.portal.resource.SkinService</type>
+      <key>org.gatein.portal.resource.SkinService</key>
+      <type>org.gatein.portal.resource.SkinService</type>
    </component>
    
    <component>
-      <key>org.exoplatform.web.application.javascript.JavascriptConfigService</key>
-      <type>org.exoplatform.web.application.javascript.JavascriptConfigService</type>
+      <key>org.gatein.web.application.javascript.JavascriptConfigService</key>
+      <type>org.gatein.web.application.javascript.JavascriptConfigService</type>
    </component>
 
    <component>
-      <key>org.exoplatform.portal.resource.compressor.ResourceCompressor</key>
-      <type>org.exoplatform.portal.resource.compressor.impl.ResourceCompressorService</type>
+      <key>org.gatein.portal.resource.compressor.ResourceCompressor</key>
+      <type>org.gatein.portal.resource.compressor.impl.ResourceCompressorService</type>
    </component>
 </configuration>

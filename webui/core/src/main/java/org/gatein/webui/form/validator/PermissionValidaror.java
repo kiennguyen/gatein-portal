@@ -23,7 +23,7 @@ import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.services.organization.Group;
 import org.exoplatform.services.organization.MembershipType;
 import org.exoplatform.services.organization.OrganizationService;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.core.UIComponent;
 import org.gatein.webui.exception.MessageException;
 

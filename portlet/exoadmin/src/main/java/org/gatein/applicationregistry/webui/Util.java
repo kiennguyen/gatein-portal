@@ -19,9 +19,9 @@
 
 package org.gatein.applicationregistry.webui;
 
-import org.exoplatform.application.gadget.Gadget;
-import org.exoplatform.application.registry.Application;
-import org.exoplatform.application.registry.ApplicationCategory;
+import org.gatein.application.gadget.Gadget;
+import org.gatein.application.registry.Application;
+import org.gatein.application.registry.ApplicationCategory;
 import org.gatein.common.i18n.LocalizedString;
 
 import java.util.Comparator;

@@ -19,7 +19,7 @@
 
 package org.gatein.webui.config;
 
-import org.exoplatform.commons.serialization.api.annotations.Converted;
+import org.gatein.commons.serialization.api.annotations.Converted;
 import org.gatein.webui.Util;
 import org.gatein.webui.config.metadata.ComponentMetaData;
 import org.gatein.webui.core.UIComponent;

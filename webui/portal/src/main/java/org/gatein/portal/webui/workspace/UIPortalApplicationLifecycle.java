@@ -22,9 +22,9 @@ package org.gatein.portal.webui.workspace;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.exoplatform.commons.utils.PortalPrinter;
-import org.exoplatform.resolver.ResourceResolver;
+import org.gatein.commons.utils.PortalPrinter;
 import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.resolver.ResourceResolver;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIComponent;
 import org.gatein.webui.core.lifecycle.Lifecycle;

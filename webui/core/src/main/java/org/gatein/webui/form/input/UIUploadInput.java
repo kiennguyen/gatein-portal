@@ -23,9 +23,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.exoplatform.upload.UploadResource;
-import org.exoplatform.upload.UploadService;
-import org.exoplatform.upload.UploadService.UploadUnit;
+import org.gatein.upload.UploadResource;
+import org.gatein.upload.UploadService;
+import org.gatein.upload.UploadService.UploadUnit;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.form.UIFormInputBase;

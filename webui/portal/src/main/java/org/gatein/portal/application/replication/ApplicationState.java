@@ -19,8 +19,8 @@
 
 package org.gatein.portal.application.replication;
 
-import org.exoplatform.commons.serialization.SerializationContext;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.SerializationContext;
+import org.gatein.commons.serialization.api.annotations.Serialized;
 import org.gatein.webui.core.UIApplication;
 
 import java.io.*;

@@ -19,8 +19,8 @@
 
 package org.gatein.webui.form.ext;
 
-import org.exoplatform.commons.utils.HTMLEntityEncoder;
-import org.exoplatform.web.application.JavascriptManager;
+import org.gatein.commons.utils.HTMLEntityEncoder;
+import org.gatein.web.application.JavascriptManager;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.model.SelectItemOption;
 import org.gatein.webui.form.UIForm;

@@ -355,7 +355,7 @@
   </UIGroupForm>
   <!--
   ############################################################################
-  #   org.exoplatform.portal.component.customization.UIShareNavigationForm   #
+  #   org.gatein.portal.component.customization.UIShareNavigationForm   #
   ############################################################################
   -->
   <UITabPane>
@@ -402,7 +402,7 @@
   </UISharedNavigation>
   <!--
   #############################################################################
-  #              org.exoplatform.portal.component.customization.UISharePortalForm#
+  #              org.gatein.portal.component.customization.UISharePortalForm#
   #############################################################################
   -->
   <UISharedPortalForm>
@@ -432,7 +432,7 @@
   </UIGroupSharedInfo>
   <!--
   #############################################################################
-  #           org.exoplatform.portal.organization.component.UIGroupManagement#
+  #           org.gatein.portal.organization.component.UIGroupManagement#
   #############################################################################
   -->
   <UIGroupManagement>
@@ -446,7 +446,7 @@
   </UIGroupManagement>
   <!--
   #############################################################################
-  #           org.exoplatform.portal.organization.component.UISharedNavigation#
+  #           org.gatein.portal.organization.component.UISharedNavigation#
   #############################################################################
   -->
 </bundle>

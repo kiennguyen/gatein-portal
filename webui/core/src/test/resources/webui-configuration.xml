@@ -85,7 +85,7 @@
       <param><name>name</name><value>value</value></param>
     </init-params>
 
-    <ui-component-root>org.exoplatform.portal.component.UIPortalApplication</ui-component-root>    
+    <ui-component-root>org.gatein.portal.component.UIPortalApplication</ui-component-root>    
     <state-manager>org.gatein.webui.test.MockStateManager</state-manager>    
     
     <application-lifecycle-listeners>       

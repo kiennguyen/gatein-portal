@@ -1,9 +1,9 @@
 <%	
-	import org.exoplatform.web.application.JavascriptManager;
+	import org.gatein.web.application.JavascriptManager;
 	import org.gatein.portal.webui.util.Util;
 	import org.gatein.portal.webui.workspace.UIPortalApplication;
 	import org.gatein.portal.webui.page.UIPage;
-	import org.exoplatform.portal.mop.user.UserNavigation;
+	import org.gatein.portal.mop.user.UserNavigation;
 
 	def rcontext = _ctx.getRequestContext();
 	 

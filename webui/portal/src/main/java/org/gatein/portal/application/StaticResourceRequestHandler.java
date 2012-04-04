@@ -20,8 +20,8 @@
 package org.gatein.portal.application;
 
 import org.exoplatform.container.PortalContainer;
-import org.exoplatform.web.ControllerContext;
-import org.exoplatform.web.WebRequestHandler;
+import org.gatein.web.ControllerContext;
+import org.gatein.web.WebRequestHandler;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;

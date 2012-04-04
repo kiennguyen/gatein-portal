@@ -22,7 +22,7 @@ import org.apache.shindig.auth.BasicSecurityToken;
 import org.apache.shindig.auth.BasicSecurityTokenCodec;
 import org.apache.shindig.auth.SecurityToken;
 import org.apache.shindig.common.crypto.BlobCrypterException;
-import org.exoplatform.portal.AbstractPortalTest;
+import org.gatein.portal.AbstractPortalTest;
 
 import com.gargoylesoftware.htmlunit.CollectingAlertHandler;
 import com.gargoylesoftware.htmlunit.NicelyResynchronizingAjaxController;

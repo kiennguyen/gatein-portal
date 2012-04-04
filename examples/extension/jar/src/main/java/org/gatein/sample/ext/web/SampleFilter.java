@@ -19,7 +19,7 @@
 
 package org.gatein.sample.ext.web;
 
-import org.exoplatform.web.filter.Filter;
+import org.gatein.web.filter.Filter;
 
 import java.io.IOException;
 

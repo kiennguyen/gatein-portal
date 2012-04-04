@@ -19,8 +19,8 @@
 
 package org.gatein.portal.webui.application;
 
-import org.exoplatform.portal.config.model.ApplicationState;
-import org.exoplatform.portal.config.model.ApplicationType;
+import org.gatein.portal.config.model.ApplicationState;
+import org.gatein.portal.config.model.ApplicationType;
 
 /**
  * Group the application state and the application id to form the state of a portlet.

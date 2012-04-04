@@ -1,6 +1,6 @@
 <%
 import org.gatein.common.text.EntityEncoder;
-import org.exoplatform.commons.utils.HTMLEntityEncoder;
+import org.gatein.commons.utils.HTMLEntityEncoder;
 def categories = uicomponent.getCategories();
 def selectedCategory = uicomponent.getSelectedCategory();
 def apps = uicomponent.getApplications();

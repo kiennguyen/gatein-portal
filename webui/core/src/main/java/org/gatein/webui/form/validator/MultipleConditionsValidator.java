@@ -23,7 +23,7 @@
 
 package org.gatein.webui.form.validator;
 
-import org.exoplatform.web.application.CompoundApplicationMessage;
+import org.gatein.web.application.CompoundApplicationMessage;
 import org.gatein.webui.exception.MessageException;
 import org.gatein.webui.form.UIFormInput;
 

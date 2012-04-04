@@ -19,9 +19,9 @@
 
 package org.gatein.portal.url.component;
 
-import org.exoplatform.web.url.URLFactoryPlugin;
-import org.exoplatform.web.url.ResourceType;
-import org.exoplatform.web.url.URLContext;
+import org.gatein.web.url.ResourceType;
+import org.gatein.web.url.URLContext;
+import org.gatein.web.url.URLFactoryPlugin;
 import org.gatein.webui.core.UIComponent;
 import org.gatein.webui.url.ComponentURL;
 

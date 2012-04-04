@@ -23,11 +23,11 @@
 
 package org.gatein.webui.form.validator;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.portal.pom.config.Utils;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.web.application.CompoundApplicationMessage;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.portal.pom.config.Utils;
+import org.gatein.web.application.CompoundApplicationMessage;
 import org.gatein.webui.form.UIFormInput;
 
 import java.io.File;

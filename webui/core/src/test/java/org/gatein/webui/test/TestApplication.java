@@ -19,7 +19,7 @@
 
 package org.gatein.webui.test;
 
-import org.exoplatform.component.test.AbstractGateInTest;
+import org.gatein.component.test.AbstractGateInTest;
 
 import java.io.File;
 import java.net.URL;

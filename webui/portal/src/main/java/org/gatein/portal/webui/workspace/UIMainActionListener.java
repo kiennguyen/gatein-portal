@@ -19,20 +19,19 @@
 
 package org.gatein.portal.webui.workspace;
 
-import org.exoplatform.portal.config.DataStorage;
-import org.exoplatform.portal.config.UserACL;
-import org.exoplatform.portal.config.model.Page;
-import org.exoplatform.portal.config.model.PortalConfig;
-import org.exoplatform.portal.mop.SiteType;
-import org.exoplatform.portal.mop.navigation.Scope;
-import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.portal.mop.user.UserNode;
-import org.exoplatform.portal.mop.user.UserNodeFilterConfig;
-import org.exoplatform.portal.mop.user.UserPortal;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.web.application.ApplicationMessage;
 import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.config.DataStorage;
+import org.gatein.portal.config.UserACL;
+import org.gatein.portal.config.model.Page;
+import org.gatein.portal.config.model.PortalConfig;
+import org.gatein.portal.mop.SiteType;
+import org.gatein.portal.mop.navigation.Scope;
+import org.gatein.portal.mop.user.UserNavigation;
+import org.gatein.portal.mop.user.UserNode;
+import org.gatein.portal.mop.user.UserNodeFilterConfig;
+import org.gatein.portal.mop.user.UserPortal;
 import org.gatein.portal.webui.page.UIPage;
 import org.gatein.portal.webui.page.UIPageBody;
 import org.gatein.portal.webui.page.UIPageCreationWizard;
@@ -44,6 +43,7 @@ import org.gatein.portal.webui.portal.UIPortalComposer;
 import org.gatein.portal.webui.portal.UIPortalForm;
 import org.gatein.portal.webui.util.PortalDataMapper;
 import org.gatein.portal.webui.util.Util;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.event.Event;
 import org.gatein.webui.event.EventListener;

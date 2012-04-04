@@ -19,8 +19,8 @@
 
 package org.gatein.webui.form;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.commons.utils.HTMLEntityEncoder;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.utils.HTMLEntityEncoder;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIComponent;
 import org.gatein.webui.core.model.SelectItemOption;

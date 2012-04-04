@@ -21,9 +21,9 @@ package org.gatein.organization.webui.component;
 
 import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.ExoContainerContext;
-import org.exoplatform.portal.config.UserACL;
 import org.exoplatform.services.organization.Group;
 import org.exoplatform.services.organization.OrganizationService;
+import org.gatein.portal.config.UserACL;
 
 import java.util.ArrayList;
 import java.util.Collection;

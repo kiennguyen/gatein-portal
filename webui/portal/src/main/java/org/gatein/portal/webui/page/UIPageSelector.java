@@ -19,12 +19,12 @@
 
 package org.gatein.portal.webui.page;
 
-import org.exoplatform.portal.config.UserACL;
-import org.exoplatform.portal.config.UserPortalConfigService;
-import org.exoplatform.portal.config.model.Page;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.portal.config.UserACL;
+import org.gatein.portal.config.UserPortalConfigService;
+import org.gatein.portal.config.model.Page;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.ComponentConfigs;

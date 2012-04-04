@@ -1,12 +1,12 @@
 package org.gatein.applicationregistry.webui.component;
 
-import org.exoplatform.application.registry.Application;
-import org.exoplatform.application.registry.ApplicationCategory;
-import org.exoplatform.application.registry.ApplicationRegistryService;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.commons.utils.HTMLEntityEncoder;
-import org.exoplatform.commons.utils.SerializablePageList;
+import org.gatein.application.registry.Application;
+import org.gatein.application.registry.ApplicationCategory;
+import org.gatein.application.registry.ApplicationRegistryService;
 import org.gatein.applicationregistry.webui.Util;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.utils.HTMLEntityEncoder;
+import org.gatein.commons.utils.SerializablePageList;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;
 import org.gatein.webui.core.UIContainer;

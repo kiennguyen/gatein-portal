@@ -21,7 +21,7 @@ package org.gatein.applicationregistry.webui.component;
 
 import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.ExoContainerContext;
-import org.exoplatform.commons.serialization.api.TypeConverter;
+import org.gatein.commons.serialization.api.TypeConverter;
 import org.gatein.pc.api.Portlet;
 import org.gatein.pc.api.PortletContext;
 import org.gatein.pc.api.PortletInvoker;

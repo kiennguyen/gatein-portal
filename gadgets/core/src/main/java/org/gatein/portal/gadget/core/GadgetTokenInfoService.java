@@ -22,13 +22,13 @@ package org.gatein.portal.gadget.core;
 import org.apache.shindig.gadgets.oauth.BasicOAuthStoreTokenIndex;
 import org.apache.shindig.gadgets.oauth.OAuthStore.TokenInfo;
 import org.chromattic.api.ChromatticSession;
-import org.exoplatform.commons.chromattic.ChromatticLifeCycle;
-import org.exoplatform.commons.chromattic.ChromatticManager;
-import org.exoplatform.commons.chromattic.ContextualTask;
-import org.exoplatform.commons.chromattic.SessionContext;
 import org.exoplatform.container.xml.InitParams;
-import org.exoplatform.web.security.security.AbstractTokenService;
+import org.gatein.commons.chromattic.ChromatticLifeCycle;
+import org.gatein.commons.chromattic.ChromatticManager;
+import org.gatein.commons.chromattic.ContextualTask;
+import org.gatein.commons.chromattic.SessionContext;
 import org.gatein.wci.security.Credentials;
+import org.gatein.web.security.security.AbstractTokenService;
 
 import java.util.Collection;
 

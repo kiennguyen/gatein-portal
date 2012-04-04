@@ -19,8 +19,8 @@
 
 package org.gatein.portal.webui.container;
 
-import org.exoplatform.portal.config.model.Container;
 import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.config.model.Container;
 import org.gatein.portal.webui.util.PortalDataMapper;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.portal.webui.workspace.UIMaskWorkspace;

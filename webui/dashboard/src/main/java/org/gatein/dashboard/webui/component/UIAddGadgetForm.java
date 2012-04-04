@@ -19,12 +19,12 @@
 
 package org.gatein.dashboard.webui.component;
 
-import org.exoplatform.application.gadget.Gadget;
-import org.exoplatform.application.gadget.GadgetRegistryService;
-import org.exoplatform.portal.config.model.TransientApplicationState;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.application.gadget.Gadget;
+import org.gatein.application.gadget.GadgetRegistryService;
+import org.gatein.portal.config.model.TransientApplicationState;
 import org.gatein.portal.webui.application.GadgetUtil;
 import org.gatein.portal.webui.application.UIGadget;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;
@@ -88,7 +88,7 @@ public class UIAddGadgetForm extends UIForm
             gadget = GadgetUtil.toGadget(name, url, false);
             service.saveGadget(gadget);
             uiGadget = uiForm.createUIComponent(context, UIGadget.class, null, null);
-            uiGadget.setState(new TransientApplicationState<org.exoplatform.portal.pom.spi.gadget.Gadget>(gadget.getName()));
+            uiGadget.setState(new TransientApplicationState<org.gatein.portal.pom.spi.gadget.Gadget>(gadget.getName()));
          }
          catch (Exception e)
          {
@@ -98,9 +98,9 @@ public class UIAddGadgetForm extends UIForm
             // TODO make sure that we did not add it already
             uiGadget = uiForm.createUIComponent(context, UIGadget.class, null, null);
 
-            org.exoplatform.portal.pom.spi.gadget.Gadget contentState = new org.exoplatform.portal.pom.spi.gadget.Gadget();
+            org.gatein.portal.pom.spi.gadget.Gadget contentState = new org.gatein.portal.pom.spi.gadget.Gadget();
             contentState.addUserPref("{'rssurl':'" + url + "'}");
-            TransientApplicationState<org.exoplatform.portal.pom.spi.gadget.Gadget> applicationState = new TransientApplicationState<org.exoplatform.portal.pom.spi.gadget.Gadget>(gadget.getName(), contentState);
+            TransientApplicationState<org.gatein.portal.pom.spi.gadget.Gadget> applicationState = new TransientApplicationState<org.gatein.portal.pom.spi.gadget.Gadget>(gadget.getName(), contentState);
 
             uiGadget.setState(applicationState);
          }

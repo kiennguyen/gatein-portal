@@ -19,8 +19,8 @@
 
 package org.gatein.portal.webui.page;
 
-import org.exoplatform.portal.config.UserPortalConfigService;
-import org.exoplatform.portal.config.model.Page;
+import org.gatein.portal.config.UserPortalConfigService;
+import org.gatein.portal.config.model.Page;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.InitParams;
 import org.gatein.webui.config.Param;

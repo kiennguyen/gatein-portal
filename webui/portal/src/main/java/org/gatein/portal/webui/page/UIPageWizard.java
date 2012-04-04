@@ -19,7 +19,6 @@
 
 package org.gatein.portal.webui.page;
 
-import org.exoplatform.web.application.JavascriptManager;
 import org.gatein.portal.application.PortalRequestContext;
 import org.gatein.portal.webui.portal.UIPortal;
 import org.gatein.portal.webui.portal.UIPortalComposer;
@@ -27,6 +26,7 @@ import org.gatein.portal.webui.util.Util;
 import org.gatein.portal.webui.workspace.UIPortalApplication;
 import org.gatein.portal.webui.workspace.UIPortalToolPanel;
 import org.gatein.portal.webui.workspace.UIWorkingWorkspace;
+import org.gatein.web.application.JavascriptManager;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIPopupWindow;
 import org.gatein.webui.core.UIWizard;

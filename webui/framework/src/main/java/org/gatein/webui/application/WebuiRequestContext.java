@@ -19,12 +19,12 @@
 
 package org.gatein.webui.application;
 
-import org.exoplatform.resolver.ApplicationResourceResolver;
-import org.exoplatform.resolver.ResourceResolver;
-import org.exoplatform.web.application.Application;
-import org.exoplatform.web.application.JavascriptManager;
-import org.exoplatform.web.application.RequestContext;
-import org.exoplatform.web.application.URLBuilder;
+import org.gatein.resolver.ApplicationResourceResolver;
+import org.gatein.resolver.ResourceResolver;
+import org.gatein.web.application.Application;
+import org.gatein.web.application.JavascriptManager;
+import org.gatein.web.application.RequestContext;
+import org.gatein.web.application.URLBuilder;
 import org.gatein.webui.core.UIApplication;
 import org.gatein.webui.core.UIComponent;
 

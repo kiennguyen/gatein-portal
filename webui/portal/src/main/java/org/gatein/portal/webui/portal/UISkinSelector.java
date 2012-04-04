@@ -19,11 +19,11 @@
 
 package org.gatein.portal.webui.portal;
 
-import org.exoplatform.portal.Constants;
-import org.exoplatform.portal.resource.SkinService;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.UserProfile;
 import org.exoplatform.services.organization.UserProfileHandler;
+import org.gatein.portal.Constants;
+import org.gatein.portal.resource.SkinService;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.portal.webui.workspace.UIMaskWorkspace;
 import org.gatein.portal.webui.workspace.UIPortalApplication;

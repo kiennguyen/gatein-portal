@@ -27,7 +27,7 @@ import org.apache.shindig.common.crypto.BasicBlobCrypter;
 import org.apache.shindig.common.crypto.BlobCrypter;
 import org.apache.shindig.common.crypto.BlobCrypterException;
 import org.apache.shindig.common.util.TimeSource;
-import org.exoplatform.web.application.RequestContext;
+import org.gatein.web.application.RequestContext;
 
 public class ExoDefaultSecurityTokenGenerator implements SecurityTokenGenerator
 {

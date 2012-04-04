@@ -1,7 +1,7 @@
 <%	
-	import org.exoplatform.services.organization.User;
+	import org.gatein.services.organization.User;
   import org.gatein.common.text.EntityEncoder;
-	import org.exoplatform.commons.utils.HTMLEntityEncoder;
+	import org.gatein.commons.utils.HTMLEntityEncoder;
 	
 	def rcontext = _ctx.getRequestContext();
 	

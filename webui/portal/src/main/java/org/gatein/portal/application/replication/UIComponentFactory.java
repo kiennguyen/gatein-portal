@@ -19,9 +19,9 @@
 
 package org.gatein.portal.application.replication;
 
-import org.exoplatform.commons.serialization.api.factory.CreateException;
-import org.exoplatform.commons.serialization.api.factory.ObjectFactory;
-import org.exoplatform.commons.serialization.model.FieldModel;
+import org.gatein.commons.serialization.api.factory.CreateException;
+import org.gatein.commons.serialization.api.factory.ObjectFactory;
+import org.gatein.commons.serialization.model.FieldModel;
 import org.gatein.webui.Util;
 import org.gatein.webui.config.Component;
 import org.gatein.webui.core.UIComponent;

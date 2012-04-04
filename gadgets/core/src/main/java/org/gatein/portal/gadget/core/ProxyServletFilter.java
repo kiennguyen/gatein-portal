@@ -20,10 +20,10 @@
 package org.gatein.portal.gadget.core;
 
 import org.exoplatform.container.PortalContainer;
-import org.exoplatform.web.security.proxy.ProxyFilterService;
 
 import org.gatein.common.logging.LoggerFactory;
 import org.gatein.common.logging.Logger;
+import org.gatein.web.security.proxy.ProxyFilterService;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;

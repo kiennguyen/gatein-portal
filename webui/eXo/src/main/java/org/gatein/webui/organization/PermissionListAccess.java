@@ -20,7 +20,7 @@
 package org.gatein.webui.organization;
 
 import org.exoplatform.commons.utils.ListAccess;
-import org.exoplatform.portal.config.UserACL.Permission;
+import org.gatein.portal.config.UserACL.Permission;
 
 import java.util.ArrayList;
 import java.util.List;

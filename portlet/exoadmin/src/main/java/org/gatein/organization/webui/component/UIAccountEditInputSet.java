@@ -19,14 +19,14 @@
 
 package org.gatein.organization.webui.component;
 
-import org.exoplatform.portal.pom.config.Utils;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.Query;
 import org.exoplatform.services.organization.User;
 import org.exoplatform.services.security.ConversationState;
-import org.exoplatform.web.CacheUserProfileFilter;
-import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.portal.pom.config.Utils;
+import org.gatein.web.CacheUserProfileFilter;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIApplication;
 import org.gatein.webui.form.UIFormCheckBoxInput;

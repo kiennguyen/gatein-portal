@@ -19,12 +19,12 @@
 
 package org.gatein.portal.application;
 
-import org.exoplatform.web.application.Application;
-import org.exoplatform.web.application.ApplicationLifecycle;
-import org.exoplatform.web.application.RequestFailure;
-import org.exoplatform.web.login.LogoutControl;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.wci.impl.DefaultServletContainerFactory;
+import org.gatein.web.application.Application;
+import org.gatein.web.application.ApplicationLifecycle;
+import org.gatein.web.application.RequestFailure;
+import org.gatein.web.login.LogoutControl;
 import org.gatein.webui.application.WebuiRequestContext;
 
 import javax.servlet.http.HttpServletRequest;

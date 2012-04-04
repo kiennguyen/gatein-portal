@@ -1,6 +1,6 @@
 <% 
   import org.gatein.common.text.EntityEncoder;
-  import org.exoplatform.commons.utils.HTMLEntityEncoder;
+  import org.gatein.commons.utils.HTMLEntityEncoder;
 
 	def uiDashboard = uicomponent.getAncestorOfType(org.gatein.dashboard.webui.component.UIDashboard.class);
 	if(!uiDashboard.canEdit()) return;

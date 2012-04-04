@@ -22,7 +22,7 @@ package org.gatein.webui.core.lifecycle;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIApplication;
 import org.gatein.webui.core.UIComponent;

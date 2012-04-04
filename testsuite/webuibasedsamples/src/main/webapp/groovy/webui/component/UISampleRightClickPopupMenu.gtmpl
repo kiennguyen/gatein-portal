@@ -1,6 +1,6 @@
 <% 
   import org.gatein.webui.core.UIRightClickPopupMenu ;
-  import org.exoplatform.web.application.JavascriptManager;
+  import org.gatein.web.application.JavascriptManager;
 
   UIRightClickPopupMenu uiPopupMenu = uicomponent.getChild(UIRightClickPopupMenu.class);
   String popupMenu = "";

@@ -29,10 +29,10 @@ import org.apache.shindig.auth.BlobCrypterSecurityTokenCodec;
 import org.apache.shindig.config.ContainerConfigException;
 import org.apache.shindig.expressions.Expressions;
 import org.exoplatform.commons.utils.PropertyManager;
-import org.exoplatform.commons.utils.Safe;
 import org.exoplatform.container.RootContainer;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
+import org.gatein.commons.utils.Safe;
 
 import java.io.File;
 import java.io.FileWriter;

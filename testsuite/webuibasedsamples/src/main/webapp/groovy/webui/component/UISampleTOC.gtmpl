@@ -1,5 +1,5 @@
 <% 
-	import org.exoplatform.web.application.JavascriptManager;
+	import org.gatein.web.application.JavascriptManager;
 	import org.gatein.sample.webui.component.UISampleContent;
 	
 	def rContext = _ctx.getRequestContext();

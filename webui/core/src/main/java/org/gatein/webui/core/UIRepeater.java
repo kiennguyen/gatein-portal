@@ -20,9 +20,9 @@
 package org.gatein.webui.core;
 
 import org.exoplatform.commons.utils.PageList;
-import org.exoplatform.portal.config.NoSuchDataException;
-import org.exoplatform.util.ReflectionUtil;
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.portal.config.NoSuchDataException;
+import org.gatein.util.ReflectionUtil;
 import org.gatein.webui.bean.UIDataFeed;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.core.UIComponent;

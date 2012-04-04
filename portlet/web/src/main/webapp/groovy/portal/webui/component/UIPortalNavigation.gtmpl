@@ -1,13 +1,13 @@
 <% 
-	import org.exoplatform.portal.mop.user.UserNode;
-	import org.exoplatform.web.application.JavascriptManager;
+	import org.gatein.portal.mop.user.UserNode;
+	import org.gatein.web.application.JavascriptManager;
 	import org.gatein.portal.webui.util.Util;
 	import org.gatein.common.text.EntityEncoder;
-	import org.exoplatform.commons.utils.HTMLEntityEncoder;
+	import org.gatein.commons.utils.HTMLEntityEncoder;
 	import javax.portlet.MimeResponse;
 	import org.gatein.portal.application.PortalRequestContext;
-	import org.exoplatform.web.url.PortalURL;
-	import org.exoplatform.web.url.navigation.NavigationResource;
+	import org.gatein.web.url.PortalURL;
+	import org.gatein.web.url.navigation.NavigationResource;
 	
 	def rcontext = _ctx.getRequestContext();
 	JavascriptManager jsmanager = rcontext.getJavascriptManager();

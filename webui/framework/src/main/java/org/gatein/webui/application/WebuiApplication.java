@@ -19,8 +19,8 @@
 
 package org.gatein.webui.application;
 
-import org.exoplatform.web.application.Application;
-import org.exoplatform.web.application.ApplicationLifecycle;
+import org.gatein.web.application.Application;
+import org.gatein.web.application.ApplicationLifecycle;
 import org.gatein.webui.Util;
 import org.gatein.webui.config.Component;
 import org.gatein.webui.core.UIComponent;

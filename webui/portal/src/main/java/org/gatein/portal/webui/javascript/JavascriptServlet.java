@@ -21,9 +21,9 @@ package org.gatein.portal.webui.javascript;
 
 import org.exoplatform.commons.utils.PropertyManager;
 import org.exoplatform.container.ExoContainerContext;
-import org.exoplatform.portal.application.ResourceRequestFilter;
-import org.exoplatform.web.application.javascript.CachedJavascript;
-import org.exoplatform.web.application.javascript.JavascriptConfigService;
+import org.gatein.portal.application.ResourceRequestFilter;
+import org.gatein.web.application.javascript.CachedJavascript;
+import org.gatein.web.application.javascript.JavascriptConfigService;
 
 import java.io.IOException;
 import java.io.OutputStream;

@@ -25,11 +25,11 @@ import java.util.Map;
 import java.util.ResourceBundle;
 
 import org.exoplatform.container.ExoContainer;
-import org.exoplatform.resolver.ApplicationResourceResolver;
-import org.exoplatform.resolver.MockResourceResolver;
 import org.gatein.portal.application.PortalStateManager;
 import org.gatein.portal.webui.portal.UIPortal;
 import org.gatein.portal.webui.workspace.UIPortalApplication;
+import org.gatein.resolver.ApplicationResourceResolver;
+import org.gatein.resolver.MockResourceResolver;
 import org.gatein.webui.application.WebuiApplication;
 
 public class MockApplication extends WebuiApplication

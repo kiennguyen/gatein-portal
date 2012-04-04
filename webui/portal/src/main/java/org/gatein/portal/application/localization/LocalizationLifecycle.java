@@ -22,25 +22,25 @@
 package org.gatein.portal.application.localization;
 
 import org.exoplatform.container.ExoContainer;
-import org.exoplatform.portal.Constants;
-import org.exoplatform.portal.config.DataStorage;
-import org.exoplatform.portal.config.model.PortalConfig;
-import org.exoplatform.portal.mop.SiteType;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.UserProfile;
-import org.exoplatform.services.resources.LocaleConfig;
-import org.exoplatform.services.resources.LocaleConfigService;
-import org.exoplatform.services.resources.LocaleContextInfo;
-import org.exoplatform.services.resources.LocalePolicy;
-import org.exoplatform.web.application.Application;
-import org.exoplatform.web.application.ApplicationRequestPhaseLifecycle;
-import org.exoplatform.web.application.Phase;
-import org.exoplatform.web.application.RequestFailure;
+import org.gatein.portal.Constants;
 import org.gatein.portal.application.PortalRequestContext;
 import org.gatein.portal.application.UserProfileLifecycle;
+import org.gatein.portal.config.DataStorage;
+import org.gatein.portal.config.model.PortalConfig;
+import org.gatein.portal.mop.SiteType;
 import org.gatein.portal.webui.workspace.UIPortalApplication;
+import org.gatein.services.resources.LocaleConfig;
+import org.gatein.services.resources.LocaleConfigService;
+import org.gatein.services.resources.LocaleContextInfo;
+import org.gatein.services.resources.LocalePolicy;
+import org.gatein.web.application.Application;
+import org.gatein.web.application.ApplicationRequestPhaseLifecycle;
+import org.gatein.web.application.Phase;
+import org.gatein.web.application.RequestFailure;
 import org.gatein.webui.application.WebuiRequestContext;
 
 import java.util.ArrayList;
@@ -63,7 +63,7 @@ import javax.servlet.http.HttpSession;
  * initial Locale to be used for processing the request.
  *
  * This Locale is then set on current {@link org.gatein.portal.application.PortalRequestContext} (it's presumed that current
- * {@link org.exoplatform.web.application.RequestContext} is of type PortalRequestContext) by calling
+ * {@link org.gatein.web.application.RequestContext} is of type PortalRequestContext) by calling
  * {@link org.gatein.portal.application.PortalRequestContext#setLocale}.
  *
  * During request processing {@link org.gatein.portal.application.PortalRequestContext#getLocale} is the ultimate reference consulted by any
@@ -90,7 +90,7 @@ public class LocalizationLifecycle implements ApplicationRequestPhaseLifecycle<W
    private static Log log = ExoLogger.getLogger("portal:LocalizationLifecycle");
 
    /**
-    * @see org.exoplatform.web.application.ApplicationLifecycle#onInit
+    * @see org.gatein.web.application.ApplicationLifecycle#onInit
     */
    public void onInit(Application app) throws Exception
    {
@@ -99,7 +99,7 @@ public class LocalizationLifecycle implements ApplicationRequestPhaseLifecycle<W
    /**
     * Initialize Locale to be used for the processing of current request
     *  
-    * @see org.exoplatform.web.application.ApplicationLifecycle#onStartRequest
+    * @see org.gatein.web.application.ApplicationLifecycle#onStartRequest
     */
    public void onStartRequest(Application app, WebuiRequestContext context) throws Exception
    {
@@ -171,7 +171,7 @@ public class LocalizationLifecycle implements ApplicationRequestPhaseLifecycle<W
    }
 
    /**
-    * @see org.exoplatform.web.application.ApplicationRequestPhaseLifecycle#onStartRequestPhase
+    * @see org.gatein.web.application.ApplicationRequestPhaseLifecycle#onStartRequestPhase
     */
    public void onStartRequestPhase(Application app, WebuiRequestContext context, Phase phase)
    {
@@ -180,7 +180,7 @@ public class LocalizationLifecycle implements ApplicationRequestPhaseLifecycle<W
    /**
     * Save any locale change - to cookie for anonymous users, to profile for logged-in users
     *
-    * @see org.exoplatform.web.application.ApplicationRequestPhaseLifecycle#onEndRequestPhase
+    * @see org.gatein.web.application.ApplicationRequestPhaseLifecycle#onEndRequestPhase
     */
    public void onEndRequestPhase(Application app, WebuiRequestContext context, Phase phase)
    {
@@ -217,21 +217,21 @@ public class LocalizationLifecycle implements ApplicationRequestPhaseLifecycle<W
    }
 
    /**
-    * @see org.exoplatform.web.application.ApplicationLifecycle#onEndRequest
+    * @see org.gatein.web.application.ApplicationLifecycle#onEndRequest
     */
    public void onEndRequest(Application app, WebuiRequestContext context) throws Exception
    {
    }
 
    /**
-    * @see org.exoplatform.web.application.ApplicationLifecycle#onFailRequest
+    * @see org.gatein.web.application.ApplicationLifecycle#onFailRequest
     */
    public void onFailRequest(Application app, WebuiRequestContext context, RequestFailure failureType) throws Exception
    {
    }
 
    /**
-    * @see org.exoplatform.web.application.ApplicationLifecycle#onDestroy
+    * @see org.gatein.web.application.ApplicationLifecycle#onDestroy
     */
    public void onDestroy(Application app) throws Exception
    {

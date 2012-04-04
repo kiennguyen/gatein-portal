@@ -1,5 +1,5 @@
 <%
-	import org.exoplatform.web.application.ApplicationMessage; 		
+	import org.gatein.web.application.ApplicationMessage; 		
 %>
 <div class="UIToolbar" style="margin-top: 150px;">
 	<div class="LargeToolbar">

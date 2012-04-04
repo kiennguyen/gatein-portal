@@ -19,7 +19,7 @@
 
 package org.gatein.webui.form.validator;
 
-import org.exoplatform.web.application.CompoundApplicationMessage;
+import org.gatein.web.application.CompoundApplicationMessage;
 import org.gatein.webui.form.UIFormInput;
 
 import java.io.Serializable;

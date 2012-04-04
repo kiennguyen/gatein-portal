@@ -22,10 +22,10 @@ package org.gatein.webui.config;
 import groovy.lang.Binding;
 import groovy.lang.GroovyShell;
 
-import org.exoplatform.resolver.ResourceResolver;
 import org.exoplatform.xml.object.XMLObject;
 import org.gatein.common.logging.Logger;
 import org.gatein.common.logging.LoggerFactory;
+import org.gatein.resolver.ResourceResolver;
 import org.gatein.webui.application.WebuiRequestContext;
 
 import java.io.InputStream;

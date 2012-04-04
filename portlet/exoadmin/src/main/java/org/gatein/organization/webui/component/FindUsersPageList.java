@@ -21,13 +21,13 @@ package org.gatein.organization.webui.component;
 
 import org.exoplatform.commons.utils.ListAccess;
 import org.exoplatform.commons.utils.PageList;
-import org.exoplatform.commons.utils.PageListAccess;
-import org.exoplatform.commons.utils.Safe;
 import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.PortalContainer;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.Query;
 import org.exoplatform.services.organization.User;
+import org.gatein.commons.utils.PageListAccess;
+import org.gatein.commons.utils.Safe;
 
 /**
  * @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a>

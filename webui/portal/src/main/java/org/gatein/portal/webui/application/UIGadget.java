@@ -19,17 +19,17 @@
 
 package org.gatein.portal.webui.application;
 
-import org.exoplatform.application.gadget.Gadget;
-import org.exoplatform.application.gadget.GadgetRegistryService;
 import org.exoplatform.commons.utils.PropertyManager;
 import org.exoplatform.container.ExoContainerContext;
-import org.exoplatform.portal.config.DataStorage;
-import org.exoplatform.portal.config.model.ApplicationState;
-import org.exoplatform.portal.config.model.ApplicationType;
-import org.exoplatform.portal.config.model.Properties;
-import org.exoplatform.portal.pom.data.ModelDataStorage;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.application.gadget.Gadget;
+import org.gatein.application.gadget.GadgetRegistryService;
+import org.gatein.portal.config.DataStorage;
+import org.gatein.portal.config.model.ApplicationState;
+import org.gatein.portal.config.model.ApplicationType;
+import org.gatein.portal.config.model.Properties;
+import org.gatein.portal.pom.data.ModelDataStorage;
 import org.gatein.portal.webui.util.Util;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;
@@ -67,7 +67,7 @@ public class UIGadget extends UIComponent
    private String storageName;
 
    /** . */
-   private ApplicationState<org.exoplatform.portal.pom.spi.gadget.Gadget> state;
+   private ApplicationState<org.gatein.portal.pom.spi.gadget.Gadget> state;
 
    /** . */
    private String gadgetId;
@@ -144,12 +144,12 @@ public class UIGadget extends UIComponent
       return storageName;
    }
 
-   public ApplicationState<org.exoplatform.portal.pom.spi.gadget.Gadget> getState()
+   public ApplicationState<org.gatein.portal.pom.spi.gadget.Gadget> getState()
    {
       return state;
    }
 
-   public void setState(ApplicationState<org.exoplatform.portal.pom.spi.gadget.Gadget> state)
+   public void setState(ApplicationState<org.gatein.portal.pom.spi.gadget.Gadget> state)
    {
       if (state != null)
       {
@@ -190,8 +190,8 @@ public class UIGadget extends UIComponent
     * desktop page
     * 
     * @return all properties of gadget application
-    * @see org.exoplatform.portal.config.model.Application
-    * @see org.exoplatform.portal.config.model.Properties
+    * @see org.gatein.portal.config.model.Application
+    * @see org.gatein.portal.config.model.Properties
     */
    public Properties getProperties()
    {
@@ -205,8 +205,8 @@ public class UIGadget extends UIComponent
     * desktop page
     * 
     * @param properties Properties that is the properties of gadget application
-    * @see org.exoplatform.portal.config.model.Properties
-    * @see org.exoplatform.portal.config.model.Application
+    * @see org.gatein.portal.config.model.Properties
+    * @see org.gatein.portal.config.model.Application
     */
    public void setProperties(Properties properties)
    {
@@ -398,14 +398,14 @@ public class UIGadget extends UIComponent
    public String getUserPref() throws Exception
    {
       DataStorage service = getApplicationComponent(DataStorage.class);
-      org.exoplatform.portal.pom.spi.gadget.Gadget pp = service.load(state, ApplicationType.GADGET);
+      org.gatein.portal.pom.spi.gadget.Gadget pp = service.load(state, ApplicationType.GADGET);
       return pp != null ? pp.getUserPref() : null;
    }
 
    public void addUserPref(String addedUserPref) throws Exception
    {
       DataStorage service = getApplicationComponent(DataStorage.class);
-      org.exoplatform.portal.pom.spi.gadget.Gadget gadget = new org.exoplatform.portal.pom.spi.gadget.Gadget();
+      org.gatein.portal.pom.spi.gadget.Gadget gadget = new org.gatein.portal.pom.spi.gadget.Gadget();
 
       //
       gadget.addUserPref(addedUserPref);

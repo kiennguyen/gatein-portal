@@ -19,9 +19,9 @@
 
 package org.gatein.webui.core;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.commons.utils.EmptySerializablePageList;
 import org.exoplatform.commons.utils.PageList;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.utils.EmptySerializablePageList;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;
 import org.gatein.webui.core.UIComponent;

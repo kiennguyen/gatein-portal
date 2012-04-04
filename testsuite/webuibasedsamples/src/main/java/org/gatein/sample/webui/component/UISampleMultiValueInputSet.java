@@ -3,8 +3,8 @@ package org.gatein.sample.webui.component;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import org.exoplatform.upload.UploadResource;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.upload.UploadResource;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;

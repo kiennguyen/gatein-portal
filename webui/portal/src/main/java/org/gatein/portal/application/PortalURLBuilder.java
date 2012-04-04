@@ -19,8 +19,8 @@
 
 package org.gatein.portal.application;
 
-import org.exoplatform.web.application.Parameter;
-import org.exoplatform.web.application.URLBuilder;
+import org.gatein.web.application.Parameter;
+import org.gatein.web.application.URLBuilder;
 import org.gatein.webui.core.UIComponent;
 import org.gatein.webui.url.ComponentURL;
 

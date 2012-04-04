@@ -20,11 +20,11 @@
 package org.gatein.portal.webui.application;
 
 import org.apache.commons.io.IOUtils;
-import org.exoplatform.application.gadget.Gadget;
-import org.exoplatform.application.gadget.GadgetRegistryService;
 import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.container.PortalContainer;
+import org.gatein.application.gadget.Gadget;
+import org.gatein.application.gadget.GadgetRegistryService;
 import org.gatein.portal.application.PortalRequestContext;
 import org.gatein.portal.gadget.core.SecurityTokenGenerator;
 import org.gatein.portal.webui.util.Util;

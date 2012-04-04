@@ -19,24 +19,24 @@
 
 package org.gatein.portal.webui.util;
 
-import org.exoplatform.portal.config.UserPortalConfig;
-import org.exoplatform.portal.config.model.Application;
-import org.exoplatform.portal.config.model.ApplicationType;
-import org.exoplatform.portal.config.model.Container;
-import org.exoplatform.portal.config.model.Dashboard;
-import org.exoplatform.portal.config.model.ModelObject;
-import org.exoplatform.portal.config.model.Page;
-import org.exoplatform.portal.config.model.PageBody;
-import org.exoplatform.portal.config.model.PortalConfig;
-import org.exoplatform.portal.config.model.SiteBody;
-import org.exoplatform.portal.mop.SiteKey;
-import org.exoplatform.portal.pom.spi.gadget.Gadget;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
 import org.gatein.common.net.media.MediaType;
 import org.gatein.pc.api.Portlet;
 import org.gatein.pc.api.info.ModeInfo;
 import org.gatein.pc.api.info.PortletInfo;
+import org.gatein.portal.config.UserPortalConfig;
+import org.gatein.portal.config.model.Application;
+import org.gatein.portal.config.model.ApplicationType;
+import org.gatein.portal.config.model.Container;
+import org.gatein.portal.config.model.Dashboard;
+import org.gatein.portal.config.model.ModelObject;
+import org.gatein.portal.config.model.Page;
+import org.gatein.portal.config.model.PageBody;
+import org.gatein.portal.config.model.PortalConfig;
+import org.gatein.portal.config.model.SiteBody;
+import org.gatein.portal.mop.SiteKey;
+import org.gatein.portal.pom.spi.gadget.Gadget;
 import org.gatein.portal.webui.application.PortletState;
 import org.gatein.portal.webui.application.UIGadget;
 import org.gatein.portal.webui.application.UIPortlet;

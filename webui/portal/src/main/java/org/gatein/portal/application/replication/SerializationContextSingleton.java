@@ -22,10 +22,10 @@ package org.gatein.portal.application.replication;
 import org.exoplatform.commons.utils.LazyList;
 import org.exoplatform.commons.utils.ObjectPageList;
 import org.exoplatform.services.organization.Query;
-import org.exoplatform.commons.serialization.SerializationContext;
-import org.exoplatform.commons.serialization.model.TypeDomain;
-import org.exoplatform.commons.serialization.model.metadata.DomainMetaData;
 import org.exoplatform.services.organization.impl.UserImpl;
+import org.gatein.commons.serialization.SerializationContext;
+import org.gatein.commons.serialization.model.TypeDomain;
+import org.gatein.commons.serialization.model.metadata.DomainMetaData;
 
 /**
  * @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a>

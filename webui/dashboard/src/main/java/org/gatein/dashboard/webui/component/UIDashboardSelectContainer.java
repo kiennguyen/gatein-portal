@@ -19,11 +19,11 @@
 
 package org.gatein.dashboard.webui.component;
 
-import org.exoplatform.application.registry.Application;
-import org.exoplatform.application.registry.ApplicationCategory;
-import org.exoplatform.application.registry.ApplicationRegistryService;
-import org.exoplatform.portal.config.UserACL;
-import org.exoplatform.portal.config.model.ApplicationType;
+import org.gatein.application.registry.Application;
+import org.gatein.application.registry.ApplicationCategory;
+import org.gatein.application.registry.ApplicationRegistryService;
+import org.gatein.portal.config.UserACL;
+import org.gatein.portal.config.model.ApplicationType;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;

@@ -19,8 +19,8 @@
 
 package org.gatein.webui.exception;
 
-import org.exoplatform.web.application.AbstractApplicationMessage;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.web.application.AbstractApplicationMessage;
+import org.gatein.web.application.ApplicationMessage;
 
 /**
  * Created by The eXo Platform SARL

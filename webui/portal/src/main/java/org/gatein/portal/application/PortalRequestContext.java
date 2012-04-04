@@ -21,38 +21,38 @@ package org.gatein.portal.application;
 
 import org.exoplatform.Constants;
 import org.exoplatform.commons.utils.ExpressionUtil;
-import org.exoplatform.commons.utils.PortalPrinter;
-import org.exoplatform.commons.xml.DOMSerializer;
 import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.container.PortalContainer;
-import org.exoplatform.portal.config.UserPortalConfig;
-import org.exoplatform.portal.config.UserPortalConfigService;
-import org.exoplatform.portal.config.model.Page;
-import org.exoplatform.portal.mop.SiteKey;
-import org.exoplatform.portal.mop.SiteType;
-import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.portal.mop.user.UserNode;
-import org.exoplatform.portal.mop.user.UserPortal;
-import org.exoplatform.portal.mop.user.UserPortalContext;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.services.resources.Orientation;
-import org.exoplatform.services.resources.ResourceBundleManager;
-import org.exoplatform.web.ControllerContext;
-import org.exoplatform.web.application.JavascriptManager;
-import org.exoplatform.web.application.URLBuilder;
-import org.exoplatform.web.url.PortalURL;
-import org.exoplatform.web.url.ResourceType;
-import org.exoplatform.web.url.URLFactory;
-import org.exoplatform.web.url.URLFactoryService;
-import org.exoplatform.web.url.navigation.NavigationResource;
-import org.exoplatform.web.url.navigation.NodeURL;
 import org.gatein.common.http.QueryStringParser;
+import org.gatein.commons.utils.PortalPrinter;
+import org.gatein.commons.xml.DOMSerializer;
+import org.gatein.portal.config.UserPortalConfig;
+import org.gatein.portal.config.UserPortalConfigService;
+import org.gatein.portal.config.model.Page;
+import org.gatein.portal.mop.SiteKey;
+import org.gatein.portal.mop.SiteType;
+import org.gatein.portal.mop.user.UserNavigation;
+import org.gatein.portal.mop.user.UserNode;
+import org.gatein.portal.mop.user.UserPortal;
+import org.gatein.portal.mop.user.UserPortalContext;
 import org.gatein.portal.url.PortalURLContext;
 import org.gatein.portal.webui.portal.UIPortal;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.portal.webui.workspace.UIPortalApplication;
+import org.gatein.services.resources.Orientation;
+import org.gatein.services.resources.ResourceBundleManager;
+import org.gatein.web.ControllerContext;
+import org.gatein.web.application.JavascriptManager;
+import org.gatein.web.application.URLBuilder;
+import org.gatein.web.url.PortalURL;
+import org.gatein.web.url.ResourceType;
+import org.gatein.web.url.URLFactory;
+import org.gatein.web.url.URLFactoryService;
+import org.gatein.web.url.navigation.NavigationResource;
+import org.gatein.web.url.navigation.NodeURL;
 import org.gatein.webui.application.WebuiApplication;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIComponent;
@@ -573,7 +573,7 @@ public class PortalRequestContext extends WebuiRequestContext
 
    /**
     * 
-    * @see org.exoplatform.web.application.RequestContext#getFullRender()
+    * @see org.gatein.web.application.RequestContext#getFullRender()
     */
    final public boolean getFullRender()
    {

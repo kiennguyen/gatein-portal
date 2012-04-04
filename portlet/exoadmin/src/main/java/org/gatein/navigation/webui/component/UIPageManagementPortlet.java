@@ -19,7 +19,7 @@
 
 package org.gatein.navigation.webui.component;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
 import org.gatein.portal.webui.page.UIPageBrowser;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.core.UIPortletApplication;

@@ -1,10 +1,10 @@
 <%
-  import org.exoplatform.portal.config.UserPortalConfigService;
+  import org.gatein.portal.config.UserPortalConfigService;
   import org.gatein.webui.core.UIComponent ;
   import org.gatein.webui.form.UIForm;
   
   import org.gatein.common.text.EntityEncoder;
-  import org.exoplatform.commons.utils.HTMLEntityEncoder;
+  import org.gatein.commons.utils.HTMLEntityEncoder;
   
   String[] actions =  uicomponent.getActions();
   uicomponent.loadPortalConfigs();

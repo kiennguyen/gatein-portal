@@ -45,8 +45,8 @@
   </component>
 
   <component>
-    <key>org.exoplatform.services.resources.LocaleConfigService</key>
-    <type>org.exoplatform.services.resources.impl.LocaleConfigServiceImpl</type>
+    <key>org.gatein.services.resources.LocaleConfigService</key>
+    <type>org.gatein.services.resources.impl.LocaleConfigServiceImpl</type>
       <init-params>
         <value-param>
           <name>locale.config.file</name>
@@ -56,13 +56,13 @@
   </component>
 
   <component>
-    <key>org.exoplatform.services.resources.ResourceBundleManager</key>
-    <type>org.exoplatform.services.resources.ResourceBundleManager</type>
+    <key>org.gatein.services.resources.ResourceBundleManager</key>
+    <type>org.gatein.services.resources.ResourceBundleManager</type>
   </component>
 
     <component>
-      <key>org.exoplatform.services.resources.ResourceBundleService</key>
-      <type>org.exoplatform.services.resources.impl.SimpleResourceBundleService</type>
+      <key>org.gatein.services.resources.ResourceBundleService</key>
+      <type>org.gatein.services.resources.impl.SimpleResourceBundleService</type>
         <init-params>
           <values-param>
             <name>classpath.resources</name>

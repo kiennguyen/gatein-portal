@@ -19,7 +19,7 @@
 
 package org.gatein.portal.webui.portal;
 
-import org.exoplatform.portal.mop.SiteKey;
+import org.gatein.portal.mop.SiteKey;
 import org.gatein.webui.core.UIComponent;
 import org.gatein.webui.event.Event;
 

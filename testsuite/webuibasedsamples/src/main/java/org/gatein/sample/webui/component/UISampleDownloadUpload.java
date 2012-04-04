@@ -7,11 +7,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.exoplatform.download.DownloadResource;
-import org.exoplatform.download.DownloadService;
-import org.exoplatform.download.InputStreamDownloadResource;
-import org.exoplatform.upload.UploadResource;
-import org.exoplatform.upload.UploadService.UploadUnit;
+import org.gatein.download.DownloadResource;
+import org.gatein.download.DownloadService;
+import org.gatein.download.InputStreamDownloadResource;
+import org.gatein.upload.UploadResource;
+import org.gatein.upload.UploadService.UploadUnit;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;
 import org.gatein.webui.core.lifecycle.UIFormLifecycle;

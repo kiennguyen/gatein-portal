@@ -19,11 +19,11 @@
 
 package org.gatein.webui.organization;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.Query;
 import org.exoplatform.services.organization.User;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.core.UIApplication;
 import org.gatein.webui.form.UIFormInputWithActions;

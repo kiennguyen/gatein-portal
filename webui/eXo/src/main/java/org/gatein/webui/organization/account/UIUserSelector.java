@@ -19,16 +19,16 @@
 
 package org.gatein.webui.organization.account;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.commons.utils.ListAccessImpl;
 import org.exoplatform.commons.utils.ObjectPageList;
 import org.exoplatform.commons.utils.PageList;
-import org.exoplatform.commons.utils.SerializablePageList;
 import org.exoplatform.services.organization.MembershipHandler;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.Query;
 import org.exoplatform.services.organization.User;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.utils.ListAccessImpl;
+import org.gatein.commons.utils.SerializablePageList;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;
 import org.gatein.webui.core.UIApplication;

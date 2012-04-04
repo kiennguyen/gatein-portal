@@ -19,16 +19,16 @@
 
 package org.gatein.navigation.webui.component;
 
-import org.exoplatform.portal.config.UserPortalConfig;
-import org.exoplatform.portal.config.UserPortalConfigService;
-import org.exoplatform.portal.mop.SiteKey;
-import org.exoplatform.portal.mop.SiteType;
-import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.web.application.ApplicationMessage;
 import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.config.UserPortalConfig;
+import org.gatein.portal.config.UserPortalConfigService;
+import org.gatein.portal.mop.SiteKey;
+import org.gatein.portal.mop.SiteType;
+import org.gatein.portal.mop.user.UserNavigation;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.portal.webui.workspace.UIPortalApplication;
 import org.gatein.portal.webui.workspace.UIWorkingWorkspace;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;
 import org.gatein.webui.core.UIComponent;

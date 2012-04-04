@@ -19,11 +19,11 @@
 
 package org.gatein.portal.webui.application;
 
-import org.exoplatform.portal.pc.ExoPortletStateType;
 import org.gatein.pc.api.PortletContext;
 import org.gatein.pc.api.StateEvent;
 import org.gatein.pc.api.spi.InstanceContext;
 import org.gatein.pc.api.state.AccessMode;
+import org.gatein.portal.pc.ExoPortletStateType;
 
 /**
  * @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a>

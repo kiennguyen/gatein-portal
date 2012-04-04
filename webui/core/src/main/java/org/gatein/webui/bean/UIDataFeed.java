@@ -20,7 +20,7 @@
 package org.gatein.webui.bean;
 
 import org.exoplatform.commons.utils.PageList;
-import org.exoplatform.portal.config.NoSuchDataException;
+import org.gatein.portal.config.NoSuchDataException;
 
 /**
  * Created by The eXo Platform SAS Author : liem.nguyen ncliam@gmail.com Jun 26,

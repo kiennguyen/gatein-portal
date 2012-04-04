@@ -27,7 +27,7 @@ import org.exoplatform.management.annotations.ManagedName;
 import org.exoplatform.management.jmx.annotations.NameTemplate;
 import org.exoplatform.management.jmx.annotations.Property;
 import org.exoplatform.management.rest.annotations.RESTEndpoint;
-import org.exoplatform.portal.config.UserPortalConfigService;
+import org.gatein.portal.config.UserPortalConfigService;
 import org.picocontainer.Startable;
 
 import java.util.List;

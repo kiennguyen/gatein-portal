@@ -19,9 +19,9 @@
 
 package org.gatein.webui.application.portlet;
 
-import org.exoplatform.web.application.Application;
-import org.exoplatform.web.application.ApplicationLifecycle;
-import org.exoplatform.web.application.RequestFailure;
+import org.gatein.web.application.Application;
+import org.gatein.web.application.ApplicationLifecycle;
+import org.gatein.web.application.RequestFailure;
 import org.gatein.webui.application.WebuiRequestContext;
 
 public class PortletApplicationLifecycle implements ApplicationLifecycle<WebuiRequestContext>

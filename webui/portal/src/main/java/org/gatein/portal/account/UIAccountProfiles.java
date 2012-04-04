@@ -19,15 +19,15 @@
 
 package org.gatein.portal.account;
 
-import org.exoplatform.portal.pom.config.Utils;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.Query;
 import org.exoplatform.services.organization.User;
 import org.exoplatform.services.security.ConversationState;
-import org.exoplatform.web.CacheUserProfileFilter;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.portal.pom.config.Utils;
 import org.gatein.portal.webui.util.Util;
 import org.gatein.portal.webui.workspace.UIWorkingWorkspace;
+import org.gatein.web.CacheUserProfileFilter;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.application.WebuiRequestContext;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;

@@ -28,7 +28,7 @@
   <display-name>eXoGadgets</display-name>
   <filter>
     <filter-name>ResourceRequestFilter</filter-name>
-    <filter-class>org.exoplatform.portal.application.ResourceRequestFilter</filter-class>
+    <filter-class>org.gatein.portal.application.ResourceRequestFilter</filter-class>
   </filter>
 
   <filter-mapping>

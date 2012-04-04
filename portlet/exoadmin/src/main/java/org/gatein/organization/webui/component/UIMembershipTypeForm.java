@@ -19,10 +19,10 @@
 
 package org.gatein.organization.webui.component;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
 import org.exoplatform.services.organization.MembershipType;
 import org.exoplatform.services.organization.OrganizationService;
-import org.exoplatform.web.application.ApplicationMessage;
+import org.gatein.commons.serialization.api.annotations.Serialized;
+import org.gatein.web.application.ApplicationMessage;
 import org.gatein.webui.config.annotation.ComponentConfig;
 import org.gatein.webui.config.annotation.EventConfig;
 import org.gatein.webui.core.UIApplication;

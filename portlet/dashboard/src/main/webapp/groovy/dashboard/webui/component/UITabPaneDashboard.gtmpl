@@ -2,10 +2,10 @@
 	import org.gatein.portal.webui.util.Util;
 	import org.gatein.portal.webui.portal.UIPortal;
 	import org.gatein.portal.application.PortalRequestContext;
-	import org.exoplatform.web.application.JavascriptManager;
-	import org.exoplatform.portal.mop.user.UserNode;
-	import org.exoplatform.web.url.PortalURL;
-	import org.exoplatform.web.url.navigation.NavigationResource;
+	import org.gatein.web.application.JavascriptManager;
+	import org.gatein.portal.mop.user.UserNode;
+	import org.gatein.web.url.PortalURL;
+	import org.gatein.web.url.navigation.NavigationResource;
 	
 	def nodes = uicomponent.getSameSiblingsNode();
 	def tabNbs = nodes.size();

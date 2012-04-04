@@ -19,7 +19,7 @@
 
 package org.gatein.webui.organization;
 
-import org.exoplatform.commons.serialization.api.annotations.Serialized;
+import org.gatein.commons.serialization.api.annotations.Serialized;
 import org.gatein.webui.core.UIComponent;
 import org.gatein.webui.event.Event;
 import org.gatein.webui.event.EventListener;
