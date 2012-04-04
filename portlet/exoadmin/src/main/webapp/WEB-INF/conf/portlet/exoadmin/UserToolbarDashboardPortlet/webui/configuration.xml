@@ -24,7 +24,7 @@
   </annotation-classes>  
    
   <application>     
-    <ui-component-root>org.exoplatform.toolbar.webui.component.UIUserToolBarDashboardPortlet</ui-component-root>    
+    <ui-component-root>org.gatein.toolbar.webui.component.UIUserToolBarDashboardPortlet</ui-component-root>    
     <state-manager>org.exoplatform.webui.application.portlet.ParentAppStateManager</state-manager>
     <application-lifecycle-listeners>       
     </application-lifecycle-listeners>

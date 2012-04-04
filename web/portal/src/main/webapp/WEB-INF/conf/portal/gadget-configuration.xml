@@ -25,11 +25,11 @@
    xsi:schemaLocation="http://www.exoplaform.org/xml/ns/kernel_1_2.xsd http://www.exoplaform.org/xml/ns/kernel_1_2.xsd"
    xmlns="http://www.exoplaform.org/xml/ns/kernel_1_2.xsd">
 <component>
-		<key>org.exoplatform.portal.gadget.core.SecurityTokenGenerator</key>
-		<type>org.exoplatform.portal.gadget.core.ExoDefaultSecurityTokenGenerator</type>
+		<key>org.gatein.portal.gadget.core.SecurityTokenGenerator</key>
+		<type>org.gatein.portal.gadget.core.ExoDefaultSecurityTokenGenerator</type>
   </component>
   <component>
-		<type>org.exoplatform.portal.gadget.core.GadgetTokenInfoService</type>
+		<type>org.gatein.portal.gadget.core.GadgetTokenInfoService</type>
 		<init-params>
   		<values-param>
         <name>service.configuration</name>
@@ -57,8 +57,8 @@
         </value-param>
         <values-param>
           <name>entities</name>
-          <value>org.exoplatform.portal.gadget.core.GadgetTokenContainer</value>
-          <value>org.exoplatform.portal.gadget.core.GadgetTokenEntry</value>
+          <value>org.gatein.portal.gadget.core.GadgetTokenContainer</value>
+          <value>org.gatein.portal.gadget.core.GadgetTokenEntry</value>
         </values-param>
       </init-params>
     </component-plugin>

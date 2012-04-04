@@ -37,9 +37,9 @@
       org.apache.shindig.common.PropertiesModule:
       org.apache.shindig.gadgets.DefaultGuiceModule:
       org.apache.shindig.gadgets.servlet.AuthenticationModule:
-      org.exoplatform.portal.gadget.core.ExoOAuthModule:
+      org.gatein.portal.gadget.core.ExoOAuthModule:
       org.apache.shindig.common.cache.ehcache.EhCacheModule:
-      org.exoplatform.portal.gadget.core.ExoModule
+      org.gatein.portal.gadget.core.ExoModule
     </param-value>
   </context-param>
 
@@ -50,7 +50,7 @@
 
   <filter>
     <filter-name>ProxyServletFilter</filter-name>
-    <filter-class>org.exoplatform.portal.gadget.core.ProxyServletFilter</filter-class>
+    <filter-class>org.gatein.portal.gadget.core.ProxyServletFilter</filter-class>
   </filter>
     
   <filter>
@@ -94,7 +94,7 @@
   </filter-mapping>
 
   <listener>
-     <listener-class>org.exoplatform.portal.gadget.core.GateInGuiceServletContextListener</listener-class>
+     <listener-class>org.gatein.portal.gadget.core.GateInGuiceServletContextListener</listener-class>
   </listener>
 
   <!-- Render a Gadget -->

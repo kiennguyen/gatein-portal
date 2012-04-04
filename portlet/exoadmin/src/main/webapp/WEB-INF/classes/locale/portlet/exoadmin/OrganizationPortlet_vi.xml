@@ -22,7 +22,7 @@
 
 <bundle>
   <!--
-  ##org.exoplatform.organization.webui.component.UIOrganizationPortlet
+  ##org.gatein.organization.webui.component.UIOrganizationPortlet
   -->
   <UIOrganizationPortlet>
     <label>
@@ -32,7 +32,7 @@
     </label>
   </UIOrganizationPortlet>
   <!--
-  ##org.exoplatform.organization.webui.component.UIMembershipTypeForm
+  ##org.gatein.organization.webui.component.UIMembershipTypeForm
   -->
   <UIMembershipTypeForm>
     <title>Thêm/Sửa Vai trò</title>
@@ -50,7 +50,7 @@
     </msg>
   </UIMembershipTypeForm>
   <!--
-  ##org.exoplatform.organization.webui.component.UIGroupMembershipForm
+  ##org.gatein.organization.webui.component.UIGroupMembershipForm
   -->
   <UIGroupEditMembershipForm>
     <label>
@@ -111,7 +111,7 @@
     </msg>
   </UIMemberShipForm>
   <!--
-  ##org.exoplatform.organization.webui.component.UIMembershipForm
+  ##org.gatein.organization.webui.component.UIMembershipForm
   -->
   <UIMembershipForm>
     <label>
@@ -126,7 +126,7 @@
     </action>
   </UIMembershipForm>
   <!--
-  ##org.exoplatform.organization.webui.component.UIListUser
+  ##org.gatein.organization.webui.component.UIListUser
   -->
   <UIListUsers>
     <header>
@@ -160,7 +160,7 @@
     <deleteMemberShip>Bạn có chắc chắn muốn xóa vai trò này không?</deleteMemberShip>
   </UIListMembershipType>
   <!--
-  ##org.exoplatform.organization.webui.component.UIUserInfo
+  ##org.gatein.organization.webui.component.UIUserInfo
   -->
   <UIUserInfo>
     <title>Thông tin về người dùng</title>
@@ -258,7 +258,7 @@
     </action>
   </UIUserInfo>
   <!--
-  ##org.exoplatform.organization.webui.component.UIUserInGroup
+  ##org.gatein.organization.webui.component.UIUserInGroup
   -->
   <UIUserInGroup>
     <confirm>
@@ -285,7 +285,7 @@
     </action>
   </UIUserInGroup>
   <!--
-  ##org.exoplatform.organization.webui.component.UIGroupInfo 
+  ##org.gatein.organization.webui.component.UIGroupInfo 
   -->
   <UIGroupInfo>
     <tab>
@@ -299,7 +299,7 @@
     <title>Thông tin nhóm</title>
   </UIGroupInfo>
   <!--
-  ##org.exoplatform.organization.webui.component.UIMembershipList
+  ##org.gatein.organization.webui.component.UIMembershipList
   -->
   <UIMembershipList>
     <header>
@@ -321,13 +321,13 @@
     </msg>
   </UIMembershipList>
   <!--
-  ##org.exoplatform.organization.webui.component.UIGroupMembershipForm
+  ##org.gatein.organization.webui.component.UIGroupMembershipForm
   -->
   <UIUserMembershipSelector>
     <deleteMembership>Bạn có chắc chắn muốn xóa thành viên này không?</deleteMembership>
   </UIUserMembershipSelector>
   <!--
-  ##org.exoplatform.organization.webui.component.UIGroupForm
+  ##org.gatein.organization.webui.component.UIGroupForm
   -->
   <AddGroup>
     <title>Thêm một nhóm mới</title>

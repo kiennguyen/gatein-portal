@@ -1,5 +1,5 @@
 <%	
-	import org.exoplatform.applicationregistry.webui.component.UIApplicationRegistryEditMode;
+	import org.gatein.applicationregistry.webui.component.UIApplicationRegistryEditMode;
 	import javax.portlet.PortletMode ;
 	
 	String cssClass; 

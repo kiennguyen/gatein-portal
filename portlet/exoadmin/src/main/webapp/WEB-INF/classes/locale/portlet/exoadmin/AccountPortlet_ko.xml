@@ -22,7 +22,7 @@
 
 <bundle>
   <!--
-  ##org.exoplatform.account.webui.component.UIAccountForm
+  ##org.gatein.account.webui.component.UIAccountForm
   -->
   <UIAccountForm>
     <label>

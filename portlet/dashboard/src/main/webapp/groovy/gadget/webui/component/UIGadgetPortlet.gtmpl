@@ -1,5 +1,5 @@
 <% 	import javax.portlet.PortletMode ; 
-		import org.exoplatform.gadget.webui.component.UIGadgetViewMode;
+		import org.gatein.gadget.webui.component.UIGadgetViewMode;
 		def rcontext = _ctx.getRequestContext() ;
 %>
 <div class="UIGadgetPortlet" id="$uicomponent.id">

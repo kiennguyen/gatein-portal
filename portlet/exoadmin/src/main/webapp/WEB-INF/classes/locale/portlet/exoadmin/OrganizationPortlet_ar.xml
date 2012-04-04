@@ -22,7 +22,7 @@
 
 <bundle>
   <!--
-  ##org.exoplatform.organization.webui.component.UIOrganizationPortlet
+  ##org.gatein.organization.webui.component.UIOrganizationPortlet
   -->
   <UIOrganizationPortlet>
     <label>
@@ -32,7 +32,7 @@
     </label>
   </UIOrganizationPortlet>
   <!--
-  ##org.exoplatform.organization.webui.component.UIMembershipTypeForm
+  ##org.gatein.organization.webui.component.UIMembershipTypeForm
   -->
   <UIMembershipTypeForm>
     <title>إضافة/تحرير العضوية</title>
@@ -51,7 +51,7 @@
     </msg>
   </UIMembershipTypeForm>
   <!--
-  ##org.exoplatform.organization.webui.component.UIGroupMembershipForm
+  ##org.gatein.organization.webui.component.UIGroupMembershipForm
   -->
   <UIGroupEditMembershipForm>
     <label>
@@ -112,7 +112,7 @@
     </msg>
   </UIMemberShipForm>
   <!--
-  ##org.exoplatform.organization.webui.component.UIMembershipForm
+  ##org.gatein.organization.webui.component.UIMembershipForm
   -->
   <UIMembershipForm>
     <label>
@@ -127,7 +127,7 @@
     </action>
   </UIMembershipForm>
   <!--
-  ##org.exoplatform.organization.webui.component.UIListUser
+  ##org.gatein.organization.webui.component.UIListUser
   -->
   <UIListUsers>
     <header>
@@ -161,7 +161,7 @@
     <deleteMemberShip>هل أنت متأكد من حذف هذه العضوية؟</deleteMemberShip>
   </UIListMembershipType>
   <!--
-  ##org.exoplatform.organization.webui.component.UIUserInfo
+  ##org.gatein.organization.webui.component.UIUserInfo
   -->
   <UIUserInfo>
     <title>معلومات تعريفة المستخدم</title>
@@ -259,7 +259,7 @@
     </action>
   </UIUserInfo>
   <!--
-  ##org.exoplatform.organization.webui.component.UIUserInGroup
+  ##org.gatein.organization.webui.component.UIUserInGroup
   -->
   <UIUserInGroup>
     <confirm>
@@ -286,7 +286,7 @@
     </action>
   </UIUserInGroup>
   <!--
-  ##org.exoplatform.organization.webui.component.UIGroupInfo 
+  ##org.gatein.organization.webui.component.UIGroupInfo 
   -->
   <UIGroupInfo>
     <tab>
@@ -300,7 +300,7 @@
     <title>معلومات المجموعة</title>
   </UIGroupInfo>
   <!--
-  ##org.exoplatform.organization.webui.component.UIMembershipList
+  ##org.gatein.organization.webui.component.UIMembershipList
   -->
   <UIMembershipList>
     <header>
@@ -322,13 +322,13 @@
     </msg>
   </UIMembershipList>
   <!--
-  ##org.exoplatform.organization.webui.component.UIGroupMembershipForm
+  ##org.gatein.organization.webui.component.UIGroupMembershipForm
   -->
   <UIUserMembershipSelector>
     <deleteMembership>هل أنت متأكد من حذف هذه العضوية؟</deleteMembership>
   </UIUserMembershipSelector>
   <!--
-  ##org.exoplatform.organization.webui.component.UIGroupForm
+  ##org.gatein.organization.webui.component.UIGroupForm
   -->
   <AddGroup>
     <title>أضف مجموعة جديدة</title>

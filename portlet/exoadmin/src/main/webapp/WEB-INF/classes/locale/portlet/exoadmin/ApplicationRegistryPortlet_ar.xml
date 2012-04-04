@@ -47,7 +47,7 @@
   </msg>
   </gadget>
   <!--
-  ##	org.exoplatform.applicationregistry.webui.component.UIApplicationRegistryPortlet
+  ##	org.gatein.applicationregistry.webui.component.UIApplicationRegistryPortlet
   -->
   <UIToolbar>
     <label>
@@ -57,7 +57,7 @@
     </label>
   </UIToolbar>
   <!--
-  ##	org.exoplatform.applicationregistry.webui.component.UIApplicationOrganizer
+  ##	org.gatein.applicationregistry.webui.component.UIApplicationOrganizer
   -->
   <UIOrganizer>
   <label>
@@ -84,7 +84,7 @@
   </msg>
   </UIOrganizer>
   <!--
-  ##org.exoplatform.applicationregistry.webui.component.UIApplicationRegistryEditMode
+  ##org.gatein.applicationregistry.webui.component.UIApplicationRegistryEditMode
   -->
   <UIApplicationRegistryEditMode>
   <title>استيراد تطبيقات</title>
@@ -93,7 +93,7 @@
   </label>
   </UIApplicationRegistryEditMode>
   <!--
-  ##org.exoplatform.applicationregistry.webui.component.UIApplicationInfo
+  ##org.gatein.applicationregistry.webui.component.UIApplicationInfo
   -->
   <UIApplicationInfo>
   <label>
@@ -107,7 +107,7 @@
   </title>
   </UIApplicationInfo>
   <!--
-  ##org.exoplatform.applicationregistry.webui.component.UIApplicationForm
+  ##org.gatein.applicationregistry.webui.component.UIApplicationForm
   -->
   <UIApplicationForm>
   <title>تحرير معلومات الخدمة</title>
@@ -122,7 +122,7 @@
   </action>
   </UIApplicationForm>
   <!--
-  ##	org.exoplatform.applicationregistry.webui.component.UIAddApplicationForm
+  ##	org.gatein.applicationregistry.webui.component.UIAddApplicationForm
   -->
   <UIAddApplicationForm>
   <header>
@@ -145,7 +145,7 @@
   </label>
   </UIAddApplicationForm>
   <!--
-  ##org.exoplatform.applicationregistry.webui.component.UICategoryForm
+  ##org.gatein.applicationregistry.webui.component.UICategoryForm
   -->
   <UICategoryForm>
   <label>
@@ -168,7 +168,7 @@
   </tab>
   </UICategoryForm>
   <!--
-  ##	org.exoplatform.applicationregistry.webui.component.UIPortletManagement
+  ##	org.gatein.applicationregistry.webui.component.UIPortletManagement
   -->
   <UIPortletManagement>
     <title>
@@ -180,7 +180,7 @@
     </msg>
   </UIPortletManagement>
   <!--
-  ##	org.exoplatform.applicationregistry.webui.component.UIPortletInfo
+  ##	org.gatein.applicationregistry.webui.component.UIPortletInfo
   -->
   <UIPortletInfo>
   <label>
@@ -213,7 +213,7 @@
   </msg>
   </UIGadgetManagement>
   <!--
-  ##	org.exoplatform.applicationregistry.webui.component.UIGadgetInfo
+  ##	org.gatein.applicationregistry.webui.component.UIGadgetInfo
   -->
   <UIGadgetInfo>
   <label>
@@ -234,7 +234,7 @@
   </msg>
   </UIGadgetInfo>
   <!--
-  ##	org.exoplatform.applicationregistry.webui.component.UIAddGadget
+  ##	org.gatein.applicationregistry.webui.component.UIAddGadget
   -->
   <UIAddGadget>
     <action>
@@ -248,7 +248,7 @@
     </label>
   </UIAddGadget>
   <!--
-  ##	org.exoplatform.applicationregistry.webui.component.UIGadgetEditor
+  ##	org.gatein.applicationregistry.webui.component.UIGadgetEditor
   -->
   <UIGadgetEditor>
     <label>
@@ -263,7 +263,7 @@
     </msg>
   </UIGadgetEditor>
   <!--
-  ##package org.exoplatform.organization.webui.component.UIListPermissionSelector
+  ##package org.gatein.organization.webui.component.UIListPermissionSelector
   -->
   <UIListPermissionSelector>
     <header>
