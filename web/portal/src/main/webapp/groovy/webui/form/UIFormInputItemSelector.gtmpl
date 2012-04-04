@@ -1,4 +1,4 @@
-<%  import  org.exoplatform.webui.form.UIForm; %>	
+<%  import  org.gatein.webui.form.UIForm; %>	
 <%
   def rcontext = _ctx.getRequestContext(); 
   rcontext.getJavascriptManager().importJavascript('eXo.webui.UIItemSelector');

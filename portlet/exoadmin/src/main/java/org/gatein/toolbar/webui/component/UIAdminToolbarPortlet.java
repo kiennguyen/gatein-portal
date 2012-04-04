@@ -24,17 +24,17 @@ import org.exoplatform.portal.config.UserACL;
 import org.exoplatform.portal.config.model.Page;
 import org.exoplatform.portal.mop.user.UserNavigation;
 import org.exoplatform.portal.mop.user.UserNode;
-import org.exoplatform.portal.webui.page.UIPage;
-import org.exoplatform.portal.webui.page.UIPageBody;
-import org.exoplatform.portal.webui.portal.UIPortal;
-import org.exoplatform.portal.webui.util.Util;
-import org.exoplatform.portal.webui.workspace.UIPortalApplication;
-import org.exoplatform.portal.webui.workspace.UIWorkingWorkspace;
-import org.exoplatform.webui.application.WebuiApplication;
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.UIPortletApplication;
-import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
+import org.gatein.portal.webui.page.UIPage;
+import org.gatein.portal.webui.page.UIPageBody;
+import org.gatein.portal.webui.portal.UIPortal;
+import org.gatein.portal.webui.util.Util;
+import org.gatein.portal.webui.workspace.UIPortalApplication;
+import org.gatein.portal.webui.workspace.UIWorkingWorkspace;
+import org.gatein.webui.application.WebuiApplication;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.core.UIPortletApplication;
+import org.gatein.webui.core.lifecycle.UIApplicationLifecycle;
 
 @ComponentConfig(lifecycle = UIApplicationLifecycle.class, template = "app:/groovy/admintoolbar/webui/component/UIAdminToolbarPortlet.gtmpl")
 public class UIAdminToolbarPortlet extends UIPortletApplication

@@ -27,21 +27,21 @@ import nl.captcha.Captcha;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.UserHandler;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.application.portlet.PortletRequestContext;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIApplication;
-import org.exoplatform.webui.core.lifecycle.UIFormLifecycle;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.Event.Phase;
-import org.exoplatform.webui.event.EventListener;
-import org.exoplatform.webui.exception.MessageException;
-import org.exoplatform.webui.form.UIForm;
-import org.exoplatform.webui.form.UIFormInputWithActions;
-import org.exoplatform.webui.form.UIFormInputWithActions.ActionData;
-import org.exoplatform.webui.form.UIFormStringInput;
-import org.exoplatform.webui.form.validator.Validator;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.application.portlet.PortletRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIApplication;
+import org.gatein.webui.core.lifecycle.UIFormLifecycle;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
+import org.gatein.webui.event.Event.Phase;
+import org.gatein.webui.exception.MessageException;
+import org.gatein.webui.form.UIForm;
+import org.gatein.webui.form.UIFormInputWithActions;
+import org.gatein.webui.form.UIFormStringInput;
+import org.gatein.webui.form.UIFormInputWithActions.ActionData;
+import org.gatein.webui.form.validator.Validator;
 
 /**
  * 

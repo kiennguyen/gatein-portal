@@ -27,12 +27,12 @@ import org.exoplatform.portal.mop.user.UserNodeFilterConfig;
 import org.exoplatform.portal.mop.user.UserPortal;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.lifecycle.UIApplicationLifecycle;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
 
 import javax.portlet.EventRequest;
 

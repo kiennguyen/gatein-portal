@@ -1,7 +1,7 @@
 <% 
-  import org.exoplatform.webui.core.UITree ; 
-  import org.exoplatform.webui.core.UIDropDownControl;  
-  import org.exoplatform.webui.core.UIRightClickPopupMenu ;
+  import org.gatein.webui.core.UITree ; 
+  import org.gatein.webui.core.UIDropDownControl;  
+  import org.gatein.webui.core.UIRightClickPopupMenu ;
   import org.exoplatform.web.application.JavascriptManager;
 
   UIRightClickPopupMenu uiPopupMenu = uicomponent.getChild(UIRightClickPopupMenu.class);

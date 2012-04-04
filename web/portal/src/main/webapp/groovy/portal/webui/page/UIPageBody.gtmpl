@@ -1,5 +1,5 @@
 <%	
-	import org.exoplatform.portal.webui.workspace.UIPortalApplication;
+	import org.gatein.portal.webui.workspace.UIPortalApplication;
 	UIPortalApplication uiPortalApp = _ctx.getRequestContext().getUIApplication();
 	int portalMode = uiPortalApp.getModeState();
 %>

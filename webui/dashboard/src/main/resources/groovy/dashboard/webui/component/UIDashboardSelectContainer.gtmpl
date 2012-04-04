@@ -2,10 +2,10 @@
   import org.gatein.common.text.EntityEncoder;
   import org.exoplatform.commons.utils.HTMLEntityEncoder;
 
-	def uiDashboard = uicomponent.getAncestorOfType(org.exoplatform.dashboard.webui.component.UIDashboard.class);
+	def uiDashboard = uicomponent.getAncestorOfType(org.gatein.dashboard.webui.component.UIDashboard.class);
 	if(!uiDashboard.canEdit()) return;
 		
-	def uiPopup = uicomponent.getAncestorOfType(org.exoplatform.webui.core.UIPopupWindow.class);
+	def uiPopup = uicomponent.getAncestorOfType(org.gatein.webui.core.UIPopupWindow.class);
 	def rcontext = _ctx.getRequestContext();
 	rcontext.getJavascriptManager().addJavascript("eXo.webui.UIDashboard.initPopup('"+uiPopup.getId()+"');");
 

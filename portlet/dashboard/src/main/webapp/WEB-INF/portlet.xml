@@ -27,7 +27,7 @@
 		<description xml:lang="EN">Dashboard Portlet</description>
 		<portlet-name>DashboardPortlet</portlet-name>
 		<display-name>Dashboard Portlet</display-name>
-		<portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+		<portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 		<init-param>
 			<name>webui.configuration</name>
 			<value>/WEB-INF/conf/portlet/dashboard/DashboardPortlet/webui/configuration.xml</value>
@@ -59,7 +59,7 @@
 		<description xml:lang="EN">Gadget Wrapper Portlet</description>
 		<portlet-name>GadgetPortlet</portlet-name>
 		<display-name>Gadget Wrapper Portlet</display-name>
-		<portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+		<portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 		<init-param>
 			<name>webui.configuration</name>
 			<value>/WEB-INF/conf/portlet/gadget/GadgetPortlet/webui/configuration.xml</value>
@@ -85,7 +85,7 @@
   	<description>Tabbed Dashboard Portlet</description>
   	<portlet-name>TabbedDashboardPortlet</portlet-name>
   	<display-name>Tabbed Dashboard</display-name>
-  	<portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+  	<portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
   	
   	<init-param>
   		<name>webui.configuration</name>

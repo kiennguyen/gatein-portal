@@ -1,6 +1,6 @@
 <% 
 	import org.exoplatform.web.application.JavascriptManager;
-	import org.exoplatform.sample.webui.component.UISampleContent;
+	import org.gatein.sample.webui.component.UISampleContent;
 	
 	def rContext = _ctx.getRequestContext();
 	JavascriptManager jsmanager = rContext.getJavascriptManager();

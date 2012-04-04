@@ -19,26 +19,26 @@
 
 package org.gatein.navigation.webui.component;
 
-import org.exoplatform.portal.application.PortalRequestContext;
 import org.exoplatform.portal.config.UserPortalConfig;
 import org.exoplatform.portal.config.UserPortalConfigService;
 import org.exoplatform.portal.mop.SiteKey;
 import org.exoplatform.portal.mop.SiteType;
 import org.exoplatform.portal.mop.user.UserNavigation;
-import org.exoplatform.portal.webui.util.Util;
-import org.exoplatform.portal.webui.workspace.UIPortalApplication;
-import org.exoplatform.portal.webui.workspace.UIWorkingWorkspace;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIComponent;
-import org.exoplatform.webui.core.UIContainer;
-import org.exoplatform.webui.core.UIPopupWindow;
-import org.exoplatform.webui.core.UIRightClickPopupMenu;
-import org.exoplatform.webui.core.UITree;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.Event.Phase;
-import org.exoplatform.webui.event.EventListener;
+import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.webui.util.Util;
+import org.gatein.portal.webui.workspace.UIPortalApplication;
+import org.gatein.portal.webui.workspace.UIWorkingWorkspace;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIComponent;
+import org.gatein.webui.core.UIContainer;
+import org.gatein.webui.core.UIPopupWindow;
+import org.gatein.webui.core.UIRightClickPopupMenu;
+import org.gatein.webui.core.UITree;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
+import org.gatein.webui.event.Event.Phase;
 
 @ComponentConfig(template = "app:/groovy/navigation/webui/component/UINavigationManagement.gtmpl", events = {
    @EventConfig(listeners = UINavigationManagement.SaveActionListener.class),

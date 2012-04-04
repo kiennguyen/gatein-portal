@@ -26,20 +26,20 @@ import org.exoplatform.services.organization.User;
 import org.exoplatform.services.security.ConversationState;
 import org.exoplatform.web.CacheUserProfileFilter;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.application.WebuiRequestContext;
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.webui.core.UIApplication;
-import org.exoplatform.webui.form.UIFormCheckBoxInput;
-import org.exoplatform.webui.form.UIFormInputBase;
-import org.exoplatform.webui.form.UIFormInputSet;
-import org.exoplatform.webui.form.UIFormStringInput;
-import org.exoplatform.webui.form.validator.EmailAddressValidator;
-import org.exoplatform.webui.form.validator.ExpressionValidator;
-import org.exoplatform.webui.form.validator.MandatoryValidator;
-import org.exoplatform.webui.form.validator.PasswordStringLengthValidator;
-import org.exoplatform.webui.form.validator.ResourceValidator;
-import org.exoplatform.webui.form.validator.StringLengthValidator;
-import org.exoplatform.webui.organization.UIUserProfileInputSet;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.core.UIApplication;
+import org.gatein.webui.form.UIFormCheckBoxInput;
+import org.gatein.webui.form.UIFormInputBase;
+import org.gatein.webui.form.UIFormInputSet;
+import org.gatein.webui.form.UIFormStringInput;
+import org.gatein.webui.form.validator.EmailAddressValidator;
+import org.gatein.webui.form.validator.ExpressionValidator;
+import org.gatein.webui.form.validator.MandatoryValidator;
+import org.gatein.webui.form.validator.PasswordStringLengthValidator;
+import org.gatein.webui.form.validator.ResourceValidator;
+import org.gatein.webui.form.validator.StringLengthValidator;
+import org.gatein.webui.organization.UIUserProfileInputSet;
 
 /** Created by The eXo Platform SARL Author : dang.tung tungcnw@gmail.com Jun 25, 2008 */
 @Serialized

@@ -24,13 +24,13 @@ import java.util.ArrayList;
 import org.exoplatform.application.registry.Application;
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
 import org.exoplatform.portal.config.UserACL;
-import org.exoplatform.portal.webui.portal.UIPortalComponentActionListener.ViewChildActionListener;
-import org.exoplatform.webui.application.WebuiApplication;
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIPortletApplication;
-import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
+import org.gatein.portal.webui.portal.UIPortalComponentActionListener.ViewChildActionListener;
+import org.gatein.webui.application.WebuiApplication;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIPortletApplication;
+import org.gatein.webui.core.lifecycle.UIApplicationLifecycle;
 
 @ComponentConfig(lifecycle = UIApplicationLifecycle.class, template = "app:/groovy/applicationregistry/webui/component/UIApplicationRegistryPortlet.gtmpl", events = {@EventConfig(listeners = ViewChildActionListener.class)})
 @Serialized

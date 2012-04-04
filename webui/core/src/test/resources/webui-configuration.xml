@@ -21,7 +21,7 @@
 
 <webui-configuration>
   <annotation-classes>
-    <class>org.exoplatform.webui.test.UIComponentAnnotation</class>
+    <class>org.gatein.webui.test.UIComponentAnnotation</class>
   </annotation-classes>
   
   <!--
@@ -86,10 +86,10 @@
     </init-params>
 
     <ui-component-root>org.exoplatform.portal.component.UIPortalApplication</ui-component-root>    
-    <state-manager>org.exoplatform.webui.test.MockStateManager</state-manager>    
+    <state-manager>org.gatein.webui.test.MockStateManager</state-manager>    
     
     <application-lifecycle-listeners>       
-      <listener>org.exoplatform.webui.application.MonitorApplicationLifecycle</listener>       
+      <listener>org.gatein.webui.application.MonitorApplicationLifecycle</listener>       
     </application-lifecycle-listeners>     
 
     <events>

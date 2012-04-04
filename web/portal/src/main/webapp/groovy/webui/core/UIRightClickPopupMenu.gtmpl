@@ -1,5 +1,5 @@
 <%	
-	import org.exoplatform.webui.core.UIComponent;
+	import org.gatein.webui.core.UIComponent;
 
 	def rcontext = _ctx.getRequestContext();	
 	rcontext.getJavascriptManager().addJavascript("eXo.webui.UIRightClickPopupMenu.init('" + uicomponent.getId() + "');");

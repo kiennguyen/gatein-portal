@@ -1,7 +1,7 @@
 <% 
   import org.exoplatform.web.application.JavascriptManager;
-  import org.exoplatform.dashboard.webui.component.DashboardParent ;
-  import org.exoplatform.portal.webui.application.UIGadget;
+  import org.gatein.dashboard.webui.component.DashboardParent ;
+  import org.gatein.portal.webui.application.UIGadget;
   
   def uiDashboard = uicomponent.getParent();
   def rcontext = _ctx.getRequestContext() ;

@@ -57,7 +57,7 @@ public class GroupManagement
    {
       boolean ret = false;
       if (username == null)
-         username = org.exoplatform.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
+         username = org.gatein.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
       OrganizationService orgService = getOrganizationService();
       Collection groups = orgService.getGroupHandler().findGroupByMembership(username, membership);
       for (Object group : groups)
@@ -80,7 +80,7 @@ public class GroupManagement
    {
       boolean ret = false;
       if (username == null)
-         username = org.exoplatform.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
+         username = org.gatein.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
       OrganizationService orgService = getOrganizationService();
       Collection groups = orgService.getGroupHandler().findGroupsOfUser(username);
       for (Object group : groups)
@@ -98,7 +98,7 @@ public class GroupManagement
    {
       boolean ret = false;
       if (username == null)
-         username = org.exoplatform.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
+         username = org.gatein.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
       OrganizationService orgService = getOrganizationService();
       Collection groups = orgService.getGroupHandler().findGroupsOfUser(username);
       for (Object group : groups)
@@ -115,7 +115,7 @@ public class GroupManagement
    public static Collection getRelatedGroups(String username, Collection groups) throws Exception
    {
       if (username == null)
-         username = org.exoplatform.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
+         username = org.gatein.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
       List relatedGroups = new ArrayList();
       OrganizationService orgService = getOrganizationService();
       Collection userGroups = orgService.getGroupHandler().findGroupsOfUser(username);
@@ -145,7 +145,7 @@ public class GroupManagement
    public static boolean isAdministrator(String username) throws Exception
    {
       if (username == null)
-         username = org.exoplatform.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
+         username = org.gatein.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
       
       //if getRemoteUser() returns null, then there isn't a logged in user, which means they are not an admin
       if (username == null)
@@ -164,7 +164,7 @@ public class GroupManagement
 
    //  public static boolean isSuperUser(String username) throws Exception {
    //    if (username == null)
-   //      username = org.exoplatform.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
+   //      username = org.gatein.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
    //    return isMemberOfGroup(username, getUserACL().getAdminGroups());
    //  }
 

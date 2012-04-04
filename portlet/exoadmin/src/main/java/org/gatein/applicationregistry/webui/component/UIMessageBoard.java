@@ -21,8 +21,8 @@ package org.gatein.applicationregistry.webui.component;
 
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.UIComponent;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.core.UIComponent;
 
 /**
  * Created by The eXo Platform SAS

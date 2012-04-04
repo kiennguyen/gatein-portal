@@ -24,21 +24,21 @@ import org.exoplatform.application.gadget.GadgetRegistryService;
 import org.exoplatform.application.registry.Application;
 import org.exoplatform.application.registry.ApplicationCategory;
 import org.exoplatform.application.registry.ApplicationRegistryService;
-import org.exoplatform.portal.application.PortalRequestContext;
 import org.exoplatform.portal.config.model.ApplicationType;
-import org.exoplatform.portal.webui.portal.UIPortal;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.application.portlet.PortletRequestContext;
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIApplication;
-import org.exoplatform.webui.core.UIContainer;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
-import org.exoplatform.webui.event.MonitorEvent;
 import org.gatein.applicationregistry.webui.Util;
+import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.webui.portal.UIPortal;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.application.portlet.PortletRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIApplication;
+import org.gatein.webui.core.UIContainer;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
+import org.gatein.webui.event.MonitorEvent;
 
 import java.util.Collections;
 import java.util.List;
@@ -96,8 +96,8 @@ public class UIApplicationOrganizer extends UIContainer
             gadgetManager.reload();
       }
 
-      PortalRequestContext portalContext = org.exoplatform.portal.webui.util.Util.getPortalRequestContext();
-      UIPortal uiPortal = org.exoplatform.portal.webui.util.Util.getUIPortal();
+      PortalRequestContext portalContext = org.gatein.portal.webui.util.Util.getPortalRequestContext();
+      UIPortal uiPortal = org.gatein.portal.webui.util.Util.getUIPortal();
       //TODO why use MonitorEvent that not just Event
       MonitorEvent<UIPortal> pnevent = new MonitorEvent<UIPortal>(uiPortal, "ChangeApplicationList", portalContext);
       uiPortal.broadcast(pnevent, Event.Phase.PROCESS);

@@ -26,12 +26,12 @@ import org.exoplatform.application.registry.ApplicationCategory;
 import org.exoplatform.application.registry.ApplicationRegistryService;
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
 import org.exoplatform.portal.config.model.ApplicationType;
-import org.exoplatform.portal.webui.container.UIContainer;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
 import org.gatein.applicationregistry.webui.component.UIPortletManagement.PortletExtra;
+import org.gatein.portal.webui.container.UIContainer;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
 
 /**
  * Created by The eXo Platform SAS

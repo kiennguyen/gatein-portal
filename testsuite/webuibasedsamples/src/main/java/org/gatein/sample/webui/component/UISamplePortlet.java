@@ -1,11 +1,11 @@
 package org.gatein.sample.webui.component;
 
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIPortletApplication;
-import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIPortletApplication;
+import org.gatein.webui.core.lifecycle.UIApplicationLifecycle;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
 
 /**
  * Created by The eXo Platform SAS Author : Nguyen Duc Khoi

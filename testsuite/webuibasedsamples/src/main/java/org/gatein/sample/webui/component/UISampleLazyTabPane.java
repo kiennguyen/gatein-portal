@@ -1,9 +1,9 @@
 package org.gatein.sample.webui.component;
 
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.UIContainer;
-import org.exoplatform.webui.core.UILazyTabPane;
-import org.exoplatform.webui.core.lifecycle.UIContainerLifecycle;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.core.UIContainer;
+import org.gatein.webui.core.UILazyTabPane;
+import org.gatein.webui.core.lifecycle.UIContainerLifecycle;
 
 @ComponentConfig(lifecycle=UIContainerLifecycle.class)
 public class UISampleLazyTabPane extends UIContainer

@@ -1,7 +1,7 @@
 <%	
-	import org.exoplatform.webui.form.UIForm; 
+	import org.gatein.webui.form.UIForm; 
 	import org.exoplatform.web.application.JavascriptManager;
-	import org.exoplatform.webui.core.UIDropDownControl;
+	import org.gatein.webui.core.UIDropDownControl;
 	
 	def selectedIconSet = uicomponent.getSelectedIconSet();
 	if(selectedIconSet.getName().equals("null")) {

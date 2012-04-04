@@ -1,7 +1,7 @@
 <%
-	import org.exoplatform.webui.organization.UIGroupMembershipSelector;
-	import org.exoplatform.webui.core.UIPopupWindow; 
-	import org.exoplatform.webui.core.UIGrid;
+	import org.gatein.webui.organization.UIGroupMembershipSelector;
+	import org.gatein.webui.core.UIPopupWindow; 
+	import org.gatein.webui.core.UIGrid;
 	def membership = uicomponent.getMembership();
 	
 	def rcontext = _ctx.getRequestContext();

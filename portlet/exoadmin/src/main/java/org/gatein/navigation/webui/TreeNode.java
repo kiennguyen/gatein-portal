@@ -7,7 +7,7 @@ import org.exoplatform.portal.mop.navigation.NodeChangeListener;
 import org.exoplatform.portal.mop.navigation.NodeState;
 import org.exoplatform.portal.mop.user.UserNavigation;
 import org.exoplatform.portal.mop.user.UserNode;
-import org.exoplatform.portal.webui.util.Util;
+import org.gatein.portal.webui.util.Util;
 
 import java.util.HashMap;
 import java.util.LinkedList;

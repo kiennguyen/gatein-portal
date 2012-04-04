@@ -1,6 +1,6 @@
 <%
  import org.exoplatform.services.organization.User;
- import org.exoplatform.webui.core.UIPopupWindow;
+ import org.gatein.webui.core.UIPopupWindow;
  uiform.begin()
  def rcontext = _ctx.getRequestContext(); 
  boolean isMulti = uicomponent.getMulti();

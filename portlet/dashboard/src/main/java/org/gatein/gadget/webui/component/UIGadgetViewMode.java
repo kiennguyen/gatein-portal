@@ -19,8 +19,8 @@
 
 package org.gatein.gadget.webui.component;
 
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.UIComponent;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.core.UIComponent;
 
 /**
  * Created by The eXo Platform SARL

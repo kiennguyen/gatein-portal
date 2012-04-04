@@ -17,8 +17,8 @@
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
 
-import org.exoplatform.webui.core.model.SelectItemCategory ;
-import org.exoplatform.webui.core.model.SelectItemOption ;
+import org.gatein.webui.core.model.SelectItemCategory ;
+import org.gatein.webui.core.model.SelectItemOption ;
   
   List templates = new ArrayList() ;
   

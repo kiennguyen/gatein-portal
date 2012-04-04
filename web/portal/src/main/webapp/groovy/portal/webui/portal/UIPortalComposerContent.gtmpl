@@ -1,6 +1,6 @@
 <%	
-	import org.exoplatform.portal.webui.portal.UIApplicationList;
-	import org.exoplatform.portal.webui.portal.UIContainerList;
+	import org.gatein.portal.webui.portal.UIApplicationList;
+	import org.gatein.portal.webui.portal.UIContainerList;
 	
 	def rcontext = _ctx.getRequestContext(); 
 	def jsManager = rcontext.getJavascriptManager();

@@ -2,9 +2,9 @@
 	<table>
 		<tr>
 			<%
-						import org.exoplatform.sample.webui.component.UISampleTOC;
-						import org.exoplatform.sample.webui.component.UISampleContent;
-						import org.exoplatform.webui.core.UIPopupMessages;
+						import org.gatein.sample.webui.component.UISampleTOC;
+						import org.gatein.sample.webui.component.UISampleContent;
+						import org.gatein.webui.core.UIPopupMessages;
 						
 					  	UISampleTOC uiSampleTOC = uicomponent.getChild(UISampleTOC.class);
 					   	if (uiSampleTOC.isRendered())

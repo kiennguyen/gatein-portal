@@ -45,7 +45,7 @@
 <!--  #############################################################################-->
 <!--  #              Empty String Validator                                      #-->
 <!--  #############################################################################-->
-<!--  #class org.exoplatform.webui.form.validator.Validator.EmptyFieldValidator-->
+<!--  #class org.gatein.webui.form.validator.Validator.EmptyFieldValidator-->
 <!--  #{0}=input field name-->
    <EmptyFieldValidator>
       <msg>
@@ -71,7 +71,7 @@
 <!--   #############################################################################-->
 <!--  #              Email Address Validator                                      #-->
 <!--  #############################################################################-->
-<!--  #class org.exoplatform.webui.form.validator.Validator.EmailAddressValidator-->
+<!--  #class org.gatein.webui.form.validator.Validator.EmailAddressValidator-->
 <!--  #{0}=input field name, {1} user input email address-->
    <EmailAddressValidator>
       <msg>
@@ -91,7 +91,7 @@
 <!--  #############################################################################-->
 <!--  #              Number Format Validator                                      #-->
 <!--  #############################################################################-->
-<!--  #class org.exoplatform.webui.form.validator.Validator.NumberFormatValidator-->
+<!--  #class org.gatein.webui.form.validator.Validator.NumberFormatValidator-->
 <!--  #{0}=input field name-->
    <NumberFormatValidator>
       <msg>
@@ -108,7 +108,7 @@
 <!--  #############################################################################-->
 <!--  #              Empty Iterator Validator                                      #-->
 <!--  #############################################################################-->
-<!--  #class org.exoplatform.webui.organization.UIListPermissionSelector.EmptyIteratorValidator-->
+<!--  #class org.gatein.webui.organization.UIListPermissionSelector.EmptyIteratorValidator-->
 <!--  #{0}=input field name-->
    <EmptyIteratorValidator>
       <msg>
@@ -128,7 +128,7 @@
 <!--   #############################################################################-->
 <!--  #              Special Character Validator                                      #-->
 <!--  #############################################################################-->
-<!--  #class org.exoplatform.webui.form.validator.Validator.SpecialCharacterValidator-->
+<!--  #class org.gatein.webui.form.validator.Validator.SpecialCharacterValidator-->
 <!--  #{0}=input field name-->
    <SpecialCharacterValidator>
       <msg>
@@ -166,7 +166,7 @@
    </UIFormMultiValueInputSet>
    
 <!--	#############################################################################-->
-<!--	#org.exoplatform.portal.webui.portal.UIPortalComposer												#-->
+<!--	#org.gatein.portal.webui.portal.UIPortalComposer												#-->
 <!--	#############################################################################-->
    <UIPortalComposer>
       <title>
@@ -218,7 +218,7 @@
 <!--  #############################################################################-->
 <!--  #              Identifier String Validator                                  #-->
 <!--  #############################################################################-->
-<!--  #class org.exoplatform.webui.form.validator.Validator.IdentifierValidator-->
+<!--  #class org.gatein.webui.form.validator.Validator.IdentifierValidator-->
 <!--  #{0}=input field name-->
    <IdentifierValidator>
       <msg>
@@ -330,7 +330,7 @@
 <!--  #############################################################################-->
 <!--  #              Name String Validator		                            #-->
 <!--  #############################################################################-->
-<!--  #class org.exoplatform.webui.form.validator.Validator.NameValidator-->
+<!--  #class org.gatein.webui.form.validator.Validator.NameValidator-->
 <!--  #{0}=input field name-->
    <NameValidator>
       <msg>
@@ -562,9 +562,9 @@
       </left>
    </PortalTemplate>
 <!--  #####################################################################################-->
-<!--  #              org.exoplatform.webui.organization.UIListPermissionSelector#-->
-<!--  #              org.exoplatform.webui.organization.UIPermissionSelector#-->
-<!--  #              org.exoplatform.webui.organization.UIGroupSelector#-->
+<!--  #              org.gatein.webui.organization.UIListPermissionSelector#-->
+<!--  #              org.gatein.webui.organization.UIPermissionSelector#-->
+<!--  #              org.gatein.webui.organization.UIGroupSelector#-->
 <!--  ###############################################################################3#####-->
    <UIListPermissionSelector>
       <header>
@@ -719,7 +719,7 @@
       </event>
    </UIPageNodeSelectorPopupMenu>
 <!--  #############################################################################-->
-<!--  #     org.exoplatform.portal.webui.portal.UIComposer    #-->
+<!--  #     org.gatein.portal.webui.portal.UIComposer    #-->
 <!--  #############################################################################-->
    <UIPageEditor>
       <action>
@@ -1254,7 +1254,7 @@
       </msg>
    </UIPageManagement>
 <!--  #############################################################################-->
-<!--  #org.exoplatform.webui.core.UIPageIterator															#-->
+<!--  #org.gatein.webui.core.UIPageIterator															#-->
 <!--  #############################################################################-->
    <UIPageIterator>
       <label>
@@ -1296,7 +1296,7 @@
       <label>기본 포탈</label>
    </ClassicPortal>
 <!--  ############################################################################-->
-<!--  #   			org.exoplatform.webui.form.UIPopupWindow                    #-->
+<!--  #   			org.gatein.webui.form.UIPopupWindow                    #-->
 <!--  ############################################################################-->
    <PopupPageSelector>
       <title>
@@ -1403,7 +1403,7 @@
       </msg>
    </UIResetPassword>
 <!--  ############################################################################-->
-<!--  #   			   org.exoplatform.webui.core.UIPopupMessages               #-->
+<!--  #   			   org.gatein.webui.core.UIPopupMessages               #-->
 <!--  ############################################################################-->
    <UIPopupMessages>
       <title>
@@ -1420,7 +1420,7 @@
       <Close>창 닫기</Close>
    </UIPopupMessages>
 <!--  ############################################################################-->
-<!--  #   			 org.exoplatform.portal.webui.component.UISitemapPortlet         #-->
+<!--  #   			 org.gatein.portal.webui.component.UISitemapPortlet         #-->
 <!--  ############################################################################-->
    <UISitemap>
       <label>
@@ -1550,7 +1550,7 @@
       </label>
    </UIEditCurentPage>
 <!--  ###############################################################################-->
-<!--  #               org.exoplatform.portal.webui.UIAccessGroup                    #-->
+<!--  #               org.gatein.portal.webui.UIAccessGroup                    #-->
 <!--  ###############################################################################-->
    <UIAccessGroup>
       <deleteAccessGroup>이 액세스 그룹을 삭제하시겠습니까?</deleteAccessGroup>
@@ -1578,7 +1578,7 @@
       <title>팩토리 아이디</title>
    </FactoryId>
 <!--  ################################################################################-->
-<!--  #		org.exoplatform.webui.core.UIGrid-->
+<!--  #		org.gatein.webui.core.UIGrid-->
 <!--  ################################################################################-->
    <UIGrid>
       <msg>
@@ -1672,7 +1672,7 @@
       </item>
    </UIDropDownPageTemp>
 <!--  ################################################################################-->
-<!--  #		 org.exoplatform.portal.webui.application.UIGadgetContainerManagement-->
+<!--  #		 org.gatein.portal.webui.application.UIGadgetContainerManagement-->
 <!--  ################################################################################-->
    <UIGadgetContainerManagement>
       <action>
@@ -1849,7 +1849,7 @@
       <Tab>새 탭</Tab>
    </UIBrowserPortlet>
 <!--  ############################################################################-->
-<!--  #		           org.exoplatform.portal.webui.container.UIPopupWindow         #-->
+<!--  #		           org.gatein.portal.webui.container.UIPopupWindow         #-->
 <!--  ############################################################################-->
    <UIPopupWindow>
       <Close>창 닫기</Close>

@@ -1,6 +1,6 @@
 <%  
-    import org.exoplatform.webui.core.UIComponent;
-    import org.exoplatform.webui.bean.UIDataFeed;
+    import org.gatein.webui.core.UIComponent;
+    import org.gatein.webui.bean.UIDataFeed;
     
     boolean hasNext = uicomponent.getDataFeed().hasNext();
     boolean isAutoAdjustHeight = uicomponent.isAutoAdjustHeight();

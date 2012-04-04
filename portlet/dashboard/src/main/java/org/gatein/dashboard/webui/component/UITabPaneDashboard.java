@@ -19,7 +19,6 @@
 
 package org.gatein.dashboard.webui.component;
 
-import org.exoplatform.portal.application.PortalRequestContext;
 import org.exoplatform.portal.config.DataStorage;
 import org.exoplatform.portal.config.UserPortalConfigService;
 import org.exoplatform.portal.config.model.Page;
@@ -32,21 +31,22 @@ import org.exoplatform.portal.mop.user.UserNode;
 import org.exoplatform.portal.mop.user.UserNodeFilterConfig;
 import org.exoplatform.portal.mop.user.UserPortal;
 import org.exoplatform.web.url.navigation.NodeURL;
-import org.exoplatform.portal.webui.page.UIPageBody;
-import org.exoplatform.portal.webui.portal.UIPortal;
-import org.exoplatform.portal.webui.util.Util;
-import org.exoplatform.portal.webui.workspace.UIPortalApplication;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIApplication;
-import org.exoplatform.webui.core.UIComponent;
-import org.exoplatform.webui.core.UIContainer;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
+import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.webui.page.UIPageBody;
+import org.gatein.portal.webui.portal.UIPortal;
+import org.gatein.portal.webui.util.Util;
+import org.gatein.portal.webui.workspace.UIPortalApplication;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIApplication;
+import org.gatein.webui.core.UIComponent;
+import org.gatein.webui.core.UIContainer;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
 
 import java.util.ArrayList;
 import java.util.Collection;

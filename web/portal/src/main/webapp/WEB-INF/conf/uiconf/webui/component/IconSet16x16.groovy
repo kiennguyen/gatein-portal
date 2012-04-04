@@ -17,7 +17,7 @@
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
 
-import org.exoplatform.webui.form.UIFormInputIconSelector ;
+import org.gatein.webui.form.UIFormInputIconSelector ;
 
 UIFormInputIconSelector.CategoryIcon categorySet = new UIFormInputIconSelector.CategoryIcon("misc","16x16"); 
 UIFormInputIconSelector.IconSet misc = 

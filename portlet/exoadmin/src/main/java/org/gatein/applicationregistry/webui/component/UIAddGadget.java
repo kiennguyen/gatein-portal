@@ -21,21 +21,21 @@ package org.gatein.applicationregistry.webui.component;
 
 import org.exoplatform.application.gadget.Gadget;
 import org.exoplatform.application.gadget.GadgetRegistryService;
-import org.exoplatform.portal.webui.application.GadgetUtil;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.application.WebuiRequestContext;
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIApplication;
-import org.exoplatform.webui.core.lifecycle.UIFormLifecycle;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
-import org.exoplatform.webui.event.Event.Phase;
-import org.exoplatform.webui.form.UIForm;
-import org.exoplatform.webui.form.UIFormStringInput;
-import org.exoplatform.webui.form.validator.MandatoryValidator;
-import org.exoplatform.webui.form.validator.URLValidator;
+import org.gatein.portal.webui.application.GadgetUtil;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIApplication;
+import org.gatein.webui.core.lifecycle.UIFormLifecycle;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
+import org.gatein.webui.event.Event.Phase;
+import org.gatein.webui.form.UIForm;
+import org.gatein.webui.form.UIFormStringInput;
+import org.gatein.webui.form.validator.MandatoryValidator;
+import org.gatein.webui.form.validator.URLValidator;
 
 import java.util.List;
 

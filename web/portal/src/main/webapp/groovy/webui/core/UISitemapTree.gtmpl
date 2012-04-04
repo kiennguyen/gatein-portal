@@ -1,10 +1,10 @@
 <%
-	import org.exoplatform.webui.core.UIPortletApplication;
+	import org.gatein.webui.core.UIPortletApplication;
 	import org.exoplatform.portal.mop.user.UserNode;
 	import javax.portlet.MimeResponse;
 	import org.exoplatform.portal.application.PortalRequestContext;
-	import org.exoplatform.portal.webui.util.Util;
-	import org.exoplatform.portal.webui.navigation.TreeNode;
+	import org.gatein.portal.webui.util.Util;
+	import org.gatein.portal.webui.navigation.TreeNode;
 	import org.exoplatform.web.url.PortalURL;
 	import org.exoplatform.web.url.navigation.NavigationResource;
 	import javax.portlet.ResourceURL;

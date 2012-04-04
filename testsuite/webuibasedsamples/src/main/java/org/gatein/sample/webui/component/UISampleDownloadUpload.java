@@ -12,14 +12,14 @@ import org.exoplatform.download.DownloadService;
 import org.exoplatform.download.InputStreamDownloadResource;
 import org.exoplatform.upload.UploadResource;
 import org.exoplatform.upload.UploadService.UploadUnit;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.lifecycle.UIFormLifecycle;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
-import org.exoplatform.webui.form.UIForm;
-import org.exoplatform.webui.form.UIFormUploadInput;
-import org.exoplatform.webui.form.input.UIUploadInput;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.lifecycle.UIFormLifecycle;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
+import org.gatein.webui.form.UIForm;
+import org.gatein.webui.form.UIFormUploadInput;
+import org.gatein.webui.form.input.UIUploadInput;
 
 @ComponentConfig(lifecycle = UIFormLifecycle.class, template = "app:/groovy/webui/component/UISampleDownloadUpload.gtmpl", events = {@EventConfig(listeners = UISampleDownloadUpload.SubmitActionListener.class)})
 public class UISampleDownloadUpload extends UIForm

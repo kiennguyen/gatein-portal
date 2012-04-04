@@ -1,12 +1,12 @@
 <%
 	import org.exoplatform.web.application.JavascriptManager;
-	import org.exoplatform.portal.webui.util.Util ;
+	import org.gatein.portal.webui.util.Util ;
 	import org.exoplatform.portal.mop.user.UserNode;
 	import org.gatein.common.text.EntityEncoder;
 	import java.util.Collection;
 	import javax.portlet.MimeResponse;
 	import javax.portlet.ResourceURL;
-	import org.exoplatform.portal.application.PortalRequestContext;
+	import org.gatein.portal.application.PortalRequestContext;
 	import org.exoplatform.web.url.PortalURL;
 	import org.exoplatform.web.url.navigation.NavigationResource;
 	import org.exoplatform.portal.config.model.PortalConfig;

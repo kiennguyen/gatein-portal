@@ -1,7 +1,7 @@
 <%	
-	import org.exoplatform.webui.core.UIComponent ;
-	import org.exoplatform.webui.form.UIFormPageIterator ;
-	import org.exoplatform.webui.form.UIFormCheckBoxInput ;
+	import org.gatein.webui.core.UIComponent ;
+	import org.gatein.webui.form.UIFormPageIterator ;
+	import org.gatein.webui.form.UIFormCheckBoxInput ;
 	UIFormPageIterator uiIterator = uicomponent.getUIFormPageIterator();	
 %>
 <div class="UIFormTableIterator" id="UIFormTableIterator">

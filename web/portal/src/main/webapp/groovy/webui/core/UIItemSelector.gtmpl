@@ -1,4 +1,4 @@
-<%import  org.exoplatform.webui.core.UIContainer;%>	
+<%import  org.gatein.webui.core.UIContainer;%>	
 <%
   def rcontext = _ctx.getRequestContext(); 
   rcontext.getJavascriptManager().importJavascript('eXo.webui.UIItemSelector');

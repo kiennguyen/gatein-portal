@@ -24,11 +24,11 @@ import javax.portlet.PortletRequest;
 
 import org.exoplatform.portal.mop.navigation.GenericScope;
 import org.exoplatform.portal.mop.navigation.Scope;
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.application.portlet.PortletRequestContext;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.UIPortletApplication;
-import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.application.portlet.PortletRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.core.UIPortletApplication;
+import org.gatein.webui.core.lifecycle.UIApplicationLifecycle;
 
 @ComponentConfig(lifecycle = UIApplicationLifecycle.class)
 public class UIPortalNavigationPortlet extends UIPortletApplication

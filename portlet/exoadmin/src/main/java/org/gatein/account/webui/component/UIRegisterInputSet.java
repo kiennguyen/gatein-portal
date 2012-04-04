@@ -18,22 +18,22 @@
  */
 package org.gatein.account.webui.component;
 
-import org.exoplatform.portal.webui.CaptchaValidator;
 import org.exoplatform.services.organization.Query;
 import org.exoplatform.services.organization.User;
 import org.exoplatform.services.organization.UserHandler;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.application.portlet.PortletRequestContext;
-import org.exoplatform.webui.core.UIApplication;
-import org.exoplatform.webui.form.UIFormInputWithActions;
-import org.exoplatform.webui.form.UIFormStringInput;
-import org.exoplatform.webui.form.validator.EmailAddressValidator;
-import org.exoplatform.webui.form.validator.MandatoryValidator;
-import org.exoplatform.webui.form.validator.NaturalLanguageValidator;
-import org.exoplatform.webui.form.validator.PasswordStringLengthValidator;
-import org.exoplatform.webui.form.validator.StringLengthValidator;
-import org.exoplatform.webui.form.validator.UserConfigurableValidator;
+import org.gatein.portal.webui.CaptchaValidator;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.application.portlet.PortletRequestContext;
+import org.gatein.webui.core.UIApplication;
+import org.gatein.webui.form.UIFormInputWithActions;
+import org.gatein.webui.form.UIFormStringInput;
+import org.gatein.webui.form.validator.EmailAddressValidator;
+import org.gatein.webui.form.validator.MandatoryValidator;
+import org.gatein.webui.form.validator.NaturalLanguageValidator;
+import org.gatein.webui.form.validator.PasswordStringLengthValidator;
+import org.gatein.webui.form.validator.StringLengthValidator;
+import org.gatein.webui.form.validator.UserConfigurableValidator;
 
 import javax.portlet.PortletPreferences;
 

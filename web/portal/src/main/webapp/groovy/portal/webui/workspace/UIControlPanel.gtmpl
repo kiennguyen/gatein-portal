@@ -1,6 +1,6 @@
 <%
-	import org.exoplatform.portal.webui.workspace.UIQuickBar;
-	import org.exoplatform.portal.webui.workspace.UIControlPanelContentPane;
+	import org.gatein.portal.webui.workspace.UIQuickBar;
+	import org.gatein.portal.webui.workspace.UIControlPanelContentPane;
 %>
 <%
 	String docBase =  _ctx.getRequestContext().getRequestContextPath() ;

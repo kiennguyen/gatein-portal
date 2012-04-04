@@ -7,7 +7,7 @@
 		<description xml:lang="EN">WebUI Samples portlet</description>
 		<portlet-name>UISamplePortlet</portlet-name>
 		<display-name xml:lang="EN">WebUI Samples</display-name>
-		<portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+		<portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
 		<init-param>
 			<name>webui.configuration</name>

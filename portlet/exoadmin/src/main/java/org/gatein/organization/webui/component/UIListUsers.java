@@ -21,26 +21,26 @@ package org.gatein.organization.webui.component;
 
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
 import org.exoplatform.portal.config.UserACL;
-import org.exoplatform.portal.webui.util.Util;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.Query;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIApplication;
-import org.exoplatform.webui.core.UIComponent;
-import org.exoplatform.webui.core.UIGrid;
-import org.exoplatform.webui.core.UIPageIterator;
-import org.exoplatform.webui.core.UIPopupWindow;
-import org.exoplatform.webui.core.UISearch;
-import org.exoplatform.webui.core.lifecycle.UIContainerLifecycle;
-import org.exoplatform.webui.core.model.SelectItemOption;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
-import org.exoplatform.webui.form.UIFormInputSet;
-import org.exoplatform.webui.form.UIFormSelectBox;
-import org.exoplatform.webui.form.UIFormStringInput;
+import org.gatein.portal.webui.util.Util;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIApplication;
+import org.gatein.webui.core.UIComponent;
+import org.gatein.webui.core.UIGrid;
+import org.gatein.webui.core.UIPageIterator;
+import org.gatein.webui.core.UIPopupWindow;
+import org.gatein.webui.core.UISearch;
+import org.gatein.webui.core.lifecycle.UIContainerLifecycle;
+import org.gatein.webui.core.model.SelectItemOption;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
+import org.gatein.webui.form.UIFormInputSet;
+import org.gatein.webui.form.UIFormSelectBox;
+import org.gatein.webui.form.UIFormStringInput;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -94,7 +94,7 @@ public class UIListUsers extends UISearch
    }
 
    /**
-    * @see org.exoplatform.webui.core.UIComponent#processRender(org.exoplatform.webui.application.WebuiRequestContext)
+    * @see org.gatein.webui.core.UIComponent#processRender(org.gatein.webui.application.WebuiRequestContext)
     */
    @Override
    public void processRender(WebuiRequestContext context) throws Exception

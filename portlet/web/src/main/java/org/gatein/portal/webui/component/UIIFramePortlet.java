@@ -19,11 +19,11 @@
 
 package org.gatein.portal.webui.component;
 
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.application.portlet.PortletRequestContext;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.UIPortletApplication;
-import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.application.portlet.PortletRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.core.UIPortletApplication;
+import org.gatein.webui.core.lifecycle.UIApplicationLifecycle;
 
 import javax.portlet.PortletPreferences;
 

@@ -19,12 +19,12 @@
 
 -->
 
-<object type="org.exoplatform.webui.form.UIFormInputIconSelector$IconSet">
+<object type="org.gatein.webui.form.UIFormInputIconSelector$IconSet">
   <field  name="name"><string>32x32</string></field>
   <field  name="categories">
     <collection type="java.util.ArrayList">
       <value>
-        <object type="org.exoplatform.webui.form.UIFormInputIconSelector$IconCategory">
+        <object type="org.gatein.webui.form.UIFormInputIconSelector$IconCategory">
           <field  name="name"><string>misc</string></field>
           <field  name="icons">
             <collection type="java.util.ArrayList">
@@ -36,7 +36,7 @@
       </value>
       
       <value>
-        <object type="org.exoplatform.webui.form.UIFormInputIconSelector$IconCategory">
+        <object type="org.gatein.webui.form.UIFormInputIconSelector$IconCategory">
           <field  name="name"><string>offices</string></field>
           <field  name="icons">
             <collection type="java.util.ArrayList">
@@ -48,7 +48,7 @@
       </value>
       
       <value>
-        <object type="org.exoplatform.webui.form.UIFormInputIconSelector$IconCategory">
+        <object type="org.gatein.webui.form.UIFormInputIconSelector$IconCategory">
           <field  name="name"><string>navigation</string></field>
           <field  name="icons">
             <collection type="java.util.ArrayList">
@@ -60,7 +60,7 @@
       </value>
       
       <value>
-        <object type="org.exoplatform.webui.form.UIFormInputIconSelector$IconCategory">
+        <object type="org.gatein.webui.form.UIFormInputIconSelector$IconCategory">
           <field  name="name"><string>tool</string></field>
           <field  name="icons">
             <collection type="java.util.ArrayList">
@@ -72,7 +72,7 @@
       </value>
       
       <value>
-        <object type="org.exoplatform.webui.form.UIFormInputIconSelector$IconCategory">
+        <object type="org.gatein.webui.form.UIFormInputIconSelector$IconCategory">
           <field  name="name"><string>user</string></field>
           <field  name="icons">
             <collection type="java.util.ArrayList">

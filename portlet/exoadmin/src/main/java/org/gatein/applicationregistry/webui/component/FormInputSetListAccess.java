@@ -20,7 +20,7 @@
 package org.gatein.applicationregistry.webui.component;
 
 import org.exoplatform.commons.utils.ListAccess;
-import org.exoplatform.webui.form.UIFormInputSet;
+import org.gatein.webui.form.UIFormInputSet;
 
 import java.util.List;
 

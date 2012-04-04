@@ -1,5 +1,5 @@
 <%
-	import org.exoplatform.webui.core.UIRightClickPopupMenu;
+	import org.gatein.webui.core.UIRightClickPopupMenu;
 	
 	def selected = uicomponent.getSelected();
 	def sibling = uicomponent.getSibbling();

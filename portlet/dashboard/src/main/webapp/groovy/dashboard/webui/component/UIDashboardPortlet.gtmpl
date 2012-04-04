@@ -1,8 +1,8 @@
 <%
   import javax.portlet.PortletMode ;
-  import org.exoplatform.dashboard.webui.component.DashboardParent ;
-  import org.exoplatform.dashboard.webui.component.UIDashboard;
-  import org.exoplatform.dashboard.webui.component.UIDashboardEditForm;
+  import org.gatein.dashboard.webui.component.DashboardParent ;
+  import org.gatein.dashboard.webui.component.UIDashboard;
+  import org.gatein.dashboard.webui.component.UIDashboardEditForm;
 
   def rcontext = _ctx.getRequestContext() ;
 %>

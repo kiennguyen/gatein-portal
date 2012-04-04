@@ -22,7 +22,7 @@
 <bundle>
 	<!--
 		#####################################################################
-		# org.exoplatform.ecm.webui.tree.selectmany.UIContentNavigation #
+		# org.gatein.ecm.webui.tree.selectmany.UIContentNavigation #
 		#####################################################################
 	-->
 	<UIContentNavigation>
@@ -70,7 +70,7 @@
 	<!--
 		############################################################################
 		# class
-		org.exoplatform.webui.form.validator.Validator.EmptyFieldValidator #
+		org.gatein.webui.form.validator.Validator.EmptyFieldValidator #
 		############################################################################
 	-->
 	<EmptyFieldValidator>
@@ -96,7 +96,7 @@
 		# Email Address Validator #
 		#############################################################################
 		#class
-		org.exoplatform.webui.form.validator.Validator.EmailAddressValidator
+		org.gatein.webui.form.validator.Validator.EmailAddressValidator
 		#{0}=input field name, {1} user input email address
 	-->
 	<EmailAddressValidator>
@@ -132,7 +132,7 @@
 		# Empty Iterator Validator #
 		#############################################################################
 		#class
-		org.exoplatform.webui.organization.UIListPermissionSelector.EmptyIteratorValidator
+		org.gatein.webui.organization.UIListPermissionSelector.EmptyIteratorValidator
 		#{0}=input field name
 	-->
 	<EmptyIteratorValidator>
@@ -151,7 +151,7 @@
 		# Special Character Validator #
 		#############################################################################
 		#class
-		org.exoplatform.webui.form.validator.Validator.SpecialCharacterValidator
+		org.gatein.webui.form.validator.Validator.SpecialCharacterValidator
 		#{0}=input field name
 	-->
 	<SpecialCharacterValidator>
@@ -194,7 +194,7 @@
 	</UIFormMultiValueInputSet>
 	<!--
 		#############################################################################
-		#org.exoplatform.portal.webui.portal.UIPortalComposer #
+		#org.gatein.portal.webui.portal.UIPortalComposer #
 		#############################################################################
 	-->
 	<UIPortalComposer>
@@ -246,7 +246,7 @@
 		# Identifier String Validator #
 		#############################################################################
 		#class
-		org.exoplatform.webui.form.validator.Validator.IdentifierValidator
+		org.gatein.webui.form.validator.Validator.IdentifierValidator
 		#{0}=input field name
 	-->
 	<IdentifierValidator>
@@ -360,7 +360,7 @@
 		#############################################################################
 		# Name String Validator #
 		#############################################################################
-		#class org.exoplatform.webui.form.validator.Validator.NameValidator
+		#class org.gatein.webui.form.validator.Validator.NameValidator
 		#{0}=input field name
 	-->
 	<NameValidator>
@@ -384,7 +384,7 @@
 	</NumberFormatValidator>
 	<!--
 		#class
-		org.exoplatform.webui.form.validator.Validator.PositiveNumberFormatValidator
+		org.gatein.webui.form.validator.Validator.PositiveNumberFormatValidator
 		#{0}=input field nam
 	-->
 	<PositiveNumberFormatValidator>
@@ -768,9 +768,9 @@
 	</UIPortalForm>
 	<!--
 		#####################################################################################
-		# org.exoplatform.webui.organization.UIListPermissionSelector# #
-		org.exoplatform.webui.organization.UIPermissionSelector# #
-		org.exoplatform.webui.organization.UIGroupSelector#
+		# org.gatein.webui.organization.UIListPermissionSelector# #
+		org.gatein.webui.organization.UIPermissionSelector# #
+		org.gatein.webui.organization.UIGroupSelector#
 		###############################################################################3#####
 	-->
 	<UITabPane>
@@ -951,7 +951,7 @@
 	</UIPageNodeSelectorPopupMenu>
 	<!--
 		#############################################################################
-		# org.exoplatform.portal.webui.portal.UIComposer #
+		# org.gatein.portal.webui.portal.UIComposer #
 		#############################################################################
 	-->
 	<UIPageEditor>
@@ -1130,7 +1130,7 @@
 	</UIPageNavigation>
 	<!--
 		#############################################################################
-		# org.exoplatform.portal.webui.component.UIPortalApplication #
+		# org.gatein.portal.webui.component.UIPortalApplication #
 		#############################################################################
 	-->
 	<UIPortalApplication>
@@ -1145,7 +1145,7 @@
 	</UIPortalApplication>
 	<!--
 		#############################################################################
-		# org.exoplatform.organization.webui.component.UIPermissionSelector #
+		# org.gatein.organization.webui.component.UIPermissionSelector #
 		#############################################################################
 	-->
 	<UIPermissionSelector>
@@ -1169,7 +1169,7 @@
 	<!--
 		#############################################################################
 		#
-		org.exoplatform.organization.webui.component.UIGroupMembershipSelector
+		org.gatein.organization.webui.component.UIGroupMembershipSelector
 		#
 		#############################################################################
 	-->
@@ -1188,7 +1188,7 @@
 	<!--
 		#############################################################################
 		#
-		org.exoplatform.organization.webui.component.UIUserMembershipSelector
+		org.gatein.organization.webui.component.UIUserMembershipSelector
 		#
 		#############################################################################
 	-->
@@ -1214,7 +1214,7 @@
 	</UserPermissionSelector>
 	<!--
 		#############################################################################
-		# org.exoplatform.webui.form.UIFormInputItemSelector #
+		# org.gatein.webui.form.UIFormInputItemSelector #
 		#############################################################################
 	-->
 	<UIFormInputItemSelector>
@@ -1230,7 +1230,7 @@
 	</UIFormInputSet>
 	<!--
 		#############################################################################
-		# org.exoplatform.webui.form.UIFormInputIconSelector #
+		# org.gatein.webui.form.UIFormInputIconSelector #
 		#############################################################################
 	-->
 	<UIFormInputIconSelector>
@@ -1272,7 +1272,7 @@
 	</Icon>
 	<!--
 		#############################################################################
-		# org.exoplatform.webui.core.UIWizard #
+		# org.gatein.webui.core.UIWizard #
 		############################################################################
 	-->
 	<UIPageWizardHelp>
@@ -1573,7 +1573,7 @@
 	<!--
 		#############################################################################
 		#
-		org.exoplatform.portletregistry.webui.component.UIFormAvailablePortlet
+		org.gatein.portletregistry.webui.component.UIFormAvailablePortlet
 		#
 		#############################################################################
 	-->
@@ -1622,7 +1622,7 @@
 	</UIPageManagement>
 	<!--
 		#############################################################################
-		#org.exoplatform.webui.core.UIPageIterator #
+		#org.gatein.webui.core.UIPageIterator #
 		#############################################################################
 	-->
 	<UIPageIterator>
@@ -1687,7 +1687,7 @@
 	</UIPageEditor>
 	<!--
 		############################################################################
-		# org.exoplatform.webui.form.UIPopupWindow #
+		# org.gatein.webui.form.UIPopupWindow #
 		############################################################################
 	-->
 	<PopupPageSelector>
@@ -1772,7 +1772,7 @@
 	</UIForgetPasswordWizard>
 	<!--
 		############################################################################
-		# org.exoplatform.webui.portal.UIForgetPassword & UIResetPassword #
+		# org.gatein.webui.portal.UIForgetPassword & UIResetPassword #
 		############################################################################
 	-->
 	<UIForgetPassword>
@@ -1830,7 +1830,7 @@
 	</UIResetPassword>
 	<!--
 		############################################################################
-		# org.exoplatform.webui.core.UIPopupMessages #
+		# org.gatein.webui.core.UIPopupMessages #
 		############################################################################
 	-->
 	<UIPopupMessages>
@@ -1849,7 +1849,7 @@
 	</UIPopupMessages>
 	<!--
 		############################################################################
-		# org.exoplatform.portal.webui.component.UISitemapPortlet #
+		# org.gatein.portal.webui.component.UISitemapPortlet #
 		############################################################################
 	-->
 	<UISitemap>
@@ -1917,7 +1917,7 @@
 	</UISearchForm>
 	<!--
 		###############################################################################
-		# org.exoplatform.portal.webui.component.UIFormUploadInput #
+		# org.gatein.portal.webui.component.UIFormUploadInput #
 		###############################################################################
 	-->
 	<UIFormUploadInput>
@@ -1933,7 +1933,7 @@
 	<!--
 		###############################################################################
 		#
-		org.exoplatform.portal.webui.component.customization.UIPageNodeSelector
+		org.gatein.portal.webui.component.customization.UIPageNodeSelector
 		#
 		###############################################################################
 	-->
@@ -1971,7 +1971,7 @@
 	<!--
 		###############################################################################
 		#
-		org.exoplatform.portal.webui.component.customization.UIEditCurentPage
+		org.gatein.portal.webui.component.customization.UIEditCurentPage
 		#
 		###############################################################################
 	-->
@@ -1999,7 +1999,7 @@
 	</UIEditCurentPage>
 	<!--
 		###############################################################################
-		# org.exoplatform.portal.webui.UIAccessGroup #
+		# org.gatein.portal.webui.UIAccessGroup #
 		###############################################################################
 	-->
 	<UIAccessGroup>
@@ -2036,7 +2036,7 @@
 	</FactoryId>
 	<!--
 		################################################################################
-		# org.exoplatform.webui.core.UIGrid
+		# org.gatein.webui.core.UIGrid
 		################################################################################
 	-->
 	<UIGrid>
@@ -2144,7 +2144,7 @@
 	</UIDropDownPageTemp>
 	<!--
 		################################################################################
-		# org.exoplatform.portal.webui.application.UIGadgetContainerManagement
+		# org.gatein.portal.webui.application.UIGadgetContainerManagement
 		################################################################################
 	-->
 	<UIGadgetContainerManagement>
@@ -2178,7 +2178,7 @@
 	</UIGadgetContainerManagement>
 	<!--
 		################################################################################
-		# org.exoplatform.portal.webui.application.UIGadgetContainerForm
+		# org.gatein.portal.webui.application.UIGadgetContainerForm
 		################################################################################
 	-->
 	<GadgetContainerPopup>
@@ -2201,7 +2201,7 @@
 	</UIGadgetContainerForm>
 	<!--
 		################################################################################
-		# org.exoplatform.portal.webui.container.UIWidgetContainer
+		# org.gatein.portal.webui.container.UIWidgetContainer
 		################################################################################
 	-->
 	<UIWidgetContainer>
@@ -2255,7 +2255,7 @@
 	</ThemeDropDown>
 	<!--
 		################################################################################
-		# org.exoplatform.dashboard.webui.component.UIDashboard
+		# org.gatein.dashboard.webui.component.UIDashboard
 		################################################################################
 	-->
 	<UIAddGadgetPopup>
@@ -2300,7 +2300,7 @@
 	</UIDashboard>
 	<!--
 		################################################################################
-		# org.exoplatform.webui.organization.account.UIUserSelector
+		# org.gatein.webui.organization.account.UIUserSelector
 		################################################################################
 	-->
 	<UIUserSelector>
@@ -2328,7 +2328,7 @@
 	</UIUserSelector>	
 	<!--
 		#############################################################################
-		#org.exoplatform.portal.webui.component.UIPortalNavigation #
+		#org.gatein.portal.webui.component.UIPortalNavigation #
 		#############################################################################
 	-->
 	<UIPortalNavigation>
@@ -2352,7 +2352,7 @@
 	</UIDropDownConfigs>
 	<!--
 		#############################################################################
-		# org.exoplatform.portal.webui.container.UITabContainer #
+		# org.gatein.portal.webui.container.UITabContainer #
 		#############################################################################
 	-->
 	<UITabContainer>
@@ -2360,7 +2360,7 @@
 	</UITabContainer>
 	<!--
 		############################################################################
-		# org.exoplatform.portal.webui.container.UIBrowserPortlet #
+		# org.gatein.portal.webui.container.UIBrowserPortlet #
 		############################################################################
 	-->
 	<UIBrowserPortlet>
@@ -2375,7 +2375,7 @@
 	</UIBrowserPortlet>
 	<!--
 		############################################################################
-		# org.exoplatform.portal.webui.container.UIPopupWindow #
+		# org.gatein.portal.webui.container.UIPopupWindow #
 		############################################################################
 	-->
 	<UIPopupWindow>
@@ -2393,7 +2393,7 @@
 	</PopupPageSelector2>
 	<!--
 		############################################################################
-		# org.exoplatform.navigation.webui.component.UISiteManagement #
+		# org.gatein.navigation.webui.component.UISiteManagement #
 		############################################################################
 	-->
 	<UISiteManagement>
@@ -2411,7 +2411,7 @@
 	<!--
 		############################################################################
 		#
-		org.exoplatform.navigation.webui.component.UIGroupNavigationManagement
+		org.gatein.navigation.webui.component.UIGroupNavigationManagement
 		#
 		############################################################################
 	-->
@@ -2440,7 +2440,7 @@
 	<!--
 		############################################################################
 		#
-		org.exoplatform.navigation.webui.component.UIGroupNavigationManagement
+		org.gatein.navigation.webui.component.UIGroupNavigationManagement
 		#
 		############################################################################
 	-->
@@ -2456,7 +2456,7 @@
 	</UINavigationManagement>
 	<!--
 		############################################################################
-		# org.exoplatform.navigation.webui.component.UIAddGroupNavigation #
+		# org.gatein.navigation.webui.component.UIAddGroupNavigation #
 		############################################################################
 	-->
 	<UIAddGroupNavigation>
@@ -2471,7 +2471,7 @@
 	</UIAddGroupNavigation>
 	<!--
 		############################################################################
-		# org.exoplatform.navigation.webui.component.UIAddGroupNavigation #
+		# org.gatein.navigation.webui.component.UIAddGroupNavigation #
 		############################################################################
 	-->
 	<UIAddGroupNavigation>
@@ -2488,7 +2488,7 @@
 	</UIAddGroupNavigation>
 	<!--
 		############################################################################
-		# org.exoplatform.portal.webui.application.UIGadget #
+		# org.gatein.portal.webui.application.UIGadget #
 		############################################################################
 	-->
 	<UIGadget>
@@ -2503,7 +2503,7 @@
 	</UIGadget>
 	<!--
 		############################################################################
-		# org.exoplatform.wsrp.webui.component.UIWsrp #
+		# org.gatein.wsrp.webui.component.UIWsrp #
 		############################################################################
 	-->
 	<UIWsrp>

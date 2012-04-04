@@ -1,6 +1,6 @@
 <%
 	import org.exoplatform.web.application.JavascriptManager;
-	import org.exoplatform.portal.webui.application.UIItemThemeSelector;
+	import org.gatein.portal.webui.application.UIItemThemeSelector;
   
   def rcontext = _ctx.getRequestContext() ;
   JavascriptManager jsmanager = rcontext.getJavascriptManager();

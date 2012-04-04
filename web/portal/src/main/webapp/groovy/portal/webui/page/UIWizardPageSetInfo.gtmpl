@@ -1,6 +1,6 @@
 <%	
-	import org.exoplatform.portal.webui.navigation.UIPageNodeSelector;
-	import org.exoplatform.webui.core.UIComponent;
+	import org.gatein.portal.webui.navigation.UIPageNodeSelector;
+	import org.gatein.webui.core.UIComponent;
   import org.gatein.common.text.EntityEncoder;
 	import org.exoplatform.commons.utils.HTMLEntityEncoder;
 

@@ -22,24 +22,24 @@ package org.gatein.organization.webui.component;
 import org.exoplatform.commons.utils.EmptySerializablePageList;
 import org.exoplatform.commons.utils.ListAccess;
 import org.exoplatform.commons.utils.PageList;
-import org.exoplatform.portal.webui.util.Util;
 import org.exoplatform.services.organization.Group;
 import org.exoplatform.services.organization.Membership;
 import org.exoplatform.services.organization.MembershipHandler;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.User;
 import org.exoplatform.services.organization.UserHandler;
-import org.exoplatform.webui.application.WebuiRequestContext;
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.ComponentConfigs;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIContainer;
-import org.exoplatform.webui.core.UIGrid;
-import org.exoplatform.webui.core.UIPageIterator;
-import org.exoplatform.webui.core.UIPopupWindow;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
+import org.gatein.portal.webui.util.Util;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.ComponentConfigs;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIContainer;
+import org.gatein.webui.core.UIGrid;
+import org.gatein.webui.core.UIPageIterator;
+import org.gatein.webui.core.UIPopupWindow;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
 
 import java.io.Serializable;
 import java.io.Writer;
@@ -78,7 +78,7 @@ public class UIUserInGroup extends UIContainer
    }
 
    @Override
-   protected String loadConfirmMesssage(org.exoplatform.webui.config.Event event, WebuiRequestContext context,
+   protected String loadConfirmMesssage(org.gatein.webui.config.Event event, WebuiRequestContext context,
       String beanId)
    {
 

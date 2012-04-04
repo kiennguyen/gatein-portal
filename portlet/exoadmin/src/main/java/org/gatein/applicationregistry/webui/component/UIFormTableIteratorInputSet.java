@@ -19,13 +19,13 @@
 
 package org.gatein.applicationregistry.webui.component;
 
-import org.exoplatform.webui.application.WebuiRequestContext;
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.UIComponent;
-import org.exoplatform.webui.form.UIFormInputBase;
-import org.exoplatform.webui.form.UIFormPageIterator;
-import org.exoplatform.webui.form.UIFormTableInputSet;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.core.UIComponent;
+import org.gatein.webui.form.UIFormInputBase;
+import org.gatein.webui.form.UIFormPageIterator;
+import org.gatein.webui.form.UIFormTableInputSet;
 
 import java.util.ArrayList;
 import java.util.List;

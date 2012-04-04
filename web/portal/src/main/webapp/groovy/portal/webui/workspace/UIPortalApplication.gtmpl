@@ -3,9 +3,9 @@
 					 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <%
 	import org.exoplatform.portal.application.PortalRequestContext ;
-	import org.exoplatform.webui.core.UIComponent;
+	import org.gatein.webui.core.UIComponent;
 	import java.util.Iterator;
-	import org.exoplatform.portal.webui.portal.UIPortal ;
+	import org.gatein.portal.webui.portal.UIPortal ;
 	import org.exoplatform.portal.config.model.PortalProperties ;
 		
 	def rcontext = _ctx.getRequestContext() ;

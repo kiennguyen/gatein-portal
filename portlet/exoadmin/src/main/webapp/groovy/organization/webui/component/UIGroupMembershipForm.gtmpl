@@ -1,7 +1,7 @@
 <%	 
-	import org.exoplatform.webui.form.UIFormSelectBox;
-	import org.exoplatform.webui.form.UIFormStringInput;
-	import org.exoplatform.webui.core.UIPopupWindow;
+	import org.gatein.webui.form.UIFormSelectBox;
+	import org.gatein.webui.form.UIFormStringInput;
+	import org.gatein.webui.core.UIPopupWindow;
 	uicomponent.renderChild(UIPopupWindow.class);
 %>
 <div class="UIFormWithTitle $uicomponent.id">

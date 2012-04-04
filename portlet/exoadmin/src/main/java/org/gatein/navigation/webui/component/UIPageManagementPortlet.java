@@ -20,11 +20,11 @@
 package org.gatein.navigation.webui.component;
 
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.portal.webui.page.UIPageBrowser;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.UIPortletApplication;
-import org.exoplatform.webui.core.UIVirtualList;
-import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
+import org.gatein.portal.webui.page.UIPageBrowser;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.core.UIPortletApplication;
+import org.gatein.webui.core.UIVirtualList;
+import org.gatein.webui.core.lifecycle.UIApplicationLifecycle;
 
 /**
  * Created by The eXo Platform SAS

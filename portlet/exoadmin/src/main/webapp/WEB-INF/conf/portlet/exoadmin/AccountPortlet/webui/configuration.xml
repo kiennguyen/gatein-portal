@@ -22,7 +22,7 @@
 <webui-configuration>  
   <application>     
     <ui-component-root>org.gatein.account.webui.component.UIAccountPortlet</ui-component-root>
-    <state-manager>org.exoplatform.webui.application.portlet.ParentAppStateManager</state-manager>
+    <state-manager>org.gatein.webui.application.portlet.ParentAppStateManager</state-manager>
     <application-lifecycle-listeners>       
     </application-lifecycle-listeners>
   </application>

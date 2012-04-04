@@ -1,7 +1,7 @@
 <%
 
-  import org.exoplatform.webui.core.UIComponent ;
-  import org.exoplatform.webui.form.UIForm;
+  import org.gatein.webui.core.UIComponent ;
+  import org.gatein.webui.form.UIForm;
   import java.text.DateFormat;
   import java.text.SimpleDateFormat;
 

@@ -21,17 +21,17 @@ package org.gatein.organization.webui.component;
 
 import org.exoplatform.services.organization.Group;
 import org.exoplatform.services.organization.OrganizationService;
-import org.exoplatform.webui.application.WebuiRequestContext;
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIBreadcumbs;
-import org.exoplatform.webui.core.UIContainer;
-import org.exoplatform.webui.core.UITree;
-import org.exoplatform.webui.core.UIBreadcumbs.LocalPath;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
-import org.exoplatform.webui.organization.UIGroup;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIBreadcumbs;
+import org.gatein.webui.core.UIContainer;
+import org.gatein.webui.core.UITree;
+import org.gatein.webui.core.UIBreadcumbs.LocalPath;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
+import org.gatein.webui.organization.UIGroup;
 
 import java.util.ArrayList;
 import java.util.Collection;

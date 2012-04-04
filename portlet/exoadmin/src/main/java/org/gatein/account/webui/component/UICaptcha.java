@@ -24,8 +24,8 @@ package org.gatein.account.webui.component;
 
 import java.util.Calendar;
 
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.form.UIFormStringInput;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.form.UIFormStringInput;
 
 import javax.portlet.RenderResponse;
 import javax.portlet.ResourceURL;

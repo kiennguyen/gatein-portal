@@ -28,15 +28,15 @@ import org.exoplatform.application.registry.ApplicationCategory;
 import org.exoplatform.application.registry.ApplicationRegistryService;
 import org.exoplatform.web.WebAppController;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.application.WebuiRequestContext;
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIApplication;
-import org.exoplatform.webui.core.UIContainer;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
 import org.gatein.applicationregistry.webui.Util;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIApplication;
+import org.gatein.webui.core.UIContainer;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
 
 import java.util.List;
 
@@ -203,7 +203,7 @@ public class UIGadgetManagement extends UIContainer
       private void removeFromApplicationRegistry(String name) throws Exception
       {
          ApplicationRegistryService appRegService =
-            org.exoplatform.portal.webui.util.Util.getUIPortalApplication().getApplicationComponent(
+            org.gatein.portal.webui.util.Util.getUIPortalApplication().getApplicationComponent(
                ApplicationRegistryService.class);
          List<ApplicationCategory> cates = appRegService.getApplicationCategories();
          for (ApplicationCategory cate : cates)

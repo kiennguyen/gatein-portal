@@ -22,12 +22,12 @@ import java.util.List;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.UIComponent;
-import org.exoplatform.webui.core.UIConfirmation;
-import org.exoplatform.webui.core.UIContainer;
-import org.exoplatform.webui.core.UIConfirmation.ActionConfirm;
-import org.exoplatform.webui.core.lifecycle.UIContainerLifecycle;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.core.UIComponent;
+import org.gatein.webui.core.UIConfirmation;
+import org.gatein.webui.core.UIContainer;
+import org.gatein.webui.core.UIConfirmation.ActionConfirm;
+import org.gatein.webui.core.lifecycle.UIContainerLifecycle;
 
 /**
  * Created by The eXo Platform SAS Author : Nguyen Duc Khoi

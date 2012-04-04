@@ -26,19 +26,19 @@ import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.User;
 import org.exoplatform.web.application.ApplicationMessage;
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIApplication;
-import org.exoplatform.webui.core.lifecycle.UIFormLifecycle;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.Event.Phase;
-import org.exoplatform.webui.event.EventListener;
-import org.exoplatform.webui.form.UIForm;
-import org.exoplatform.webui.form.UIFormStringInput;
-import org.exoplatform.webui.form.UIFormTextAreaInput;
-import org.exoplatform.webui.form.validator.IdentifierValidator;
-import org.exoplatform.webui.form.validator.MandatoryValidator;
-import org.exoplatform.webui.form.validator.StringLengthValidator;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIApplication;
+import org.gatein.webui.core.lifecycle.UIFormLifecycle;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
+import org.gatein.webui.event.Event.Phase;
+import org.gatein.webui.form.UIForm;
+import org.gatein.webui.form.UIFormStringInput;
+import org.gatein.webui.form.UIFormTextAreaInput;
+import org.gatein.webui.form.validator.IdentifierValidator;
+import org.gatein.webui.form.validator.MandatoryValidator;
+import org.gatein.webui.form.validator.StringLengthValidator;
 
 /** Created by The eXo Platform SARL Author : chungnv nguyenchung136@yahoo.com Jun 27, 2006 8:48:47 AM */
 @ComponentConfig(lifecycle = UIFormLifecycle.class, template = "system:/groovy/webui/form/UIFormWithTitle.gtmpl", events = {
@@ -184,7 +184,7 @@ public class UIGroupForm extends UIForm
          }
 
          // change group
-         String username = org.exoplatform.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
+         String username = org.gatein.portal.webui.util.Util.getPortalRequestContext().getRemoteUser();
          User user = service.getUserHandler().findUserByName(username);
          MembershipType membershipType =
             service.getMembershipTypeHandler().findMembershipType(GroupManagement.getUserACL().getAdminMSType());

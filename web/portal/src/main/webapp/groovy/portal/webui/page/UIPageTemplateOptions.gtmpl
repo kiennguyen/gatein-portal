@@ -1,7 +1,7 @@
 <%		
-	import org.exoplatform.webui.form.UIForm; 
-	import org.exoplatform.webui.core.UIDropDownControl; 
-	import org.exoplatform.webui.core.model.SelectItemOption;
+	import org.gatein.webui.form.UIForm; 
+	import org.gatein.webui.core.UIDropDownControl; 
+	import org.gatein.webui.core.model.SelectItemOption;
 
 	def rcontext = _ctx.getRequestContext(); 
 	rcontext.getJavascriptManager().importJavascript('eXo.webui.UIPopupSelectCategory'); 

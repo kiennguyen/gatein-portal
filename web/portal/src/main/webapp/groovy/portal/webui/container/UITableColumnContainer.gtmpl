@@ -1,6 +1,6 @@
 <%	
 	import org.exoplatform.commons.utils.ExpressionUtil;
-	import org.exoplatform.portal.webui.workspace.UIPortalApplication;
+	import org.gatein.portal.webui.workspace.UIPortalApplication;
 	
 	def rcontext = _ctx.getRequestContext(); 
 	ResourceBundle res = rcontext.getApplicationResourceBundle(); 

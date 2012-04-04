@@ -611,9 +611,9 @@ public class GroupDAOImpl implements GroupHandler
          // at org.picketlink.idm.impl.api.session.managers.AbstractManager.checkNotNullArgument(AbstractManager.java:267)
          //  at org.picketlink.idm.impl.api.session.managers.RelationshipManagerImpl.findRelatedGroups(RelationshipManagerImpl.java:753)
          // at org.exoplatform.services.organization.idm.GroupDAOImpl.findGroupsOfUser(GroupDAOImpl.java:225)
-         // at org.exoplatform.organization.webui.component.GroupManagement.isMemberOfGroup(GroupManagement.java:72)
-         // at org.exoplatform.organization.webui.component.GroupManagement.isAdministrator(GroupManagement.java:125)
-         // at org.exoplatform.organization.webui.component.UIGroupExplorer.<init>(UIGroupExplorer.java:57)
+         // at org.gatein.organization.webui.component.GroupManagement.isMemberOfGroup(GroupManagement.java:72)
+         // at org.gatein.organization.webui.component.GroupManagement.isAdministrator(GroupManagement.java:125)
+         // at org.gatein.organization.webui.component.UIGroupExplorer.<init>(UIGroupExplorer.java:57)
 
          if (log.isTraceEnabled())
          {

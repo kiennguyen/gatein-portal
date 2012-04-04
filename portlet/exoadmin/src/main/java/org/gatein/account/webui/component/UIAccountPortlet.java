@@ -20,10 +20,10 @@
 package org.gatein.account.webui.component;
 
 import org.exoplatform.commons.serialization.api.annotations.Serialized;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.UIPortletApplication;
-import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
-import org.exoplatform.webui.organization.UIAccountForm;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.core.UIPortletApplication;
+import org.gatein.webui.core.lifecycle.UIApplicationLifecycle;
+import org.gatein.webui.organization.UIAccountForm;
 
 @ComponentConfig(lifecycle = UIApplicationLifecycle.class)
 @Serialized

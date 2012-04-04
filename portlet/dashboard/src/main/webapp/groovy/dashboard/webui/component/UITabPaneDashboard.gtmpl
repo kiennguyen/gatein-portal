@@ -1,7 +1,7 @@
 <%
-	import org.exoplatform.portal.webui.util.Util;
-	import org.exoplatform.portal.webui.portal.UIPortal;
-	import org.exoplatform.portal.application.PortalRequestContext;
+	import org.gatein.portal.webui.util.Util;
+	import org.gatein.portal.webui.portal.UIPortal;
+	import org.gatein.portal.application.PortalRequestContext;
 	import org.exoplatform.web.application.JavascriptManager;
 	import org.exoplatform.portal.mop.user.UserNode;
 	import org.exoplatform.web.url.PortalURL;

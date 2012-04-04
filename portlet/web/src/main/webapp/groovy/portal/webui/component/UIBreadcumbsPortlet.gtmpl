@@ -1,8 +1,8 @@
 <%	
 	import java.util.List;
 	import org.exoplatform.portal.mop.user.UserNode;
-	import org.exoplatform.portal.webui.util.Util;
-	import org.exoplatform.portal.application.PortalRequestContext;
+	import org.gatein.portal.webui.util.Util;
+	import org.gatein.portal.application.PortalRequestContext;
   import org.gatein.common.text.EntityEncoder;
 	import org.exoplatform.commons.utils.HTMLEntityEncoder;
   import org.exoplatform.web.url.PortalURL;

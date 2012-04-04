@@ -53,7 +53,7 @@
    -->
    <!--
       #class
-      org.exoplatform.webui.form.validator.Validator.EmptyFieldValidator
+      org.gatein.webui.form.validator.Validator.EmptyFieldValidator
    -->
    <!-- #{0}=input field name-->
    <EmptyFieldValidator>
@@ -88,7 +88,7 @@
    -->
    <!--
       #class
-      org.exoplatform.webui.form.validator.Validator.EmailAddressValidator
+      org.gatein.webui.form.validator.Validator.EmailAddressValidator
    -->
    <!-- #{0}=input field name, {1} user input email address-->
    <EmailAddressValidator>
@@ -122,7 +122,7 @@
    -->
    <!--
       #class
-      org.exoplatform.webui.form.validator.Validator.NumberFormatValidator
+      org.gatein.webui.form.validator.Validator.NumberFormatValidator
    -->
    <!-- #{0}=input field name-->
    <NumberFormatValidator>
@@ -146,7 +146,7 @@
    -->
    <!--
       #class
-      org.exoplatform.webui.organization.UIListPermissionSelector.EmptyIteratorValidator
+      org.gatein.webui.organization.UIListPermissionSelector.EmptyIteratorValidator
    -->
    <!-- #{0}=input field name-->
    <EmptyIteratorValidator>
@@ -179,7 +179,7 @@
    -->
    <!--
       #class
-      org.exoplatform.webui.form.validator.Validator.SpecialCharacterValidator
+      org.gatein.webui.form.validator.Validator.SpecialCharacterValidator
    -->
    <!-- #{0}=input field name-->
    <SpecialCharacterValidator>
@@ -220,7 +220,7 @@
       ##############################################
       ###############################
    -->
-   <!-- #org.exoplatform.portal.webui.portal.UIPortalComposer #-->
+   <!-- #org.gatein.portal.webui.portal.UIPortalComposer #-->
    <!--
       ##############################################
       ###############################
@@ -295,7 +295,7 @@
    -->
    <!--
       #class
-      org.exoplatform.webui.form.validator.Validator.IdentifierValidator
+      org.gatein.webui.form.validator.Validator.IdentifierValidator
    -->
    <!-- #{0}=input field name-->
    <IdentifierValidator>

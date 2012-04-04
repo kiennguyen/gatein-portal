@@ -1,8 +1,8 @@
 <%	 
 	import org.exoplatform.portal.config.model.Page; 
-	import org.exoplatform.webui.core.UIPopupWindow;
-	import org.exoplatform.webui.form.UIForm; 
-	import org.exoplatform.webui.form.UIFormInputSet;
+	import org.gatein.webui.core.UIPopupWindow;
+	import org.gatein.webui.form.UIForm; 
+	import org.gatein.webui.form.UIFormInputSet;
 
 
 	Page page	= uicomponent.getPage();		

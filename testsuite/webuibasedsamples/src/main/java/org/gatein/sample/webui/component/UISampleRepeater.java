@@ -7,16 +7,16 @@ import java.util.List;
 import org.exoplatform.commons.utils.LazyPageList;
 import org.exoplatform.commons.utils.ListAccessImpl;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIContainer;
-import org.exoplatform.webui.core.UIGrid;
-import org.exoplatform.webui.core.UIPageIterator;
-import org.exoplatform.webui.core.lifecycle.UIContainerLifecycle;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
 import org.gatein.sample.webui.component.bean.User;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIContainer;
+import org.gatein.webui.core.UIGrid;
+import org.gatein.webui.core.UIPageIterator;
+import org.gatein.webui.core.lifecycle.UIContainerLifecycle;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
 
 @ComponentConfig(lifecycle = UIContainerLifecycle.class, events = {
    @EventConfig(listeners = UISampleRepeater.ViewActionListener.class),

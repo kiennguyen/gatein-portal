@@ -1,6 +1,6 @@
 <%  
     import org.exoplatform.portal.mop.SiteKey;
-    import org.exoplatform.webui.organization.OrganizationUtils;
+    import org.gatein.webui.organization.OrganizationUtils;
     import org.gatein.common.text.EntityEncoder;
     import org.exoplatform.commons.utils.HTMLEntityEncoder;
     

@@ -196,7 +196,7 @@
   </msg>
   </UIPortletInfo>
   <!--
-  ##	org.exoplatform.portletregistry.webui.component.UIGadgetManagement
+  ##	org.gatein.portletregistry.webui.component.UIGadgetManagement
   -->
   <UIGadgetManagement>
   <label>

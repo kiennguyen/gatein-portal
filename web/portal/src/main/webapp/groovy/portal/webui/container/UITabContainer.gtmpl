@@ -1,7 +1,7 @@
 <%	
 	import org.exoplatform.web.application.JavascriptManager;
 	import org.exoplatform.commons.utils.ExpressionUtil;	
-	import org.exoplatform.portal.webui.util.Util;
+	import org.gatein.portal.webui.util.Util;
 	
 	def rcontext = _ctx.getRequestContext(); 
 	ResourceBundle res = rcontext.getApplicationResourceBundle(); 
@@ -84,12 +84,12 @@
 															            <div class="PopupCategoryML">
 															               <div class="PopupCategoryMR">
 															                  <div class="PopupCategoryMC">
-															                     <% if (!tabState.equals(org.exoplatform.portal.webui.container.UITabContainer.FIRST_TAB)) {%>
+															                     <% if (!tabState.equals(org.gatein.portal.webui.container.UITabContainer.FIRST_TAB)) {%>
 															                     <a class="CategoryItem">
 															                        <div class="CategoryItemLabel" onclick="$moveLeftAction;eXo.portal.UIPortal.changeComposerSaveButton()"><%= _ctx.appRes("UITabContainer.label.moveLeft") %></div>
 															                     </a>
 															                     <% } %>
-															                     <% if (!tabState.equals(org.exoplatform.portal.webui.container.UITabContainer.LAST_TAB)) { %>															                      
+															                     <% if (!tabState.equals(org.gatein.portal.webui.container.UITabContainer.LAST_TAB)) { %>															                      
 															                     <a class="CategoryItem">
 															                        <div class="CategoryItemLabel" onclick="$moveRightAction;eXo.portal.UIPortal.changeComposerSaveButton()"><%= _ctx.appRes("UITabContainer.label.moveRight") %></div>
 															                     </a>

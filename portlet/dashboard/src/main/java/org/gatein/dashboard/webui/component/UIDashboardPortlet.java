@@ -19,23 +19,23 @@
 
 package org.gatein.dashboard.webui.component;
 
-import org.exoplatform.dashboard.webui.component.DashboardParent;
-import org.exoplatform.dashboard.webui.component.UIDashboard;
-import org.exoplatform.dashboard.webui.component.UIDashboardContainer;
-import org.exoplatform.dashboard.webui.component.UIDashboardEditForm;
-import org.exoplatform.portal.application.PortalRequestContext;
 import org.exoplatform.portal.config.DataStorage;
 import org.exoplatform.portal.config.UserACL;
 import org.exoplatform.portal.config.model.Page;
 import org.exoplatform.portal.mop.user.UserNode;
-import org.exoplatform.portal.webui.container.UIContainer;
-import org.exoplatform.portal.webui.portal.UIPortal;
-import org.exoplatform.portal.webui.workspace.UIPortalApplication;
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.application.portlet.PortletRequestContext;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.UIPortletApplication;
-import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
+import org.gatein.dashboard.webui.component.DashboardParent;
+import org.gatein.dashboard.webui.component.UIDashboard;
+import org.gatein.dashboard.webui.component.UIDashboardContainer;
+import org.gatein.dashboard.webui.component.UIDashboardEditForm;
+import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.webui.container.UIContainer;
+import org.gatein.portal.webui.portal.UIPortal;
+import org.gatein.portal.webui.workspace.UIPortalApplication;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.application.portlet.PortletRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.core.UIPortletApplication;
+import org.gatein.webui.core.lifecycle.UIApplicationLifecycle;
 
 import javax.portlet.PortletPreferences;
 

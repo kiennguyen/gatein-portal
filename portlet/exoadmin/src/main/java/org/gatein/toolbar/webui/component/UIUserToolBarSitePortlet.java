@@ -22,7 +22,6 @@ package org.gatein.toolbar.webui.component;
 import java.util.List;
 
 import org.exoplatform.portal.config.DataStorage;
-import org.exoplatform.portal.application.PortalRequestContext;
 import org.exoplatform.portal.config.UserPortalConfigService;
 import org.exoplatform.portal.config.model.PortalConfig;
 import org.exoplatform.portal.mop.SiteKey;
@@ -31,10 +30,11 @@ import org.exoplatform.portal.mop.user.UserNavigation;
 import org.exoplatform.portal.mop.user.UserNode;
 import org.exoplatform.portal.mop.user.UserNodeFilterConfig;
 import org.exoplatform.portal.mop.user.UserPortal;
-import org.exoplatform.portal.webui.util.Util;
-import org.exoplatform.portal.webui.workspace.UIPortalApplication;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
+import org.gatein.portal.application.PortalRequestContext;
+import org.gatein.portal.webui.util.Util;
+import org.gatein.portal.webui.workspace.UIPortalApplication;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.core.lifecycle.UIApplicationLifecycle;
 
 /**
  * Created by The eXo Platform SAS

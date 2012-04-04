@@ -1,6 +1,6 @@
 <%
-	import org.exoplatform.portal.application.PortalRequestContext;
-	import org.exoplatform.portal.webui.util.Util;
+	import org.gatein.portal.application.PortalRequestContext;
+	import org.gatein.portal.webui.util.Util;
 	import org.exoplatform.web.url.PortalURL;
 	import org.exoplatform.web.url.navigation.NavigationResource;
 	import org.exoplatform.portal.mop.SiteType;

@@ -5,24 +5,24 @@ import java.util.Calendar;
 
 import org.exoplatform.upload.UploadResource;
 import org.exoplatform.web.application.ApplicationMessage;
-import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.config.annotation.ComponentConfig;
-import org.exoplatform.webui.config.annotation.EventConfig;
-import org.exoplatform.webui.core.UIComponent;
-import org.exoplatform.webui.core.lifecycle.UIFormLifecycle;
-import org.exoplatform.webui.event.Event;
-import org.exoplatform.webui.event.EventListener;
-import org.exoplatform.webui.form.UIForm;
-import org.exoplatform.webui.form.UIFormDateTimeInput;
-import org.exoplatform.webui.form.UIFormInput;
-import org.exoplatform.webui.form.UIFormInputBase;
-import org.exoplatform.webui.form.UIFormMultiValueInputSet;
-import org.exoplatform.webui.form.UIFormStringInput;
-import org.exoplatform.webui.form.UIFormTextAreaInput;
-import org.exoplatform.webui.form.UIFormUploadInput;
-import org.exoplatform.webui.form.ext.UIFormColorPicker;
-import org.exoplatform.webui.form.ext.UIFormColorPicker.Colors;
-import org.exoplatform.webui.form.ext.UIFormColorPicker.Colors.Color;
+import org.gatein.webui.application.WebuiRequestContext;
+import org.gatein.webui.config.annotation.ComponentConfig;
+import org.gatein.webui.config.annotation.EventConfig;
+import org.gatein.webui.core.UIComponent;
+import org.gatein.webui.core.lifecycle.UIFormLifecycle;
+import org.gatein.webui.event.Event;
+import org.gatein.webui.event.EventListener;
+import org.gatein.webui.form.UIForm;
+import org.gatein.webui.form.UIFormDateTimeInput;
+import org.gatein.webui.form.UIFormInput;
+import org.gatein.webui.form.UIFormInputBase;
+import org.gatein.webui.form.UIFormMultiValueInputSet;
+import org.gatein.webui.form.UIFormStringInput;
+import org.gatein.webui.form.UIFormTextAreaInput;
+import org.gatein.webui.form.UIFormUploadInput;
+import org.gatein.webui.form.ext.UIFormColorPicker;
+import org.gatein.webui.form.ext.UIFormColorPicker.Colors;
+import org.gatein.webui.form.ext.UIFormColorPicker.Colors.Color;
 
 @ComponentConfig(lifecycle = UIFormLifecycle.class, template = "system:/groovy/webui/form/UIFormWithTitle.gtmpl", events = {@EventConfig(listeners = UISampleMultiValueInputSet.SubmitActionListener.class)})
 public class UISampleMultiValueInputSet extends UIForm

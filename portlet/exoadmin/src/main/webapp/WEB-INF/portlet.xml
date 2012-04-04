@@ -27,7 +27,7 @@
       <description xml:lang="EN">Organization Portlet</description>
       <portlet-name>OrganizationPortlet</portlet-name>
       <display-name xml:lang="EN">Organization Portlet</display-name>
-      <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+      <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
       <init-param>
          <name>webui.configuration</name>
@@ -60,7 +60,7 @@
       <description xml:lang="EN">Account Portlet</description>
       <portlet-name>AccountPortlet</portlet-name>
       <display-name xml:lang="EN">Account Portlet</display-name>
-      <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+      <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
       <init-param>
          <name>webui.configuration</name>
@@ -123,7 +123,7 @@
       <description xml:lang="EN">Group Navigation Portlet</description>
       <portlet-name>GroupNavigationPortlet</portlet-name>
       <display-name xml:lang="EN">Group Navigation Portlet</display-name>
-      <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+      <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
       <init-param>
          <name>webui.configuration</name>
@@ -158,7 +158,7 @@
       <description xml:lang="EN">Portal Navigation Portlet</description>
       <portlet-name>PortalNavigationPortlet</portlet-name>
       <display-name xml:lang="EN">Portal Navigation Portlet</display-name>
-      <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+      <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
       <init-param>
          <name>webui.configuration</name>
@@ -192,7 +192,7 @@
       <description xml:lang="EN">Page Management Portlet</description>
       <portlet-name>PageManagementPortlet</portlet-name>
       <display-name xml:lang="EN">Page Management Portlet</display-name>
-      <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+      <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
       <init-param>
          <name>webui.configuration</name>
@@ -221,7 +221,7 @@
       <description xml:lang="EN">Application Registry</description>
       <portlet-name>ApplicationRegistryPortlet</portlet-name>
       <display-name xml:lang="EN">Application Registry</display-name>
-      <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+      <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
       <init-param>
          <name>webui.configuration</name>
@@ -255,7 +255,7 @@
       <description xml:lang="EN">Administration Toolbar Portlet</description>
       <portlet-name>AdminToolbarPortlet</portlet-name>
       <display-name xml:lang="EN">Administration Toolbar Portlet</display-name>
-      <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+      <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
       <init-param>
          <name>webui.configuration</name>
@@ -282,7 +282,7 @@
       <description xml:lang="EN">User Info Portlet</description>
       <portlet-name>UserInfoPortlet</portlet-name>
       <display-name xml:lang="EN">User Info Portlet</display-name>
-      <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+      <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
       <init-param>
          <name>webui.configuration</name>
@@ -312,7 +312,7 @@
       <description xml:lang="EN">User Toolbar Site Portlet</description>
       <portlet-name>UserToolbarSitePortlet</portlet-name>
       <display-name xml:lang="EN">User Toolbar Site Portlet</display-name>
-      <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+      <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
       <init-param>
          <name>webui.configuration</name>
@@ -347,7 +347,7 @@
       <description xml:lang="EN">User Toolbar Dashboard Portlet</description>
       <portlet-name>UserToolbarDashboardPortlet</portlet-name>
       <display-name xml:lang="EN">User Toolbar Dashboard Portlet</display-name>
-      <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+      <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
       <init-param>
          <name>webui.configuration</name>
@@ -385,7 +385,7 @@
       <description xml:lang="EN">User Toolbar Group Portlet</description>
       <portlet-name>UserToolbarGroupPortlet</portlet-name>
       <display-name xml:lang="EN">User Toolbar Group Portlet</display-name>
-      <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+      <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
       <init-param>
          <name>webui.configuration</name>
@@ -422,7 +422,7 @@
       <description xml:lang="EN">Star Toolbar Portlet</description>
       <portlet-name>StarToolbarPortlet</portlet-name>
       <display-name xml:lang="EN">Star Toolbar Portlet</display-name>
-      <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+      <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>
 
       <init-param>
          <name>webui.configuration</name>

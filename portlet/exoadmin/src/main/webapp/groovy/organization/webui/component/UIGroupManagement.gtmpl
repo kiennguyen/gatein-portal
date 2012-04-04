@@ -1,8 +1,8 @@
 <%	
 	import	org.gatein.organization.webui.component.UIGroupExplorer;
 	import	org.gatein.organization.webui.component.UIGroupDetail;
-	import org.exoplatform.webui.core.UIPopupWindow;
-	import	org.exoplatform.webui.core.UIBreadcumbs;
+	import org.gatein.webui.core.UIPopupWindow;
+	import	org.gatein.webui.core.UIBreadcumbs;
 	import	org.gatein.organization.webui.component.GroupManagement;
 	import	org.exoplatform.services.organization.Group;
 	

@@ -1,8 +1,8 @@
 <%
 	//Fixed by Phuong 12/08/2006	
-	import org.exoplatform.webui.organization.UIGroupMembershipSelector;
-	import org.exoplatform.webui.core.UIPopupWindow; 
-	import org.exoplatform.webui.form.UIForm;
+	import org.gatein.webui.organization.UIGroupMembershipSelector;
+	import org.gatein.webui.core.UIPopupWindow; 
+	import org.gatein.webui.form.UIForm;
 	
 	def uiForm = uicomponent.getAncestorOfType(UIForm.class);
 	def permission =	uicomponent.getPermission();

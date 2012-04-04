@@ -1,5 +1,5 @@
 <%	
-	import org.exoplatform.webui.core.UIDropDownControl; 
+	import org.gatein.webui.core.UIDropDownControl; 
 	import org.exoplatform.web.application.JavascriptManager;
 	
 	def rcontext = _ctx.getRequestContext(); 

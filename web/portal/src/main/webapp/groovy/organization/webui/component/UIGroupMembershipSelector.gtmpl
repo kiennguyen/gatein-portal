@@ -1,6 +1,6 @@
 <%
-	import	org.exoplatform.webui.core.UIBreadcumbs; 
-	import	org.exoplatform.webui.core.UITree; 
+	import	org.gatein.webui.core.UIBreadcumbs; 
+	import	org.gatein.webui.core.UITree; 
 %>
 <div class="UIGroupMembershipSelector" id="$uicomponent.id">
 	<div class="Container ClearFix">

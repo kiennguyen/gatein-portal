@@ -33,7 +33,7 @@
     <description xml:lang="EN">Logo Portlet</description>
     <portlet-name>LogoPortlet</portlet-name>
     <display-name xml:lang="EN">Logo Portlet</display-name>
-    <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>    
+    <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>    
     
     <init-param>
       <name>webui.configuration</name>
@@ -59,7 +59,7 @@
     <description xml:lang="EN">Banner Portlet</description>
     <portlet-name>BannerPortlet</portlet-name>
     <display-name xml:lang="EN">Banner Portlet</display-name>
-    <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>    
+    <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>    
     
     <init-param>
       <name>webui.configuration</name>
@@ -92,7 +92,7 @@
     <description xml:lang="EN">Footer Portlet</description>
     <portlet-name>FooterPortlet</portlet-name>
     <display-name xml:lang="EN">Footer Portlet</display-name>
-    <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>    
+    <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>    
     
     <init-param>
       <name>webui.configuration</name>
@@ -125,7 +125,7 @@
     <description xml:lang="EN">Breadcumbs Portlet</description>
     <portlet-name>BreadcumbsPortlet</portlet-name>
     <display-name xml:lang="EN">Breadcumbs Portlet</display-name>
-    <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>    
+    <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>    
     
     <init-param>
       <name>webui.configuration</name>
@@ -167,7 +167,7 @@
     <description xml:lang="EN">Navigation Portlet</description>
     <portlet-name>NavigationPortlet</portlet-name>
     <display-name xml:lang="EN">Navigation Portlet</display-name>
-    <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>    
+    <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>    
     
     <init-param>
       <name>webui.configuration</name>
@@ -208,7 +208,7 @@
     <description xml:lang="EN">SiteMap Portlet</description>
     <portlet-name>SiteMapPortlet</portlet-name>
     <display-name xml:lang="EN">Site Map Portlet</display-name>
-    <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>    
+    <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>    
     
     <init-param>
       <name>webui.configuration</name>
@@ -251,7 +251,7 @@
     <description xml:lang="EN">IFrame Portlet</description>
     <portlet-name>IFramePortlet</portlet-name>
     <display-name xml:lang="EN">IFrame Portlet</display-name>
-    <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>    
+    <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>    
     
     <init-param>
       <name>webui.configuration</name>
@@ -284,7 +284,7 @@
     <description xml:lang="EN">HomePage Portlet</description>
     <portlet-name>HomePagePortlet</portlet-name>
     <display-name xml:lang="EN">HomePage Portlet</display-name>
-    <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>    
+    <portlet-class>org.gatein.webui.application.portlet.PortletApplicationController</portlet-class>    
     
     <init-param>
       <name>webui.configuration</name>

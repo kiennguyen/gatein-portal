@@ -1,7 +1,7 @@
 <%	
-	import org.exoplatform.webui.form.UIFormPopupWindow;
-	import org.exoplatform.webui.form.UIFormGrid;
-	import org.exoplatform.webui.form.UIFormCheckBoxInput;
+	import org.gatein.webui.form.UIFormPopupWindow;
+	import org.gatein.webui.form.UIFormGrid;
+	import org.gatein.webui.form.UIFormCheckBoxInput;
 	
 	def rcontext = _ctx.getRequestContext();
  	def uiPublicMode = uicomponent.getChildById("publicMode");

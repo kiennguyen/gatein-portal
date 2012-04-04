@@ -21,7 +21,8 @@ package org.gatein.account.webui.component;
 
 import nl.captcha.Captcha;
 import nl.captcha.servlet.CaptchaServletUtil;
-import org.exoplatform.webui.application.portlet.PortletApplicationController;
+
+import org.gatein.webui.application.portlet.PortletApplicationController;
 
 import javax.portlet.PortletException;
 import javax.portlet.PortletSession;

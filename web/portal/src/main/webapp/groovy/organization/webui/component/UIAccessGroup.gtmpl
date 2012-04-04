@@ -1,6 +1,6 @@
 <%
-	import org.exoplatform.webui.form.UIFormPopupWindow;
-	import org.exoplatform.webui.core.UIGrid;
+	import org.gatein.webui.form.UIFormPopupWindow;
+	import org.gatein.webui.core.UIGrid;
 	
 	def rcontext = _ctx.getRequestContext();
 	rcontext.getJavascriptManager().importJavascript('eXo.webui.UIPopupWindow');

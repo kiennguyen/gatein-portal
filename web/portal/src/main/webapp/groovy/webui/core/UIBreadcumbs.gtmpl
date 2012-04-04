@@ -1,6 +1,6 @@
 <%	
 	import java.util.List;
-	import org.exoplatform.portal.webui.util.Util;
+	import org.gatein.portal.webui.util.Util;
 	import org.exoplatform.portal.application.PortalRequestContext;
   import org.gatein.common.text.EntityEncoder;
 	import org.exoplatform.commons.utils.HTMLEntityEncoder;
