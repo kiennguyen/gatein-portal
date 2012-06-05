@@ -65,8 +65,6 @@ public class UIRegisterInputSet extends UIFormInputWithActions
    public UIRegisterInputSet(String name) throws Exception{
       super(name);
       
-      /*addUIFormInput(new UIFormStringInput(USER_NAME, USER_NAME, null).addValidator(MandatoryValidator.class)
-         .addValidator(UsernameValidator.class, 3, 30));*/
       addUIFormInput(new UIFormStringInput(USER_NAME, USER_NAME, null).addValidator(MandatoryValidator.class)
          .addValidator(UserConfigurableValidator.class, UserConfigurableValidator.USERNAME));
       
