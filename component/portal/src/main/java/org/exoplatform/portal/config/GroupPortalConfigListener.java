@@ -74,6 +74,11 @@ public class GroupPortalConfigListener extends GroupEventListener
    @Override
    public void preSave(Group group, boolean isNew) throws Exception
    {
+      if (!isNew)
+      {
+         return;
+      }
+      
       RequestLifeCycle.begin(PortalContainer.getInstance());
 
       try
