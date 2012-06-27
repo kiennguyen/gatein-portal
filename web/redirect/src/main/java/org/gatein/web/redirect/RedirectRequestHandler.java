@@ -22,16 +22,6 @@
  ******************************************************************************/
 package org.gatein.web.redirect;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.container.component.RequestLifeCycle;
@@ -48,11 +38,19 @@ import org.exoplatform.web.url.navigation.NavigationResource;
 import org.exoplatform.web.url.navigation.NodeURL;
 import org.gatein.common.logging.Logger;
 import org.gatein.common.logging.LoggerFactory;
-import org.gatein.web.redirect.api.SiteRedirectService;
 import org.gatein.web.redirect.api.RedirectKey;
-import org.gatein.web.redirect.api.RedirectHandler;
 import org.gatein.web.redirect.api.RedirectType;
+import org.gatein.web.redirect.api.SiteRedirectService;
 import org.picocontainer.Startable;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author <a href="mailto:mwringe@redhat.com">Matt Wringe</a>
@@ -102,14 +100,11 @@ public class RedirectRequestHandler extends WebRequestHandler implements Startab
    }
 
    @Override
-   public boolean execute(ControllerContext context) throws Exception
+   public boolean execute(ControllerContext context, HttpServletRequest request, HttpServletResponse response) throws Exception
    {
       RequestLifeCycle.begin(ExoContainerContext.getCurrentContainer());
       try
       {
-      HttpServletRequest request = context.getRequest();
-      HttpServletResponse response = context.getResponse();
-      
       String originRequestPath = context.getParameter(PortalRequestHandler.REQUEST_PATH);
       SiteKey originSite = getOriginSiteKey(context);
       
@@ -126,12 +121,12 @@ public class RedirectRequestHandler extends WebRequestHandler implements Startab
       {
          SiteKey redirectSiteKey = new SiteKey(originSite.getType(),redirectFlagValue);
          RedirectKey redirectKey =  RedirectKey.redirect(redirectSiteKey.getName());
-         return performRedirect(originSite, redirectKey, originRequestPath, context, true);
+         return performRedirect(originSite, redirectKey, originRequestPath, context, true, request, response);
       }
       
       String referer = request.getHeader("Referer");
       String siteURL = request.getRequestURL().substring(0, request.getRequestURL().length() - request.getServletPath().length());
-      if (referer != null && referer.startsWith(siteURL) && (context.getRequest().getSession(true).getAttribute(DEVICE_DETECTION_ATTEMPTED) == null))
+      if (referer != null && referer.startsWith(siteURL) && (request.getSession(true).getAttribute(DEVICE_DETECTION_ATTEMPTED) == null))
       {
          return false;
       }
@@ -142,7 +137,7 @@ public class RedirectRequestHandler extends WebRequestHandler implements Startab
       if (redirectSite != null) // a redirect has already been set, use it
       {
          // do the redirect
-         return performRedirect(originSite, redirectSite, originRequestPath, context, false);
+         return performRedirect(originSite, redirectSite, originRequestPath, context, false, request, response);
       }
       else
       // no redirect set yet, we need to check if a redirect is requested or not
@@ -153,11 +148,11 @@ public class RedirectRequestHandler extends WebRequestHandler implements Startab
          log.debug("Found user-agent string : " + userAgentString);
 
          //we only care if this exists or not, no need to set it to anything other than Object
-         Object attemptedDeviceDetection = context.getRequest().getSession(true).getAttribute(DEVICE_DETECTION_ATTEMPTED);
+         Object attemptedDeviceDetection = request.getSession(true).getAttribute(DEVICE_DETECTION_ATTEMPTED);
          if (attemptedDeviceDetection != null)
          {
             deviceProperties = getDeviceProperties(request);
-            context.getRequest().getSession().removeAttribute(DEVICE_DETECTION_ATTEMPTED);
+            request.getSession().removeAttribute(DEVICE_DETECTION_ATTEMPTED);
             log.debug("Found device properties : " + deviceProperties);
          }
 
@@ -190,7 +185,7 @@ public class RedirectRequestHandler extends WebRequestHandler implements Startab
          // the service gave us a redirection site to use, use it.
          {
             log.debug("Redirect for origin site " + originSite.getName() + " is being set to : " + redirectSite);
-            return performRedirect(originSite, redirectSite, originRequestPath, context, false);
+            return performRedirect(originSite, redirectSite, originRequestPath, context, false, request, response);
          }
       }
       }
@@ -213,7 +208,7 @@ public class RedirectRequestHandler extends WebRequestHandler implements Startab
       RedirectCookieService redirectCookieService = (RedirectCookieService)container.getComponentInstanceOfType(RedirectCookieService.class);
 
       //Determine the URL for the site so we can use this for the cookie path
-      PortalURLContext urlContext = new PortalURLContext(context, SiteKey.portal(origin.getName()));
+      PortalURLContext urlContext = new PortalURLContext(context, SiteKey.portal(origin.getName()), request);
       NodeURL url = urlFactory.newURL(NodeURL.TYPE, urlContext);
       String path = url.setResource(new NavigationResource(SiteType.PORTAL, origin.getName(), "")).toString();
       //We have to check for the '/' at the end of the path since the portal could be accessed under /portal/classic or /portal/classic/
@@ -266,7 +261,7 @@ public class RedirectRequestHandler extends WebRequestHandler implements Startab
    }
 
    protected boolean performRedirect(SiteKey origin, RedirectKey redirect, String requestPath,
-         ControllerContext context, boolean forceRedirect) throws IOException
+         ControllerContext context, boolean forceRedirect, HttpServletRequest request, HttpServletResponse response) throws IOException
    {
       // If we have a no-redirect type, don't do anything and return null
       if (redirect.getType() == RedirectType.NOREDIRECT)
@@ -288,16 +283,13 @@ public class RedirectRequestHandler extends WebRequestHandler implements Startab
          {
             log.debug("RedirectPath set to : " + redirectLocation);
 
-            setRedirect(origin, redirect, context.getRequest(), context.getResponse(), context);
+            setRedirect(origin, redirect, request, response, context);
 
             //create the new redirect url
             SiteKey siteKey = new SiteKey(SiteType.PORTAL, redirect.getRedirect());
-            PortalURLContext urlContext = new PortalURLContext(context, siteKey);
+            PortalURLContext urlContext = new PortalURLContext(context, siteKey, request);
             NodeURL url = urlFactory.newURL(NodeURL.TYPE, urlContext);
             String s = url.setResource(new NavigationResource(SiteType.PORTAL, redirect.getRedirect(), redirectLocation)).toString();
-            
-            HttpServletResponse response = context.getResponse();
-            HttpServletRequest request = context.getRequest();
             
             //Add in the query string, if any.
             String queryString = request.getQueryString();
@@ -391,5 +383,4 @@ public class RedirectRequestHandler extends WebRequestHandler implements Startab
    {
       //required because of eXo kernel
    }
-
 }

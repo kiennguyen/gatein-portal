@@ -119,10 +119,10 @@ public class PortalRequestContext extends WebuiRequestContext
    private final Locale requestLocale;
 
    /** . */
-   private final HttpServletRequest request_;
+   protected final HttpServletRequest request_;
 
    /** . */
-   private final HttpServletResponse response_;
+   protected final HttpServletResponse response_;
 
    private String cacheLevel_ = "cacheLevelPortlet";
 
@@ -166,6 +166,8 @@ public class PortalRequestContext extends WebuiRequestContext
    public PortalRequestContext(
       WebuiApplication app,
       ControllerContext controllerContext,
+      HttpServletRequest request,
+      HttpServletResponse response,
       String requestSiteType,
       String requestSiteName,
       String requestPath,
@@ -179,8 +181,8 @@ public class PortalRequestContext extends WebuiRequestContext
       this.jsmanager_ = new JavascriptManager();
       
       //
-      request_ = controllerContext.getRequest();
-      response_ = controllerContext.getResponse();
+      request_ = request;
+      response_ = response;
       response_.setBufferSize(1024 * 100);
       setSessionId(request_.getSession().getId());
 
@@ -256,7 +258,7 @@ public class PortalRequestContext extends WebuiRequestContext
    @Override
    public <R, U extends PortalURL<R, U>> U newURL(ResourceType<R, U> resourceType, URLFactory urlFactory)
    {
-      PortalURLContext urlContext = new PortalURLContext(controllerContext, siteKey);
+      PortalURLContext urlContext = new PortalURLContext(controllerContext, siteKey, request_);
       U url = urlFactory.newURL(resourceType, urlContext);
       if (url != null)
       {

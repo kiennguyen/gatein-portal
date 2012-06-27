@@ -38,6 +38,7 @@ import java.util.Map;
 import org.exoplatform.commons.utils.CompositeReader;
 import org.exoplatform.commons.utils.PropertyManager;
 import org.exoplatform.container.ExoContainerContext;
+import org.exoplatform.container.PortalContainer;
 import org.exoplatform.portal.resource.AbstractResourceService;
 import org.exoplatform.portal.resource.compressor.ResourceCompressor;
 import org.exoplatform.web.ControllerContext;
@@ -203,7 +204,6 @@ public class JavascriptConfigService extends AbstractResourceService implements 
    public Map<String, FetchMode> resolveURLs(
       ControllerContext controllerContext,
       Map<ResourceId, FetchMode> ids,
-      boolean merge,
       boolean minified,
       Locale locale) throws IOException
    {
@@ -227,6 +227,9 @@ public class JavascriptConfigService extends AbstractResourceService implements 
             }
             else
             {
+               // Append portal context path
+               String contextPath = PortalContainer.getInstance().getPortalContext().getContextPath();
+               writer.append(contextPath);
                controllerContext.renderURL(resource.getParameters(minified, locale), writer);
                urls.put(buffer.toString(), mode);
                buffer.setLength(0);
@@ -256,8 +259,7 @@ public class JavascriptConfigService extends AbstractResourceService implements 
          {
             HashMap<ResourceId, FetchMode> ids = new HashMap<ResourceId, FetchMode>();
             ids.put(resource.getId(), null);                     
-            Map<String, FetchMode> urlMap = resolveURLs(controllerContext, ids, !PropertyManager.isDevelopping(),
-               !PropertyManager.isDevelopping(), locale);         
+            Map<String, FetchMode> urlMap = resolveURLs(controllerContext, ids, !PropertyManager.isDevelopping(), locale);         
             
             String url = urlMap.keySet().iterator().next();            
             paths.put(name, url.substring(0, url.length() - ".js".length()));            

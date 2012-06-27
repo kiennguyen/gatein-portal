@@ -29,6 +29,7 @@ import org.exoplatform.web.url.URLFactoryService;
 import org.exoplatform.web.url.navigation.NavigationResource;
 import org.exoplatform.web.url.navigation.NodeURL;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
@@ -56,14 +57,13 @@ public class DefaultRequestHandler extends WebRequestHandler
    }
 
    @Override
-   public boolean execute(ControllerContext context) throws Exception
+   public boolean execute(ControllerContext context, HttpServletRequest request, HttpServletResponse response) throws Exception
    {
       String defaultPortal = configService.getDefaultPortal();
-      PortalURLContext urlContext = new PortalURLContext(context, SiteKey.portal(defaultPortal));
+      PortalURLContext urlContext = new PortalURLContext(context, SiteKey.portal(defaultPortal), request);
       NodeURL url = urlFactory.newURL(NodeURL.TYPE, urlContext);
       String s = url.setResource(new NavigationResource(SiteType.PORTAL, defaultPortal, "")).toString();
-      HttpServletResponse resp = context.getResponse();
-      resp.sendRedirect(resp.encodeRedirectURL(s));
+      response.sendRedirect(response.encodeRedirectURL(s));
       return true;
    }
 

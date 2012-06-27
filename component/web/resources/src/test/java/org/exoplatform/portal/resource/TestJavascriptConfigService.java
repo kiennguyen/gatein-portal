@@ -148,14 +148,14 @@ public class TestJavascriptConfigService extends AbstractWebResourceTest
       Map<ResourceId, FetchMode> tmp = new HashMap<ResourceId, FetchMode>();
       tmp.put(new ResourceId(ResourceScope.SHARED, "remote1"), null);
       
-      Map<String, FetchMode> remoteURL = jsService.resolveURLs(CONTROLLER_CONTEXT, tmp, false, false, null);
+      Map<String, FetchMode> remoteURL = jsService.resolveURLs(CONTROLLER_CONTEXT, tmp, false, null);
       assertTrue(remoteURL.size() > 0);
       //Return remote module/script url as it's  declared in gatein-resources.xml
       assertEquals("/js/remote1.js", remoteURL.keySet().iterator().next());
       
       tmp.clear();
       tmp.put(new ResourceId(ResourceScope.SHARED, "module1"), null);      
-      remoteURL = jsService.resolveURLs(CONTROLLER_CONTEXT, tmp, false, false, null);
+      remoteURL = jsService.resolveURLs(CONTROLLER_CONTEXT, tmp, false, null);
       assertTrue(remoteURL.size() > 0);
       assertEquals("mock_url_of_module1.js", remoteURL.keySet().iterator().next());
    }
@@ -254,7 +254,7 @@ public class TestJavascriptConfigService extends AbstractWebResourceTest
    {
       public MockControllerContext()
       {
-         super(null, null, new MockServletRequest(null, null), null, null);
+         super(null, null);
       }
 
       @Override
