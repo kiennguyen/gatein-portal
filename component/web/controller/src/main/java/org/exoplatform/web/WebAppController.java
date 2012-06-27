@@ -363,7 +363,7 @@ public class WebAppController
                      }
 
                      //
-                     processed = handler.execute(new ControllerContext(this, router, req, res, parameters));
+                     processed = handler.execute(new ControllerContext(router, parameters), req, res);
                   }
                   else
                   {

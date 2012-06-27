@@ -21,6 +21,8 @@ package org.exoplatform.web;
 
 import org.exoplatform.container.component.BaseComponentPlugin;
 import javax.servlet.ServletConfig;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * Abstract calss that one must implement if it want to provide a dedicated handler for serving custom requests.
@@ -53,7 +55,7 @@ abstract public class WebRequestHandler extends BaseComponentPlugin
     * @throws Exception any exception
     * @return true if the handler was able to handle the request
     */
-   abstract public boolean execute(ControllerContext context) throws Exception;
+   abstract public boolean execute(ControllerContext context, HttpServletRequest request, HttpServletResponse response) throws Exception;
 
    /**
     * Destroy callback.

@@ -84,7 +84,7 @@ public class LegacyRequestHandler extends WebRequestHandler
    }
 
    @Override
-   public boolean execute(ControllerContext context) throws Exception
+   public boolean execute(ControllerContext context, HttpServletRequest request, HttpServletResponse response) throws Exception
    {
       String requestSiteName = context.getParameter(PortalRequestHandler.REQUEST_SITE_NAME);
       String requestPath = context.getParameter(PortalRequestHandler.REQUEST_PATH);
@@ -95,7 +95,7 @@ public class LegacyRequestHandler extends WebRequestHandler
       // Resolve the user node if node path is indicated
       if (!requestPath.equals(""))
       {
-         UserPortalConfig cfg = userPortalService.getUserPortalConfig(requestSiteName, context.getRequest().getRemoteUser(), userPortalContext);
+         UserPortalConfig cfg = userPortalService.getUserPortalConfig(requestSiteName, request.getRemoteUser(), userPortalContext);
          if (cfg != null)
          {
             UserPortal userPortal = cfg.getUserPortal();
@@ -111,13 +111,12 @@ public class LegacyRequestHandler extends WebRequestHandler
       }
 
       //
-      PortalURLContext urlContext = new PortalURLContext(context, siteKey);
+      PortalURLContext urlContext = new PortalURLContext(context, siteKey, request);
       NodeURL url = urlFactory.newURL(NodeURL.TYPE, urlContext);
 
       url.setResource(new NavigationResource(siteKey.getType(), siteKey.getName(), uri));
       url.setMimeType(MimeType.PLAIN);
 
-      HttpServletRequest request = context.getRequest();
       Enumeration paraNames = request.getParameterNames();
       while (paraNames.hasMoreElements())
       {
@@ -127,8 +126,7 @@ public class LegacyRequestHandler extends WebRequestHandler
 
       String s = url.toString();
 
-      HttpServletResponse resp = context.getResponse();
-      resp.sendRedirect(resp.encodeRedirectURL(s));
+      response.sendRedirect(response.encodeRedirectURL(s));
       return true;
    }
 

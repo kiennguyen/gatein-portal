@@ -368,7 +368,6 @@ public class UIPortalApplication extends UIApplication
             prc.getControllerContext(),
             requiredResources,
             !PropertyManager.isDevelopping(),
-            !PropertyManager.isDevelopping(),
             locale));
          urls.addAll(jsMan.getExtendedScriptURLs());
          

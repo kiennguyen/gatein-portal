@@ -55,13 +55,13 @@ public class UploadHandler extends WebRequestHandler
    }
 
    @Override
-   public boolean execute(ControllerContext context) throws Exception
+   public boolean execute(ControllerContext context, HttpServletRequest request, HttpServletResponse response) throws Exception
    {
-      execute(context.getController(), context.getRequest(), context.getResponse());
+      execute(request, response);
       return true;
    }
 
-   public void execute(WebAppController controller, HttpServletRequest req, HttpServletResponse res) throws Exception
+   public void execute(HttpServletRequest req, HttpServletResponse res) throws Exception
    {
       String action = req.getParameter("action");
       String[] uploadIds = req.getParameterValues("uploadId");

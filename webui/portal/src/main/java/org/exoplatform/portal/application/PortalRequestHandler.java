@@ -21,6 +21,8 @@ package org.exoplatform.portal.application;
 
 import org.exoplatform.commons.utils.I18N;
 import org.exoplatform.commons.utils.Safe;
+import org.exoplatform.container.ExoContainer;
+import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.container.PortalContainer;
 import org.exoplatform.portal.config.DataStorage;
 import org.exoplatform.portal.config.StaleModelException;
@@ -28,6 +30,7 @@ import org.exoplatform.portal.config.model.PortalConfig;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
 import org.exoplatform.web.ControllerContext;
+import org.exoplatform.web.WebAppController;
 import org.exoplatform.web.WebRequestHandler;
 import org.exoplatform.web.application.ApplicationLifecycle;
 import org.exoplatform.web.application.ApplicationRequestPhaseLifecycle;
@@ -38,6 +41,8 @@ import org.exoplatform.webui.application.WebuiRequestContext;
 import org.exoplatform.webui.core.UIApplication;
 import java.util.List;
 import java.util.Locale;
+
+import javax.servlet.ServletConfig;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -64,12 +69,12 @@ public class PortalRequestHandler extends WebRequestHandler
 
    /** . */
    public static final QualifiedName LANG = QualifiedName.create("gtn", "lang");
-
+   
    public String getHandlerName()
    {
       return "portal";
    }
-
+   
    /**
     * This method will handle incoming portal request. It gets a reference to the WebAppController
     * 
@@ -95,14 +100,11 @@ public class PortalRequestHandler extends WebRequestHandler
     */
    @SuppressWarnings("unchecked")
    @Override
-   public boolean execute(ControllerContext controllerContext) throws Exception
+   public boolean execute(ControllerContext controllerContext, HttpServletRequest request, HttpServletResponse response) throws Exception
    {
-      HttpServletRequest req = controllerContext.getRequest();
-      HttpServletResponse res = controllerContext.getResponse();
 
-
-      log.debug("Session ID = " + req.getSession().getId());
-      res.setHeader("Cache-Control", "no-cache");
+      log.debug("Session ID = " + request.getSession().getId());
+      response.setHeader("Cache-Control", "no-cache");
 
       //
       String requestPath = controllerContext.getParameter(REQUEST_PATH);
@@ -122,12 +124,13 @@ public class PortalRequestHandler extends WebRequestHandler
       }
 
       if (requestSiteName == null) {
-         res.sendRedirect(req.getContextPath());
+         response.sendRedirect(request.getContextPath());
          return true;
       }
 
-      PortalApplication app = controllerContext.getController().getApplication(PortalApplication.PORTAL_APPLICATION_ID);
-      PortalRequestContext context = new PortalRequestContext(app, controllerContext, requestSiteType, requestSiteName, requestPath, requestLocale);
+      WebAppController controller = (WebAppController) ExoContainerContext.getCurrentContainer().getComponentInstanceOfType(WebAppController.class);
+      PortalApplication application = controller.getApplication(PortalApplication.PORTAL_APPLICATION_ID);
+      PortalRequestContext context = new PortalRequestContext(application, controllerContext, request, response, requestSiteType, requestSiteName, requestPath, requestLocale);
       if (context.getUserPortalConfig() == null)
       {
          DataStorage storage = (DataStorage)PortalContainer.getComponent(DataStorage.class);
@@ -136,7 +139,7 @@ public class PortalRequestHandler extends WebRequestHandler
          {
             return false;
          }
-         else if(req.getRemoteUser() == null)
+         else if(request.getRemoteUser() == null)
          {
             context.requestAuthenticationLogin();
          }
@@ -147,7 +150,7 @@ public class PortalRequestHandler extends WebRequestHandler
       }
       else
       {
-         processRequest(context, app);
+         processRequest(context, application);
       }
       return true;
    }
