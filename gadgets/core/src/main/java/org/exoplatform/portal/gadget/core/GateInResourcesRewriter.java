@@ -18,6 +18,12 @@
  */
 package org.exoplatform.portal.gadget.core;
 
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+
 import org.apache.shindig.common.xml.DomUtil;
 import org.apache.shindig.gadgets.Gadget;
 import org.apache.shindig.gadgets.http.HttpResponse;
@@ -27,22 +33,18 @@ import org.apache.shindig.gadgets.rewrite.RewritingException;
 import org.apache.shindig.gadgets.spec.Feature;
 import org.exoplatform.commons.utils.PropertyManager;
 import org.exoplatform.container.PortalContainer;
-import org.gatein.portal.controller.resource.ResourceId;
-import org.gatein.portal.controller.resource.ResourceScope;
-import org.gatein.portal.controller.resource.script.FetchMap;
-import org.gatein.portal.controller.resource.script.FetchMode;
 import org.exoplatform.web.ControllerContext;
 import org.exoplatform.web.WebAppController;
 import org.exoplatform.web.application.javascript.JavascriptConfigService;
 import org.gatein.common.logging.Logger;
 import org.gatein.common.logging.LoggerFactory;
+import org.gatein.portal.controller.resource.ResourceId;
+import org.gatein.portal.controller.resource.ResourceScope;
+import org.gatein.portal.controller.resource.script.FetchMap;
+import org.gatein.portal.controller.resource.script.FetchMode;
+import org.json.JSONArray;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
-import java.io.IOException;
-import java.util.Collection;
-import java.util.Locale;
-import java.util.Map;
 
 /**
  * Look up GateIn resource with given Id and inject resource URL into html header of gadget's content
@@ -54,7 +56,7 @@ public class GateInResourcesRewriter implements GadgetRewriter
 {
    private static String GATEIN_RESOURCES_FEATURE = "gatein-resources";
 
-   private static String FEATURE_ID = "id";
+   private static String RESOURCE_ID = "resource-id";
    
    /** . */
    final Logger log = LoggerFactory.getLogger(GateInResourcesRewriter.class);
@@ -64,39 +66,52 @@ public class GateInResourcesRewriter implements GadgetRewriter
       if (gadget.getAllFeatures().contains(GATEIN_RESOURCES_FEATURE))
       {
          Feature grFeature = gadget.getSpec().getModulePrefs().getFeatures().get(GATEIN_RESOURCES_FEATURE);
-         Collection<String> resourceIds = grFeature.getParamCollection(FEATURE_ID);
+         Collection<String> resourceIds = grFeature.getParamCollection(RESOURCE_ID);
 
          if (resourceIds.size() > 0)
          {
             PortalContainer pcontainer = PortalContainer.getInstance();
             JavascriptConfigService service =
                (JavascriptConfigService)pcontainer.getComponentInstanceOfType(
-                  JavascriptConfigService.class);
-            FetchMap<ResourceId> resourcesMap = new FetchMap<ResourceId>();
-
+                  JavascriptConfigService.class);            
+            
+            List<ResourceId> ids = new LinkedList<ResourceId>();            
             for (String id : resourceIds)
             {
-               resourcesMap.add(new ResourceId(ResourceScope.SHARED, id), FetchMode.IMMEDIATE);
-            }
+               ids.add(new ResourceId(ResourceScope.SHARED, id));
+            }           
 
+            //We need to add bootstrap separately to others
+            ResourceId bootstrapID = new ResourceId(ResourceScope.SHARED, "bootstrap"); 
+            ids.remove(bootstrapID);
+                                    
             try
-            {
-               WebAppController webAppController = (WebAppController)pcontainer.getComponentInstanceOfType(
-                  WebAppController.class);
-               ControllerContext context = new ControllerContext(webAppController.getRouter(), null);
-               Map<String, FetchMode> resources =
-                  service.resolveURLs(context, resourcesMap, !PropertyManager.isDevelopping(), new Locale("en"));
-   
-               for (Map.Entry<String, FetchMode> entry : resources.entrySet())
+            {                                     
+               if (ids.size() > 0)
                {
-                  Document doc = content.getDocument();
-                  Element head = (Element)DomUtil.getFirstNamedChildNode(doc.getDocumentElement(), "head");
-                  Element script = head.getOwnerDocument().createElement("script");
-                  script.setAttribute("src", entry.getKey());
-                  head.appendChild(script);
+                  WebAppController webAppController = (WebAppController)pcontainer.getComponentInstanceOfType(
+                     WebAppController.class);
+                  ControllerContext context = new ControllerContext(webAppController.getRouter(), null);
+                  Locale en = new Locale("en");
+                  
+                  FetchMap<ResourceId> tmp = new FetchMap<ResourceId>();
+                  tmp.put(bootstrapID, null);                  
+                  Map<String, FetchMode> bootstrapURL =
+                           service.resolveURLs(context, tmp, !PropertyManager.isDevelopping(), en);
+                  
+                  //Add bootstrap
+                  Document doc = content.getDocument();                  
+                  appendScriptToHead(null, "var require=" + service.getJSConfig(context, en), doc);
+                  appendScriptToHead(bootstrapURL.keySet().iterator().next(), null, doc);
+                  
+                  //Add others
+                  StringBuilder loadBuilder = new StringBuilder("require(");
+                  loadBuilder.append(new JSONArray(ids));
+                  loadBuilder.append(")");
+                  appendScriptToHead(null, loadBuilder.toString(), doc);
                }
             }
-            catch (IOException e) 
+            catch (Exception e) 
             {
                throw new RewritingException("Error",
                   HttpResponse.SC_INTERNAL_SERVER_ERROR);
@@ -107,5 +122,24 @@ public class GateInResourcesRewriter implements GadgetRewriter
             log.warn("There is no GateIn resources configured in the gadget " + gadget.getSpec().getUrl());
          }
       }
+   }
+
+   private void appendScriptToHead(String url, String content, Document doc)
+   {
+      if (url == null && content == null)
+      {
+         return;
+      }
+      Element head = (Element)DomUtil.getFirstNamedChildNode(doc.getDocumentElement(), "head");
+      Element script = doc.createElement("script");
+      if (url != null)
+      {
+         script.setAttribute("src", url);
+      }
+      else
+      {
+         script.setTextContent(content);
+      }
+      head.appendChild(script);
    }
 }
