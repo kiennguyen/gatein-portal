@@ -17,7 +17,7 @@
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
 
-if (eXo.jQConflict) {
+if (window.eXo && window.eXo.jQConflict) {
   var gj = jQuery.noConflict(true);
 } else {
   var gj = jQuery.sub();
