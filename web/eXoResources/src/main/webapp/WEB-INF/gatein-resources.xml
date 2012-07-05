@@ -355,4 +355,27 @@
       </depends>
    </module>
 
+	 <module>
+	 		<name>pubsub</name>
+	 		<script>
+         <name>eXo.pubsub.OpenAjax</name>
+         <path>/javascript/eXo/pubsub/OpenAjax-mashup.js</path>
+      </script>
+      <script>
+         <name>eXo.pubsub.InlineContainer</name>
+         <path>/javascript/eXo/pubsub/inline.js</path>
+      </script>
+      <script>
+         <name>eXo.pubsub.IframeContainer</name>
+         <path>/javascript/eXo/pubsub/iframe.js</path>
+      </script>
+      <script>
+         <name>eXo.pubsub.IframeContainerCrypto</name>
+         <path>/javascript/eXo/pubsub/crypto.js</path>
+      </script>
+      <script>
+         <name>eXo.pubsub.loader</name>
+         <path>/javascript/eXo/pubsub/loader.js</path>
+      </script>
+	 </module>
 </gatein-resources>

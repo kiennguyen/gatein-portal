@@ -1,0 +1,6 @@
+#{title value='Pub Portlet'/}
+
+Pub portlet
+
+<input type="button" class="publish" value="Publish" />
+<div class="data"></div>

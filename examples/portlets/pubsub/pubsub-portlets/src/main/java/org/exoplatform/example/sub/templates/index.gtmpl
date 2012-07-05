@@ -1,0 +1,7 @@
+#{title value='Subscribe Portlet'/}
+
+Sub portlet
+
+<input type="button" class="subscribe" value="Subscribe" />
+<input type="button" class="unsubscribe" value="Unsubscribe" />
+<div class="data"></div>
