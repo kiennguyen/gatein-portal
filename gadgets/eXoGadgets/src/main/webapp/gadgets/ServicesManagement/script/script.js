@@ -16,7 +16,9 @@
  * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA, or see the FSF
  * site: http://www.fsf.org.
  */
-var eXo = eXo || {gadget : {}};
+
+define("eXo.gadget.ServicesManagement", ["SHARED/jquery"], function($) {
+var eXo = window.eXo || {gadget : {}};
 
 function ServicesManagement() {
 	this.DEFAULT_SERVICES_URL = "/portal/rest/management";
@@ -48,7 +50,6 @@ ServicesManagement.prototype.init = function() {
 		}
 	}
 	
-	monitor.registerHandler();
 	monitor.makeRequest(monitor.SERVICES_URL, monitor.renderServiceSelector);
 };
 
@@ -373,4 +374,38 @@ ServicesManagement.prototype.resetHeight = function() {
 	}
 };
 
+/**
+ * @param reqUrl - String
+ * @param callback - Function
+ * @param sendData - Data that will be send to server 
+ * @param returnType - String html/xml/json/script
+ * @param reqMethod - GET/POST/PUT...
+ * @return XMLHttpRequest object
+ */
+ServicesManagement.prototype.makeRequest = function(reqUrl, callback, sendData, returnType, reqMethod) {	
+	if (reqUrl == "") {
+		return;
+	}
+	reqMethod = reqMethod ? reqMethod : "GET";
+	returnType = returnType ? returnType : "json";
+	
+	return $.ajax({
+					  url: reqUrl,
+					  type: reqMethod,					  
+					  success: callback,
+					  contentType: "application/x-www-form-urlencoded",
+					  error: function() {
+						  var prefs = new _IG_Prefs();
+						  alert(prefs.getMsg("badURL"));
+					  },
+					  data: sendData,
+					  dataType: returnType,
+					  beforeSend: function(xhr) {
+					  	xhr.setRequestHeader("If-Modified-Since", "Thu, 1 Jan 1970 00:00:00 GMT");
+					  } 
+					});	
+};
+		
 eXo.gadget.ServicesManagement = new ServicesManagement();
+return eXo.gadget.ServicesManagement;
+});

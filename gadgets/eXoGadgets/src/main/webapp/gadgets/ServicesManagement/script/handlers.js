@@ -16,19 +16,20 @@
  * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
-ServicesManagement.prototype.registerHandler = function() {
+ 
+require(["SHARED/jquery", "eXo.gadget.ServicesManagement"], function($, ServicesManagement) {
 	
 	//======================Handler======================================//
 	$("#servicesSelector").change(function () {
 	  var serviceName = $(this).val();
 	  serviceName = gadgets.util.unescapeString(!serviceName ? "" : serviceName);
-	  var methodsURL = eXo.gadget.ServicesManagement.SERVICES_URL + "/" + encodeURIComponent(serviceName);
+	  var methodsURL = ServicesManagement.SERVICES_URL + "/" + encodeURIComponent(serviceName);
 	  
 	  var currView = gadgets.views.getCurrentView().getName();
 	  if (currView == "home") {
-	  	eXo.gadget.ServicesManagement.makeRequest(methodsURL, eXo.gadget.ServicesManagement.renderServiceDetailForHome);
+	  	ServicesManagement.makeRequest(methodsURL, ServicesManagement.renderServiceDetailForHome);
 	  } else {
-	  	eXo.gadget.ServicesManagement.makeRequest(methodsURL, eXo.gadget.ServicesManagement.renderServiceDetailForCanvas);
+	  	ServicesManagement.makeRequest(methodsURL, ServicesManagement.renderServiceDetailForCanvas);
 	  }
 	});
 
@@ -41,22 +42,22 @@ ServicesManagement.prototype.registerHandler = function() {
 		$(selectedTab).removeClass("TabSelected");
 		$(this).addClass("TabSelected");
 		
-		var selectedContent = eXo.gadget.ServicesManagement.getContentContainer(selectedTab);
-		var content = eXo.gadget.ServicesManagement.getContentContainer(this);
+		var selectedContent = ServicesManagement.getContentContainer(selectedTab);
+		var content = ServicesManagement.getContentContainer(this);
 		
 		$(selectedContent).removeClass("ContentSelected");
 		$(selectedContent).hide();
-		eXo.gadget.ServicesManagement.fadeIn(content, function() {
+		ServicesManagement.fadeIn(content, function() {
 			$(this).addClass("ContentSelected");
 		});		
 	});
 	
 	$(".DesIconHome").click(function () {
-		eXo.gadget.ServicesManagement.fadeIn($(".DescriptionBox")[0], function() {
+		ServicesManagement.fadeIn($(".DescriptionBox")[0], function() {
 			var desBox = this; 
 			window.setTimeout(function() {
 				$(desBox).fadeOut(2000, function() {
-					eXo.gadget.ServicesManagement.resetHeight();
+					ServicesManagement.resetHeight();
 				});
 			}, 5000);
 		});
@@ -76,7 +77,7 @@ ServicesManagement.prototype.registerHandler = function() {
 		  }
 	  }
 
-	  eXo.gadget.ServicesManagement.renderPropertyDetail(property);
+	  ServicesManagement.renderPropertyDetail(property);
 	});
 	
 	$("#methodsSelector").change(function () {
@@ -93,7 +94,7 @@ ServicesManagement.prototype.registerHandler = function() {
           }
       }
 
-      eXo.gadget.ServicesManagement.renderMethodDetail(method);
+      ServicesManagement.renderMethodDetail(method);
     });
 	
 	$('.MethodActionButton').live('click', function(event) {
@@ -105,10 +106,10 @@ ServicesManagement.prototype.registerHandler = function() {
 	  serviceName = gadgets.util.unescapeString(!serviceName ? "" : serviceName);
 	  var param = $("form", tr).serialize();
 	  
-		var execLink = eXo.gadget.ServicesManagement.SERVICES_URL + "/" + 
+		var execLink = ServicesManagement.SERVICES_URL + "/" + 
 												encodeURIComponent(serviceName) + "/" + 
 												encodeURIComponent(methodName);
-		eXo.gadget.ServicesManagement.makeRequest(execLink, eXo.gadget.ServicesManagement.showMinimessage, param, "text", reqMethod);
+		ServicesManagement.makeRequest(execLink, ServicesManagement.showMinimessage, param, "text", reqMethod);
 	});
 	
 	$('.PropertyActionButton').live('click', function(event) {
@@ -119,41 +120,9 @@ ServicesManagement.prototype.registerHandler = function() {
       var serviceName = $("#servicesSelector").val();
       serviceName = gadgets.util.unescapeString(!serviceName ? "" : serviceName);
       
-      var execLink = eXo.gadget.ServicesManagement.SERVICES_URL + "/" + 
+      var execLink = ServicesManagement.SERVICES_URL + "/" + 
                                                 encodeURIComponent(serviceName) + "/" + 
                                                 encodeURIComponent(propName);
-      eXo.gadget.ServicesManagement.makeRequest(execLink, eXo.gadget.ServicesManagement.showMinimessage, null, "text", reqMethod);
+      ServicesManagement.makeRequest(execLink, ServicesManagement.showMinimessage, null, "text", reqMethod);
     });
-};
-
-/**
- * @param reqUrl - String
- * @param callback - Function
- * @param sendData - Data that will be send to server 
- * @param returnType - String html/xml/json/script
- * @param reqMethod - GET/POST/PUT...
- * @return XMLHttpRequest object
- */
-ServicesManagement.prototype.makeRequest = function(reqUrl, callback, sendData, returnType, reqMethod) {	
-	if (reqUrl == "") {
-		return;
-	}
-	reqMethod = reqMethod ? reqMethod : "GET";
-	returnType = returnType ? returnType : "json";
-	
-	return $.ajax({
-					  url: reqUrl,
-					  type: reqMethod,					  
-					  success: callback,
-					  contentType: "application/x-www-form-urlencoded",
-					  error: function() {
-						  var prefs = new _IG_Prefs();
-						  alert(prefs.getMsg("badURL"));
-					  },
-					  data: sendData,
-					  dataType: returnType,
-					  beforeSend: function(xhr) {
-					  	xhr.setRequestHeader("If-Modified-Since", "Thu, 1 Jan 1970 00:00:00 GMT");
-					  } 
-					});	
-};
+});
