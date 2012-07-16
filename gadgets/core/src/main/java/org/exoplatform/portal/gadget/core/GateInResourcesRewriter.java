@@ -19,6 +19,7 @@
 package org.exoplatform.portal.gadget.core;
 
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
@@ -42,7 +43,9 @@ import org.gatein.portal.controller.resource.ResourceId;
 import org.gatein.portal.controller.resource.ResourceScope;
 import org.gatein.portal.controller.resource.script.FetchMap;
 import org.gatein.portal.controller.resource.script.FetchMode;
+import org.gatein.portal.controller.resource.script.ScriptResource;
 import org.json.JSONArray;
+import org.json.JSONObject;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -75,40 +78,67 @@ public class GateInResourcesRewriter implements GadgetRewriter
                (JavascriptConfigService)pcontainer.getComponentInstanceOfType(
                   JavascriptConfigService.class);            
             
-            List<ResourceId> ids = new LinkedList<ResourceId>();            
+            Map<ResourceId, FetchMode> ids = new HashMap<ResourceId, FetchMode>();
             for (String id : resourceIds)
             {
-               ids.add(new ResourceId(ResourceScope.SHARED, id));
-            }           
-
-            //We need to add bootstrap separately to others
-            ResourceId bootstrapID = new ResourceId(ResourceScope.SHARED, "bootstrap"); 
-            ids.remove(bootstrapID);
+               ids.put(new ResourceId(ResourceScope.SHARED, id), null);
+            }         
+            Map<ScriptResource, FetchMode> resolvedIds = service.resolveIds(ids);
+            
+            LinkedList<ResourceId> immediate = new LinkedList<ResourceId>();
+            List<ResourceId> on_load = new LinkedList<ResourceId>();
+            for (ScriptResource sc : resolvedIds.keySet())
+            {
+               if (FetchMode.IMMEDIATE.equals(sc.getFetchMode())) 
+               {
+                  immediate.add(sc.getId());
+               }
+               else
+               {
+                  on_load.add(sc.getId());
+               }
+            }                     
+            
+            ResourceId bootstrapID = new ResourceId(ResourceScope.SHARED, "bootstrap");
+            //Only add bootstrap when there are on_load resources
+            immediate.remove(bootstrapID);
                                     
             try
             {                                     
-               if (ids.size() > 0)
+               WebAppController webAppController = (WebAppController)pcontainer.getComponentInstanceOfType(
+                  WebAppController.class);
+               ControllerContext context = new ControllerContext(webAppController.getRouter(), null);
+               Locale en = new Locale("en");
+               
+               Document doc = content.getDocument();                  
+               if (on_load.size() > 0) 
                {
-                  WebAppController webAppController = (WebAppController)pcontainer.getComponentInstanceOfType(
-                     WebAppController.class);
-                  ControllerContext context = new ControllerContext(webAppController.getRouter(), null);
-                  Locale en = new Locale("en");
+                  JSONObject reqConfig = service.getJSConfig(context, en);
+                  appendScriptToHead(null, "var require=" + reqConfig, doc);
                   
-                  FetchMap<ResourceId> tmp = new FetchMap<ResourceId>();
-                  tmp.put(bootstrapID, null);                  
-                  Map<String, FetchMode> bootstrapURL =
-                           service.resolveURLs(context, tmp, !PropertyManager.isDevelopping(), en);
+                  JSONObject paths = reqConfig.getJSONObject("paths");
+                  immediate.addFirst(bootstrapID);
+                  for (ResourceId id : immediate)
+                  {
+                     appendScriptToHead(paths.getString(id.toString()) + ".js", null, doc);
+                  }
                   
-                  //Add bootstrap
-                  Document doc = content.getDocument();                  
-                  appendScriptToHead(null, "var require=" + service.getJSConfig(context, en), doc);
-                  appendScriptToHead(bootstrapURL.keySet().iterator().next(), null, doc);
-                  
-                  //Add others
                   StringBuilder loadBuilder = new StringBuilder("require(");
-                  loadBuilder.append(new JSONArray(ids));
+                  loadBuilder.append(new JSONArray(on_load));
                   loadBuilder.append(")");
-                  appendScriptToHead(null, loadBuilder.toString(), doc);
+                  appendScriptToHead(null, loadBuilder.toString(), doc);                     
+               }
+               else
+               {
+                  for (ResourceId id : immediate) 
+                  {
+                     FetchMap<ResourceId> tmp = new FetchMap<ResourceId>();
+                     tmp.put(id, null);                  
+                     Map<String, FetchMode> immediateURL =
+                              service.resolveURLs(context, tmp, !PropertyManager.isDevelopping(), en);
+                     
+                     appendScriptToHead(immediateURL.keySet().iterator().next(), null, doc);                     
+                  }                  
                }
             }
             catch (Exception e) 
