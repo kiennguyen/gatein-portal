@@ -57,10 +57,12 @@ import org.w3c.dom.Element;
  */
 public class GateInResourcesRewriter implements GadgetRewriter
 {
+   public final static String REQUIRE_JS = "requirejs";
+
    private static String GATEIN_RESOURCES_FEATURE = "gatein-resources";
 
    private static String RESOURCE_ID = "resource-id";
-   
+
    /** . */
    final Logger log = LoggerFactory.getLogger(GateInResourcesRewriter.class);
 
@@ -70,6 +72,16 @@ public class GateInResourcesRewriter implements GadgetRewriter
       {
          Feature grFeature = gadget.getSpec().getModulePrefs().getFeatures().get(GATEIN_RESOURCES_FEATURE);
          Collection<String> resourceIds = grFeature.getParamCollection(RESOURCE_ID);
+         
+         /*****************************************************************
+         if (resourceIds.contains(REQUIRE_JS))
+         {
+            // Add the shared immediate script from GateIn which contains RequireJS lib
+            // And the config map of modules
+         }
+
+         // Add immediate scripts configured in Gatein resource feature
+         *****************************************************************/
 
          if (resourceIds.size() > 0)
          {
