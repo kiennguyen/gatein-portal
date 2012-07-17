@@ -18,12 +18,11 @@
  */
 package org.exoplatform.portal.gadget.core;
 
-import java.util.Collection;
 import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.HashSet;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Set;
 
 import org.apache.shindig.common.xml.DomUtil;
 import org.apache.shindig.gadgets.Gadget;
@@ -32,7 +31,6 @@ import org.apache.shindig.gadgets.rewrite.GadgetRewriter;
 import org.apache.shindig.gadgets.rewrite.MutableContent;
 import org.apache.shindig.gadgets.rewrite.RewritingException;
 import org.apache.shindig.gadgets.spec.Feature;
-import org.exoplatform.commons.utils.PropertyManager;
 import org.exoplatform.container.PortalContainer;
 import org.exoplatform.web.ControllerContext;
 import org.exoplatform.web.WebAppController;
@@ -41,138 +39,125 @@ import org.gatein.common.logging.Logger;
 import org.gatein.common.logging.LoggerFactory;
 import org.gatein.portal.controller.resource.ResourceId;
 import org.gatein.portal.controller.resource.ResourceScope;
-import org.gatein.portal.controller.resource.script.FetchMap;
 import org.gatein.portal.controller.resource.script.FetchMode;
 import org.gatein.portal.controller.resource.script.ScriptResource;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 /**
- * Look up GateIn resource with given Id and inject resource URL into html header of gadget's content
+ * Look up GateIn resource with given Id and inject resource URL into html
+ * header of gadget's content
  * 
  * @author <a href="kienna@exoplatform.com">Kien Nguyen</a>
  * @version $Revision$
  */
 public class GateInResourcesRewriter implements GadgetRewriter
 {
-   public final static String REQUIRE_JS = "requirejs";
-
    private static String GATEIN_RESOURCES_FEATURE = "gatein-resources";
 
-   private static String RESOURCE_ID = "resource-id";
+   public final static String SCRIPTS = "scripts";
+
+   private static String AMD = "amd";
+
+   private JavascriptConfigService service;
 
    /** . */
    final Logger log = LoggerFactory.getLogger(GateInResourcesRewriter.class);
+
+   private ResourceId reqJS = new ResourceId(ResourceScope.SHARED, "bootstrap");
+
+   public GateInResourcesRewriter()
+   {
+      PortalContainer pcontainer = PortalContainer.getInstance();
+      service = (JavascriptConfigService)pcontainer.getComponentInstanceOfType(JavascriptConfigService.class);
+   }
 
    public void rewrite(Gadget gadget, MutableContent content) throws RewritingException
    {
       if (gadget.getAllFeatures().contains(GATEIN_RESOURCES_FEATURE))
       {
          Feature grFeature = gadget.getSpec().getModulePrefs().getFeatures().get(GATEIN_RESOURCES_FEATURE);
-         Collection<String> resourceIds = grFeature.getParamCollection(RESOURCE_ID);
+         JSONObject reqConfig = getJSConfig();
          
-         /*****************************************************************
-         if (resourceIds.contains(REQUIRE_JS))
+         Document doc = content.getDocument();
+         Element head = (Element)DomUtil.getFirstNamedChildNode(doc.getDocumentElement(), "head");
+         Element body = (Element)DomUtil.getFirstNamedChildNode(doc.getDocumentElement(), "body");
+         
+         Set<ResourceId> modules = resolveIds(grFeature.getParam(AMD), FetchMode.ON_LOAD);
+         if (modules != null)
          {
-            // Add the shared immediate script from GateIn which contains RequireJS lib
-            // And the config map of modules
+            // Add RequireJS lib
+            head.appendChild(createScript(null, "var require=" + reqConfig, doc));
+            head.appendChild(createScript(getPath(reqJS, reqConfig), null, doc));
+
+            // Add modules
+            if (modules.size() > 0)
+            {
+               StringBuilder loadBuilder = new StringBuilder("require(");
+               loadBuilder.append(new JSONArray(modules));
+               loadBuilder.append(")");
+               body.appendChild(createScript(null, loadBuilder.toString(), doc));
+            }
          }
 
          // Add immediate scripts configured in Gatein resource feature
-         *****************************************************************/
-
-         if (resourceIds.size() > 0)
+         Set<ResourceId> scripts = resolveIds(grFeature.getParam(SCRIPTS), FetchMode.IMMEDIATE);
+         if (scripts != null)
          {
-            PortalContainer pcontainer = PortalContainer.getInstance();
-            JavascriptConfigService service =
-               (JavascriptConfigService)pcontainer.getComponentInstanceOfType(
-                  JavascriptConfigService.class);            
-            
-            Map<ResourceId, FetchMode> ids = new HashMap<ResourceId, FetchMode>();
-            for (String id : resourceIds)
+            scripts.remove(reqJS);
+            for (ResourceId script : scripts)
             {
-               ids.put(new ResourceId(ResourceScope.SHARED, id), null);
-            }         
-            Map<ScriptResource, FetchMode> resolvedIds = service.resolveIds(ids);
-            
-            LinkedList<ResourceId> immediate = new LinkedList<ResourceId>();
-            List<ResourceId> on_load = new LinkedList<ResourceId>();
-            for (ScriptResource sc : resolvedIds.keySet())
-            {
-               if (FetchMode.IMMEDIATE.equals(sc.getFetchMode())) 
-               {
-                  immediate.add(sc.getId());
-               }
-               else
-               {
-                  on_load.add(sc.getId());
-               }
-            }                     
-            
-            ResourceId bootstrapID = new ResourceId(ResourceScope.SHARED, "bootstrap");
-            //Only add bootstrap when there are on_load resources
-            immediate.remove(bootstrapID);
-                                    
-            try
-            {                                     
-               WebAppController webAppController = (WebAppController)pcontainer.getComponentInstanceOfType(
-                  WebAppController.class);
-               ControllerContext context = new ControllerContext(webAppController.getRouter(), null);
-               Locale en = new Locale("en");
-               
-               Document doc = content.getDocument();                  
-               if (on_load.size() > 0) 
-               {
-                  JSONObject reqConfig = service.getJSConfig(context, en);
-                  appendScriptToHead(null, "var require=" + reqConfig, doc);
-                  
-                  JSONObject paths = reqConfig.getJSONObject("paths");
-                  immediate.addFirst(bootstrapID);
-                  for (ResourceId id : immediate)
-                  {
-                     appendScriptToHead(paths.getString(id.toString()) + ".js", null, doc);
-                  }
-                  
-                  StringBuilder loadBuilder = new StringBuilder("require(");
-                  loadBuilder.append(new JSONArray(on_load));
-                  loadBuilder.append(")");
-                  appendScriptToHead(null, loadBuilder.toString(), doc);                     
-               }
-               else
-               {
-                  for (ResourceId id : immediate) 
-                  {
-                     FetchMap<ResourceId> tmp = new FetchMap<ResourceId>();
-                     tmp.put(id, null);                  
-                     Map<String, FetchMode> immediateURL =
-                              service.resolveURLs(context, tmp, !PropertyManager.isDevelopping(), en);
-                     
-                     appendScriptToHead(immediateURL.keySet().iterator().next(), null, doc);                     
-                  }                  
-               }
+               head.appendChild(createScript(getPath(script, reqConfig), null, doc));
             }
-            catch (Exception e) 
-            {
-               throw new RewritingException("Error",
-                  HttpResponse.SC_INTERNAL_SERVER_ERROR);
-            }
-         }
-         else
-         {
-            log.warn("There is no GateIn resources configured in the gadget " + gadget.getSpec().getUrl());
          }
       }
    }
 
-   private void appendScriptToHead(String url, String content, Document doc)
+   private JSONObject getJSConfig() throws RewritingException
    {
-      if (url == null && content == null)
+      PortalContainer pcontainer = PortalContainer.getInstance();
+      WebAppController webAppController =
+         (WebAppController)pcontainer.getComponentInstanceOfType(WebAppController.class);
+      ControllerContext context = new ControllerContext(webAppController.getRouter(), null);
+      Locale en = new Locale("en");
+      try
       {
-         return;
+         return service.getJSConfig(context, en);
       }
-      Element head = (Element)DomUtil.getFirstNamedChildNode(doc.getDocumentElement(), "head");
+      catch (Exception e)
+      {
+         throw new RewritingException(e, HttpResponse.SC_INTERNAL_SERVER_ERROR);
+      }
+   }
+
+   private Set<ResourceId> resolveIds(String resourceParams, FetchMode mode)
+   {
+      if (resourceParams != null)
+      {
+         Map<ResourceId, FetchMode> ids = new HashMap<ResourceId, FetchMode>();
+         for (String module : resourceParams.split(","))
+         {
+            module = module.trim();
+            ids.put(new ResourceId(ResourceScope.SHARED, module), mode);
+         }
+         Set<ResourceId> result = new HashSet<ResourceId>();
+         for (ScriptResource res : service.resolveIds(ids).keySet())
+         {
+            result.add(res.getId());
+         }
+         return result;
+      }
+      else
+      {
+         return null;
+      }
+   }
+
+   private Element createScript(String url, String content, Document doc)
+   {
       Element script = doc.createElement("script");
       if (url != null)
       {
@@ -182,6 +167,19 @@ public class GateInResourcesRewriter implements GadgetRewriter
       {
          script.setTextContent(content);
       }
-      head.appendChild(script);
+      return script;
+   }
+
+   private String getPath(ResourceId id, JSONObject reqConfig) throws RewritingException
+   {
+      try
+      {
+         JSONObject paths = reqConfig.getJSONObject("paths");
+         return paths.getString(id.toString()) + ".js";
+      }
+      catch (JSONException ex)
+      {
+         throw new RewritingException(ex, HttpResponse.SC_INTERNAL_SERVER_ERROR);
+      }
    }
 }

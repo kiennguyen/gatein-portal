@@ -19,6 +19,8 @@
 
 package org.gatein.portal.controller.resource.script;
 
+import org.exoplatform.services.log.ExoLogger;
+import org.exoplatform.services.log.Log;
 import org.exoplatform.web.application.javascript.JavascriptConfigParser;
 import org.gatein.portal.controller.resource.ResourceId;
 import org.gatein.portal.controller.resource.ResourceScope;
@@ -39,6 +41,8 @@ public class ScriptGraph
    
    /** . */
    final EnumMap<ResourceScope, Map<String, ScriptResource>> resources;
+   
+   protected static Log log = ExoLogger.getLogger(ScriptGraph.class);
 
    public ScriptGraph()
    {
@@ -118,6 +122,7 @@ public class ScriptGraph
       {
          if (mode != null && !resource.fetchMode.equals(mode))
          {
+            log.debug("Can't find resource {} with fetchMode {}", id, mode);
             return null;
          }
          else
@@ -151,6 +156,7 @@ public class ScriptGraph
       }
       else
       {
+         log.debug("Can't find resource {}", id);
          return null;
       }
    }
