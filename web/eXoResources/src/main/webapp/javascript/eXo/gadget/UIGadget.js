@@ -37,7 +37,7 @@ var eXoGadget = {
   	require([gadgets.pubsubURL], 
   		function() {
   			//Make sure that 2 modules in shindig-patch has been loaded already
-  			require(["eXo.gadget.Gadgets", "eXo.gadget.ExoBasedUserPrefStore"], function() {eXo.gadget.UIGadget.createCallback.apply(window, args)});
+  			require(["eXo.gadget.Gadgets", "eXo.gadget.ExoBasedUserPrefStore"], function() {_module.UIGadget.createCallback.apply(window, args)});
   	});
   },
 
