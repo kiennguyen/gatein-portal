@@ -98,7 +98,7 @@ public class GateInResourcesRewriter implements GadgetRewriter
             {
                StringBuilder loadBuilder = new StringBuilder("require(");
                loadBuilder.append(new JSONArray(modules));
-               loadBuilder.append(")");
+               loadBuilder.append(");");
                body.appendChild(createScript(null, loadBuilder.toString(), doc));
             }
          }

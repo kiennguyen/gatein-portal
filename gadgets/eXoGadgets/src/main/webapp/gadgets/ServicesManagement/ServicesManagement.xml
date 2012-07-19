@@ -51,7 +51,6 @@
       <![CDATA[
         <link rel="stylesheet" type="text/css" href="style/home.css"></link>	
 		<script src="script/script.js" type="text/javascript"></script>	
-		<script src="script/handlers.js" type="text/javascript"></script>
 		<script type="text/javascript">
 				gadgets.util.registerOnLoadHandler(initGadget);
 		</script>
@@ -141,7 +140,6 @@
       <![CDATA[
         <link rel="stylesheet" type="text/css" href="style/canvas.css"></link>    
 		<script src="script/script.js"></script>
-		<script src="script/handlers.js"></script>
 		<script type="text/javascript">
 				gadgets.util.registerOnLoadHandler(initGadget);
 		</script>

@@ -515,3 +515,11 @@ define("eXo.gadget.servMgnt", ["SHARED/jquery"], function($) {
   
 	return _module;
 });
+
+function initGadget()
+{
+  require(['eXo.gadget.servMgnt'], function(servMgnt) {
+    servMgnt.init();
+    servMgnt.initDOM();
+  });
+}
