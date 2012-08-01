@@ -27,6 +27,7 @@ import org.apache.shindig.common.crypto.BasicBlobCrypter;
 import org.apache.shindig.common.crypto.BlobCrypter;
 import org.apache.shindig.common.crypto.BlobCrypterException;
 import org.apache.shindig.common.util.TimeSource;
+import org.exoplatform.container.PortalContainer;
 import org.exoplatform.web.application.RequestContext;
 
 public class ExoDefaultSecurityTokenGenerator implements SecurityTokenGenerator
@@ -71,7 +72,7 @@ public class ExoDefaultSecurityTokenGenerator implements SecurityTokenGenerator
       String rUser = context.getRemoteUser();
       String viewer = rUser;
 
-      return createToken(gadgetURL, viewer, rUser, moduleId, "default");
+      return createToken(gadgetURL, viewer, rUser, moduleId, PortalContainer.getInstance().getName());
    }
 
    protected BlobCrypter getBlobCrypter() throws IOException

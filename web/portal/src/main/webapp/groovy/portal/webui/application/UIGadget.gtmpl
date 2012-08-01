@@ -1,6 +1,7 @@
 <%	
 	import org.exoplatform.web.application.JavascriptManager;
 	import org.exoplatform.portal.webui.application.GadgetUtil;
+   import org.exoplatform.container.PortalContainer;
 	
     def rcontext = _ctx.getRequestContext();
     JavascriptManager jsmanager = rcontext.getJavascriptManager();
@@ -26,7 +27,8 @@
         userPref = uicomponent.getUserPref();
         def noCache = uicomponent.isNoCache();
     	  def isDebug = uicomponent.isDebug();
-        reqJS.addScripts("gadget.UIGadget.createGadget('$url','content-$id', $metadata, $userPref, '$view', '$hostName', " + (isDebug ? 1 : 0) + ", " + (noCache ? 1 : 0) + ");");      									
+        def pContainer = PortalContainer.getInstance().getName();
+        reqJS.addScripts("gadget.UIGadget.createGadget('$url','content-$id', $metadata, $userPref, '$view', '$hostName', " + (isDebug ? 1 : 0) + ", " + (noCache ? 1 : 0) + ",'" + pContainer + "');");      									
     }
                                                                                                             																													
 	boolean isMini = Boolean.parseBoolean(uicomponent.getProperties().get("minimized"));

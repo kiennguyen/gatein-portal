@@ -4,6 +4,7 @@
 	import org.exoplatform.portal.webui.application.GadgetUtil;
 	import org.exoplatform.webui.application.portlet.PortletRequestContext;
 	import org.exoplatform.portal.webui.application.UIPortlet;
+   import org.exoplatform.container.PortalContainer;
 	
 	def hostName = GadgetUtil.getGadgetServerUrl();
 	def rcontext = _ctx.getRequestContext() ;
@@ -18,7 +19,8 @@
 	  	def noCache = uicomponent.getParent().isNoCache();
 	  	def isDebug = uicomponent.getParent().isDebug();
 	  	JavascriptManager jsmanager = rcontext.getJavascriptManager();
-	  	def requireJS = jsmanager.require("SHARED/gadget", "gadget").addScripts("gadget.UIGadget.createGadget('$url','$id', $metadata, $userPref, 'canvas', '$hostName', " + (isDebug ? 1 : 0) + ", " + (noCache ? 1 : 0) + ");");
+      def pContainer = PortalContainer.getInstance().getName();
+	  	def requireJS = jsmanager.require("SHARED/gadget", "gadget").addScripts("gadget.UIGadget.createGadget('$url','$id', $metadata, $userPref, 'canvas', '$hostName', " + (isDebug ? 1 : 0) + ", " + (noCache ? 1 : 0) + ",'" + pContainer + "');");
 	  	
 	  	if(UIPortlet.getCurrentUIPortlet().getHeight() == null && uicomponent.getParent().isFillUpFreeSpace()) {
 	  	 requireJS.addScripts("gadget.UIGadget.resizeFullHeight('$id')");

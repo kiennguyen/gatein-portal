@@ -15,6 +15,7 @@ import org.apache.shindig.gadgets.oauth.OAuthStore;
 import org.apache.shindig.gadgets.oauth.BasicOAuthStoreConsumerKeyAndSecret.KeyType;
 import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.PortalContainer;
+import org.exoplatform.container.RootContainer;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -159,6 +160,7 @@ public class ExoOAuthStore implements OAuthStore {
   public ConsumerInfo getConsumerKeyAndSecret(
       SecurityToken securityToken, String serviceName, OAuthServiceProvider provider)
       throws GadgetException {
+     System.out.println("EXoOAuthStore: " + securityToken.getContainer());
     ++consumerKeyLookupCount;
     BasicOAuthStoreConsumerIndex pk = new BasicOAuthStoreConsumerIndex();
     pk.setGadgetUri(securityToken.getAppUrl());

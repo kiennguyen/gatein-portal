@@ -328,7 +328,8 @@ public class GateInJsonContainerConfig extends AbstractContainerConfig {
     try {
       JSONObject contents = new JSONObject(json);
       JSONArray containers = contents.getJSONArray(CONTAINER_KEY);
-
+      //JSONArray containers = new JSONArray("['default', 'portal']");
+      
       for (int i = 0, j = containers.length(); i < j; ++i) {
         // Copy the default object and produce a new one.
         String container = containers.getString(i);

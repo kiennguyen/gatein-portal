@@ -28,7 +28,7 @@ var eXoGadget = {
    * @param {boolean} debug normal or debug mode (0, 1)
    * @param {String} nocache value indicate cache or nocache at shindig level (0, 1)
    */
-  createGadget : function(url, id, metadata, userPref, view, hostName, debug, nocache)
+  createGadget : function(url, id, metadata, userPref, view, hostName, debug, nocache, container)
   {
     window.gadgets = window.gadgets || {};
     eXo.gadgets = window.gadgets;
@@ -41,9 +41,10 @@ var eXoGadget = {
   	});
   },
 
-  createCallback : function(url, id, metadata, userPref, view, hostName, debug, nocache)
+  createCallback : function(url, id, metadata, userPref, view, hostName, debug, nocache, container)
   {
     var language = eXo.core.I18n.getLanguage();
+    gadgets.container.setName(container);
     gadgets.container.setLanguage(language);
     var gadget;
     if (metadata != null)

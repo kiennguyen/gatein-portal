@@ -77,6 +77,7 @@ public class GateInResourcesRewriter implements GadgetRewriter
 
    public void rewrite(Gadget gadget, MutableContent content) throws RewritingException
    {
+      System.out.println("GateIn resource rewriter: " + gadget.getContext().getContainer());
       if (gadget.getAllFeatures().contains(GATEIN_RESOURCES_FEATURE))
       {
          Feature grFeature = gadget.getSpec().getModulePrefs().getFeatures().get(GATEIN_RESOURCES_FEATURE);
